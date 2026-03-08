@@ -1,0 +1,3329 @@
+
+──────────── COMMAND END ────────────
+
+[01:26:28] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ sudo acpidump > acpi_dump.txt
+[sudo] password for cyberian-cherubim: 
+
+──────────── COMMAND END ────────────
+
+[01:26:37] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ acpixtract -a acpi_dump.txt
+
+Intel ACPI Component Architecture
+ACPI Binary Table Extraction Utility version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+  LUFT -  216258 bytes written (0x00034CC2) - luft.dat
+  SSDT -   13135 bytes written (0x0000334F) - ssdt1.dat
+  MCFG -      60 bytes written (0x0000003C) - mcfg.dat
+  APIC -     476 bytes written (0x000001DC) - apic.dat
+  SSDT -   23860 bytes written (0x00005D34) - ssdt2.dat
+  TPM2 -      76 bytes written (0x0000004C) - tpm2.dat
+  SSDT -    5578 bytes written (0x000015CA) - ssdt3.dat
+  NHLT -      45 bytes written (0x0000002D) - nhlt.dat
+  UEFI -      72 bytes written (0x00000048) - uefi.dat
+  DSDT -  598892 bytes written (0x0009236C) - dsdt.dat
+  SSDT -   37620 bytes written (0x000092F4) - ssdt4.dat
+  WSMT -      40 bytes written (0x00000028) - wsmt.dat
+  LPIT -     204 bytes written (0x000000CC) - lpit.dat
+  SSDT -    7962 bytes written (0x00001F1A) - ssdt5.dat
+  DBG2 -      84 bytes written (0x00000054) - dbg2.dat
+  SSDT -   14810 bytes written (0x000039DA) - ssdt6.dat
+  SSDT -   10917 bytes written (0x00002AA5) - ssdt7.dat
+  DMAR -      80 bytes written (0x00000050) - dmar.dat
+  FACP -     276 bytes written (0x00000114) - facp.dat
+  FPDT -      68 bytes written (0x00000044) - fpdt.dat
+  PHAT -    2627 bytes written (0x00000A43) - phat.dat
+  SSDT -     908 bytes written (0x0000038C) - ssdt8.dat
+  MSDM -      85 bytes written (0x00000055) - msdm.dat
+  SSDT -    6410 bytes written (0x0000190A) - ssdt9.dat
+  DBGP -      52 bytes written (0x00000034) - dbgp.dat
+  HPET -      56 bytes written (0x00000038) - hpet.dat
+  SSDT -   10883 bytes written (0x00002A83) - ssdt10.dat
+  FIDT -     156 bytes written (0x0000009C) - fidt.dat
+  FACS -      64 bytes written (0x00000040) - facs.dat
+  BGRT -      56 bytes written (0x00000038) - bgrt.dat
+  SSDT -   14810 bytes written (0x000039DA) - ssdt11.dat
+  SSDT -    4937 bytes written (0x00001349) - ssdt12.dat
+  SSDT -    7087 bytes written (0x00001BAF) - ssdt13.dat
+  SSDT -     427 bytes written (0x000001AB) - ssdt14.dat
+  SSDT -     916 bytes written (0x00000394) - ssdt15.dat
+  SSDT -    4027 bytes written (0x00000FBB) - ssdt16.dat
+  SSDT -    4152 bytes written (0x00001038) - ssdt17.dat
+  SSDT -    1205 bytes written (0x000004B5) - ssdt18.dat
+  SSDT -    1376 bytes written (0x00000560) - ssdt19.dat
+
+──────────── COMMAND END ────────────
+
+[01:26:40] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ iasl -d *.dat
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+ERROR at line 335: Unterminated quoted string
+ERROR at line 343: Unterminated quoted string
+ERROR at line 380: Unterminated quoted string
+ERROR at line 395: Unterminated quoted string
+ERROR at line 410: Unterminated quoted string
+ERROR at line 425: Unterminated quoted string
+ERROR at line 437: Unterminated quoted string
+ERROR at line 467: Unterminated quoted string
+ERROR at line 473: Unterminated quoted string
+ERROR at line 510: Unterminated quoted string
+ERROR at line 515: Unterminated quoted string
+ERROR at line 539: Unterminated quoted string
+ERROR at line 552: Unterminated quoted string
+ERROR at line 598: Unterminated quoted string
+ERROR at line 824: Unterminated quoted string
+ERROR at line 830: Unterminated quoted string
+ERROR at line 867: Unterminated quoted string
+ERROR at line 870: Unterminated quoted string
+ERROR at line 898: Unterminated quoted string
+ERROR at line 1009: Unterminated quoted string
+ERROR at line 1024: Unterminated quoted string
+ERROR at line 1043: Unterminated quoted string
+ERROR at line 1046: Unterminated quoted string
+ERROR at line 1108: Unterminated quoted string
+ERROR at line 1423: Unterminated quoted string
+ERROR at line 1470: Unterminated quoted string
+ERROR at line 1691: Unterminated quoted string
+ERROR at line 1754: Unterminated quoted string
+ERROR at line 1773: Unterminated quoted string
+ERROR at line 1811: Unterminated quoted string
+ERROR at line 1812: Unterminated quoted string
+ERROR at line 1840: Unterminated quoted string
+ERROR at line 1848: Unterminated quoted string
+ERROR at line 1893: Unterminated quoted string
+ERROR at line 1929: Unterminated quoted string
+ERROR at line 1946: Unterminated quoted string
+ERROR at line 1951: Unterminated quoted string
+ERROR at line 2004: Unterminated quoted string
+ERROR at line 2018: Unterminated quoted string
+ERROR at line 2046: Unterminated quoted string
+ERROR at line 2054: Unterminated quoted string
+ERROR at line 2079: Unterminated quoted string
+ERROR at line 2097: Unterminated quoted string
+ERROR at line 2137: Unterminated quoted string
+ERROR at line 2144: Unterminated quoted string
+ERROR at line 2147: Unterminated quoted string
+ERROR at line 2187: Unterminated quoted string
+ERROR at line 2201: Unterminated quoted string
+ERROR at line 2220: Unterminated quoted string
+ERROR at line 2235: Unterminated quoted string
+ERROR at line 2272: Unterminated quoted string
+ERROR at line 2349: Unterminated quoted string
+ERROR at line 2361: Unterminated quoted string
+ERROR at line 2366: Unterminated quoted string
+ERROR at line 2381: Unterminated quoted string
+ERROR at line 2411: Unterminated quoted string
+ERROR at line 2434: Unterminated quoted string
+ERROR at line 2445: Unterminated quoted string
+ERROR at line 2473: Unterminated quoted string
+ERROR at line 2493: Unterminated quoted string
+ERROR at line 2620: Unterminated quoted string
+ERROR at line 2732: Unterminated quoted string
+ERROR at line 3027: Unterminated quoted string
+ERROR at line 3067: Unterminated quoted string
+ERROR at line 3071: Unterminated quoted string
+ERROR at line 3155: Unterminated quoted string
+ERROR at line 3168: Unterminated quoted string
+ERROR at line 3218: Unterminated quoted string
+ERROR at line 3273: Unterminated quoted string
+ERROR at line 3274: Unterminated quoted string
+ERROR at line 3293: Unterminated quoted string
+ERROR at line 3300: Unterminated quoted string
+ERROR at line 3301: Unterminated quoted string
+ERROR at line 3305: Unterminated quoted string
+ERROR at line 3310: Unterminated quoted string
+ERROR at line 3311: Unterminated quoted string
+ERROR at line 3316: Unterminated quoted string
+ERROR at line 3345: Unterminated quoted string
+ERROR at line 3554: Unterminated quoted string
+ERROR at line 3577: Unterminated quoted string
+ERROR at line 3592: Unterminated quoted string
+ERROR at line 3861: Unterminated quoted string
+ERROR at line 3872: Unterminated quoted string
+ERROR at line 3890: Unterminated quoted string
+ERROR at line 3987: Unterminated quoted string
+ERROR at line 4059: Unterminated quoted string
+ERROR at line 4090: Unterminated quoted string
+ERROR at line 4097: Unterminated quoted string
+ERROR at line 4098: Unterminated quoted string
+ERROR at line 4220: Unterminated quoted string
+ERROR at line 4232: Unterminated quoted string
+ERROR at line 4457: Unterminated quoted string
+ERROR at line 4519: Unterminated quoted string
+ERROR at line 4624: Unterminated quoted string
+ERROR at line 4671: Unterminated quoted string
+ERROR at line 4694: Unterminated quoted string
+ERROR at line 4706: Unterminated quoted string
+ERROR at line 4724: Unterminated quoted string
+ERROR at line 4726: Unterminated quoted string
+ERROR at line 4791: Unterminated quoted string
+ERROR at line 4796: Unterminated quoted string
+ERROR at line 4799: Unterminated quoted string
+ERROR at line 4835: Unterminated quoted string
+ERROR at line 4843: Unterminated quoted string
+ERROR at line 4855: Unterminated quoted string
+ERROR at line 4865: Unterminated quoted string
+ERROR at line 4893: Unterminated quoted string
+ERROR at line 4899: Unterminated quoted string
+ERROR at line 4942: Unterminated quoted string
+ERROR at line 4943: Unterminated quoted string
+ERROR at line 4945: Unterminated quoted string
+ERROR at line 4953: Unterminated quoted string
+ERROR at line 4964: Unterminated quoted string
+ERROR at line 5014: Unterminated quoted string
+ERROR at line 5033: Unterminated quoted string
+ERROR at line 5100: Unterminated quoted string
+ERROR at line 5109: Unterminated quoted string
+ERROR at line 5152: Unterminated quoted string
+ERROR at line 5189: Unterminated quoted string
+ERROR at line 5209: Unterminated quoted string
+ERROR at line 5212: Unterminated quoted string
+ERROR at line 5266: Unterminated quoted string
+ERROR at line 5292: Unterminated quoted string
+ERROR at line 5333: Unterminated quoted string
+ERROR at line 5375: Unterminated quoted string
+ERROR at line 5444: Unterminated quoted string
+ERROR at line 5468: Unterminated quoted string
+ERROR at line 5499: Unterminated quoted string
+ERROR at line 5532: Unterminated quoted string
+ERROR at line 5534: Unterminated quoted string
+ERROR at line 5548: Unterminated quoted string
+ERROR at line 5581: Unterminated quoted string
+ERROR at line 14004: Unterminated quoted string
+ERROR at line 14033: Unterminated quoted string
+ERROR at line 14154: Unterminated quoted string
+ERROR at line 14201: Unterminated quoted string
+ERROR at line 14215: Unterminated quoted string
+ERROR at line 14224: Unterminated quoted string
+ERROR at line 14294: Unterminated quoted string
+ERROR at line 14585: Unterminated quoted string
+ERROR at line 14622: Unterminated quoted string
+ERROR at line 14641: Unterminated quoted string
+ERROR at line 14659: Unterminated quoted string
+ERROR at line 14679: Unterminated quoted string
+ERROR at line 14698: Unterminated quoted string
+ERROR at line 14718: Unterminated quoted string
+ERROR at line 14738: Unterminated quoted string
+ERROR at line 14758: Unterminated quoted string
+ERROR at line 14778: Unterminated quoted string
+ERROR at line 14798: Unterminated quoted string
+ERROR at line 14816: Unterminated quoted string
+ERROR at line 14836: Unterminated quoted string
+ERROR at line 14855: Unterminated quoted string
+ERROR at line 14874: Unterminated quoted string
+ERROR at line 14894: Unterminated quoted string
+ERROR at line 14913: Unterminated quoted string
+ERROR at line 14933: Unterminated quoted string
+ERROR at line 14952: Unterminated quoted string
+ERROR at line 14970: Unterminated quoted string
+ERROR at line 14990: Unterminated quoted string
+ERROR at line 15009: Unterminated quoted string
+ERROR at line 15029: Unterminated quoted string
+ERROR at line 15049: Unterminated quoted string
+ERROR at line 15069: Unterminated quoted string
+ERROR at line 15089: Unterminated quoted string
+ERROR at line 15109: Unterminated quoted string
+ERROR at line 15127: Unterminated quoted string
+ERROR at line 15147: Unterminated quoted string
+ERROR at line 15166: Unterminated quoted string
+ERROR at line 15185: Unterminated quoted string
+ERROR at line 15205: Unterminated quoted string
+ERROR at line 15224: Unterminated quoted string
+ERROR at line 15244: Unterminated quoted string
+ERROR at line 15263: Unterminated quoted string
+ERROR at line 15281: Unterminated quoted string
+ERROR at line 15301: Unterminated quoted string
+ERROR at line 15320: Unterminated quoted string
+ERROR at line 15340: Unterminated quoted string
+ERROR at line 15360: Unterminated quoted string
+ERROR at line 15380: Unterminated quoted string
+ERROR at line 15400: Unterminated quoted string
+ERROR at line 15420: Unterminated quoted string
+ERROR at line 15438: Unterminated quoted string
+ERROR at line 15458: Unterminated quoted string
+ERROR at line 15477: Unterminated quoted string
+ERROR at line 15496: Unterminated quoted string
+ERROR at line 15516: Unterminated quoted string
+ERROR at line 15535: Unterminated quoted string
+ERROR at line 15555: Unterminated quoted string
+ERROR at line 15574: Unterminated quoted string
+ERROR at line 15592: Unterminated quoted string
+ERROR at line 15612: Unterminated quoted string
+ERROR at line 15631: Unterminated quoted string
+ERROR at line 15651: Unterminated quoted string
+ERROR at line 15671: Unterminated quoted string
+ERROR at line 15691: Unterminated quoted string
+ERROR at line 15711: Unterminated quoted string
+ERROR at line 15731: Unterminated quoted string
+ERROR at line 15749: Unterminated quoted string
+ERROR at line 15769: Unterminated quoted string
+ERROR at line 15788: Unterminated quoted string
+ERROR at line 15807: Unterminated quoted string
+ERROR at line 15939: Unterminated quoted string
+ERROR at line 15945: Unterminated quoted string
+ERROR at line 16081: Unterminated quoted string
+ERROR at line 16082: Unterminated quoted string
+ERROR at line 16090: Unterminated quoted string
+ERROR at line 16093: Unterminated quoted string
+ERROR at line 19100: Unterminated quoted string
+ERROR at line 19398: Unterminated quoted string
+ERROR at line 19428: Unterminated quoted string
+ERROR at line 19492: Unterminated quoted string
+ERROR at line 19500: Unterminated quoted string
+ERROR at line 19506: Unterminated quoted string
+ERROR at line 19750: Unterminated quoted string
+ERROR at line 19892: Unterminated quoted string
+ERROR at line 20165: Unterminated quoted string
+ERROR at line 20265: Unterminated quoted string
+ERROR at line 20392: Unterminated quoted string
+ERROR at line 20395: Unterminated quoted string
+ERROR at line 20397: Unterminated quoted string
+ERROR at line 20399: Unterminated quoted string
+ERROR at line 20404: Unterminated quoted string
+ERROR at line 20406: Unterminated quoted string
+ERROR at line 20408: Unterminated quoted string
+ERROR at line 20411: Unterminated quoted string
+ERROR at line 20413: Unterminated quoted string
+ERROR at line 20415: Unterminated quoted string
+ERROR at line 20418: Unterminated quoted string
+ERROR at line 20420: Unterminated quoted string
+ERROR at line 20422: Unterminated quoted string
+ERROR at line 20425: Unterminated quoted string
+ERROR at line 20427: Unterminated quoted string
+ERROR at line 20429: Unterminated quoted string
+ERROR at line 20432: Unterminated quoted string
+ERROR at line 20434: Unterminated quoted string
+ERROR at line 20436: Unterminated quoted string
+ERROR at line 20444: Unterminated quoted string
+ERROR at line 20446: Unterminated quoted string
+ERROR at line 20448: Unterminated quoted string
+ERROR at line 20450: Unterminated quoted string
+ERROR at line 20455: Unterminated quoted string
+ERROR at line 20457: Unterminated quoted string
+ERROR at line 20460: Unterminated quoted string
+ERROR at line 20462: Unterminated quoted string
+ERROR at line 20464: Unterminated quoted string
+ERROR at line 20467: Unterminated quoted string
+ERROR at line 20469: Unterminated quoted string
+ERROR at line 20471: Unterminated quoted string
+ERROR at line 20474: Unterminated quoted string
+ERROR at line 20476: Unterminated quoted string
+ERROR at line 20478: Unterminated quoted string
+ERROR at line 20480: Unterminated quoted string
+ERROR at line 20483: Unterminated quoted string
+ERROR at line 20485: Unterminated quoted string
+ERROR at line 20487: Unterminated quoted string
+ERROR at line 20495: Unterminated quoted string
+ERROR at line 20497: Unterminated quoted string
+ERROR at line 20499: Unterminated quoted string
+ERROR at line 20502: Unterminated quoted string
+ERROR at line 20504: Unterminated quoted string
+ERROR at line 20511: Unterminated quoted string
+ERROR at line 20513: Unterminated quoted string
+ERROR at line 20516: Unterminated quoted string
+ERROR at line 20518: Unterminated quoted string
+ERROR at line 20520: Unterminated quoted string
+ERROR at line 20535: Unterminated quoted string
+ERROR at line 20610: Unterminated quoted string
+ERROR at line 20645: Unterminated quoted string
+ERROR at line 20736: Unterminated quoted string
+ERROR at line 21052: Unterminated quoted string
+ERROR at line 21081: Unterminated quoted string
+ERROR at line 21111: Unterminated quoted string
+ERROR at line 21140: Unterminated quoted string
+ERROR at line 21152: Unterminated quoted string
+ERROR at line 21153: Unterminated quoted string
+ERROR at line 21335: Unterminated quoted string
+ERROR at line 21336: Unterminated quoted string
+ERROR at line 21773: Unterminated quoted string
+ERROR at line 21803: Unterminated quoted string
+ERROR at line 21804: Unterminated quoted string
+ERROR at line 21807: Unterminated quoted string
+ERROR at line 21840: Unterminated quoted string
+ERROR at line 21846: Unterminated quoted string
+ERROR at line 21849: Unterminated quoted string
+ERROR at line 21850: Unterminated quoted string
+ERROR at line 21851: Unterminated quoted string
+ERROR at line 21878: Unterminated quoted string
+ERROR at line 21939: Unterminated quoted string
+ERROR at line 21945: Unterminated quoted string
+ERROR at line 21948: Unterminated quoted string
+ERROR at line 21949: Unterminated quoted string
+ERROR at line 21951: Unterminated quoted string
+ERROR at line 21978: Unterminated quoted string
+ERROR at line 22038: Unterminated quoted string
+ERROR at line 22044: Unterminated quoted string
+ERROR at line 22047: Unterminated quoted string
+ERROR at line 22048: Unterminated quoted string
+ERROR at line 22049: Unterminated quoted string
+ERROR at line 22076: Unterminated quoted string
+ERROR at line 22137: Unterminated quoted string
+ERROR at line 22143: Unterminated quoted string
+ERROR at line 22146: Unterminated quoted string
+ERROR at line 22147: Unterminated quoted string
+ERROR at line 22148: Unterminated quoted string
+ERROR at line 22175: Unterminated quoted string
+ERROR at line 22236: Unterminated quoted string
+ERROR at line 22242: Unterminated quoted string
+ERROR at line 22245: Unterminated quoted string
+ERROR at line 22246: Unterminated quoted string
+ERROR at line 22248: Unterminated quoted string
+ERROR at line 22275: Unterminated quoted string
+ERROR at line 22334: Unterminated quoted string
+ERROR at line 22340: Unterminated quoted string
+ERROR at line 22343: Unterminated quoted string
+ERROR at line 22344: Unterminated quoted string
+ERROR at line 22345: Unterminated quoted string
+ERROR at line 22372: Unterminated quoted string
+ERROR at line 22433: Unterminated quoted string
+ERROR at line 22439: Unterminated quoted string
+ERROR at line 22442: Unterminated quoted string
+ERROR at line 22443: Unterminated quoted string
+ERROR at line 22444: Unterminated quoted string
+ERROR at line 22471: Unterminated quoted string
+ERROR at line 22532: Unterminated quoted string
+ERROR at line 22538: Unterminated quoted string
+ERROR at line 22541: Unterminated quoted string
+ERROR at line 22543: Unterminated quoted string
+ERROR at line 22544: Unterminated quoted string
+ERROR at line 22571: Unterminated quoted string
+ERROR at line 22632: Unterminated quoted string
+ERROR at line 22638: Unterminated quoted string
+ERROR at line 22641: Unterminated quoted string
+ERROR at line 22642: Unterminated quoted string
+ERROR at line 22643: Unterminated quoted string
+ERROR at line 22670: Unterminated quoted string
+ERROR at line 22731: Unterminated quoted string
+ERROR at line 22737: Unterminated quoted string
+ERROR at line 22740: Unterminated quoted string
+ERROR at line 22741: Unterminated quoted string
+ERROR at line 22742: Unterminated quoted string
+ERROR at line 22769: Unterminated quoted string
+ERROR at line 22829: Unterminated quoted string
+ERROR at line 22835: Unterminated quoted string
+ERROR at line 22838: Unterminated quoted string
+ERROR at line 22840: Unterminated quoted string
+ERROR at line 22841: Unterminated quoted string
+ERROR at line 22868: Unterminated quoted string
+ERROR at line 22929: Unterminated quoted string
+ERROR at line 22935: Unterminated quoted string
+ERROR at line 22938: Unterminated quoted string
+ERROR at line 22939: Unterminated quoted string
+ERROR at line 22940: Unterminated quoted string
+ERROR at line 22967: Unterminated quoted string
+ERROR at line 23028: Unterminated quoted string
+ERROR at line 23034: Unterminated quoted string
+ERROR at line 23037: Unterminated quoted string
+ERROR at line 23038: Unterminated quoted string
+ERROR at line 23040: Unterminated quoted string
+ERROR at line 23067: Unterminated quoted string
+ERROR at line 23128: Unterminated quoted string
+ERROR at line 23134: Unterminated quoted string
+ERROR at line 23137: Unterminated quoted string
+ERROR at line 23138: Unterminated quoted string
+ERROR at line 23139: Unterminated quoted string
+ERROR at line 23166: Unterminated quoted string
+ERROR at line 23227: Unterminated quoted string
+ERROR at line 23233: Unterminated quoted string
+ERROR at line 23236: Unterminated quoted string
+ERROR at line 23237: Unterminated quoted string
+ERROR at line 23238: Unterminated quoted string
+ERROR at line 23265: Unterminated quoted string
+ERROR at line 23326: Unterminated quoted string
+ERROR at line 23332: Unterminated quoted string
+ERROR at line 23335: Unterminated quoted string
+ERROR at line 23336: Unterminated quoted string
+ERROR at line 23338: Unterminated quoted string
+ERROR at line 23365: Unterminated quoted string
+ERROR at line 23425: Unterminated quoted string
+ERROR at line 23431: Unterminated quoted string
+ERROR at line 23434: Unterminated quoted string
+ERROR at line 23435: Unterminated quoted string
+ERROR at line 23436: Unterminated quoted string
+ERROR at line 23463: Unterminated quoted string
+ERROR at line 23524: Unterminated quoted string
+ERROR at line 23530: Unterminated quoted string
+ERROR at line 23533: Unterminated quoted string
+ERROR at line 23534: Unterminated quoted string
+ERROR at line 23535: Unterminated quoted string
+ERROR at line 23562: Unterminated quoted string
+ERROR at line 23623: Unterminated quoted string
+ERROR at line 23629: Unterminated quoted string
+ERROR at line 23632: Unterminated quoted string
+ERROR at line 23634: Unterminated quoted string
+ERROR at line 23635: Unterminated quoted string
+ERROR at line 23662: Unterminated quoted string
+ERROR at line 23723: Unterminated quoted string
+ERROR at line 23729: Unterminated quoted string
+ERROR at line 23732: Unterminated quoted string
+ERROR at line 23733: Unterminated quoted string
+ERROR at line 23734: Unterminated quoted string
+ERROR at line 23761: Unterminated quoted string
+ERROR at line 23822: Unterminated quoted string
+ERROR at line 23828: Unterminated quoted string
+ERROR at line 23831: Unterminated quoted string
+ERROR at line 23832: Unterminated quoted string
+ERROR at line 23834: Unterminated quoted string
+ERROR at line 23861: Unterminated quoted string
+ERROR at line 23921: Unterminated quoted string
+ERROR at line 23927: Unterminated quoted string
+ERROR at line 23929: Unterminated quoted string
+ERROR at line 23931: Unterminated quoted string
+ERROR at line 23932: Unterminated quoted string
+ERROR at line 23959: Unterminated quoted string
+ERROR at line 24020: Unterminated quoted string
+ERROR at line 24026: Unterminated quoted string
+ERROR at line 24029: Unterminated quoted string
+ERROR at line 24030: Unterminated quoted string
+ERROR at line 24031: Unterminated quoted string
+ERROR at line 24058: Unterminated quoted string
+ERROR at line 24119: Unterminated quoted string
+ERROR at line 24125: Unterminated quoted string
+ERROR at line 24128: Unterminated quoted string
+ERROR at line 24129: Unterminated quoted string
+ERROR at line 24131: Unterminated quoted string
+ERROR at line 24158: Unterminated quoted string
+ERROR at line 24218: Unterminated quoted string
+ERROR at line 24224: Unterminated quoted string
+ERROR at line 24227: Unterminated quoted string
+ERROR at line 24228: Unterminated quoted string
+ERROR at line 24230: Unterminated quoted string
+ERROR at line 24257: Unterminated quoted string
+ERROR at line 24316: Unterminated quoted string
+ERROR at line 24322: Unterminated quoted string
+ERROR at line 24325: Unterminated quoted string
+ERROR at line 24326: Unterminated quoted string
+ERROR at line 24327: Unterminated quoted string
+ERROR at line 24354: Unterminated quoted string
+ERROR at line 24415: Unterminated quoted string
+ERROR at line 24421: Unterminated quoted string
+ERROR at line 24424: Unterminated quoted string
+ERROR at line 24425: Unterminated quoted string
+ERROR at line 24426: Unterminated quoted string
+ERROR at line 24453: Unterminated quoted string
+ERROR at line 24514: Unterminated quoted string
+ERROR at line 24520: Unterminated quoted string
+ERROR at line 24523: Unterminated quoted string
+ERROR at line 24525: Unterminated quoted string
+ERROR at line 24526: Unterminated quoted string
+ERROR at line 24553: Unterminated quoted string
+ERROR at line 24635: Unterminated quoted string
+ERROR at line 24638: Unterminated quoted string
+ERROR at line 24640: Unterminated quoted string
+ERROR at line 24643: Unterminated quoted string
+ERROR at line 24652: Unterminated quoted string
+ERROR at line 24654: Unterminated quoted string
+ERROR at line 24812: Unterminated quoted string
+ERROR at line 24835: Unterminated quoted string
+ERROR at line 24871: Unterminated quoted string
+ERROR at line 24872: Unterminated quoted string
+ERROR at line 24883: Unterminated quoted string
+ERROR at line 24906: Unterminated quoted string
+ERROR at line 24942: Unterminated quoted string
+ERROR at line 24944: Unterminated quoted string
+ERROR at line 25028: Unterminated quoted string
+ERROR at line 25316: Unterminated quoted string
+ERROR at line 25499: Unterminated quoted string
+ERROR at line 26015: Unterminated quoted string
+ERROR at line 26080: Unterminated quoted string
+ERROR at line 26417: Unterminated quoted string
+ERROR at line 26425: Unterminated quoted string
+ERROR at line 26446: Unterminated quoted string
+ERROR at line 26455: Unterminated quoted string
+ERROR at line 26475: Unterminated quoted string
+ERROR at line 26483: Unterminated quoted string
+ERROR at line 26505: Unterminated quoted string
+ERROR at line 26514: Unterminated quoted string
+ERROR at line 26533: Unterminated quoted string
+ERROR at line 26541: Unterminated quoted string
+ERROR at line 26563: Unterminated quoted string
+ERROR at line 26572: Unterminated quoted string
+ERROR at line 26591: Unterminated quoted string
+ERROR at line 26599: Unterminated quoted string
+ERROR at line 26621: Unterminated quoted string
+ERROR at line 26630: Unterminated quoted string
+ERROR at line 26649: Unterminated quoted string
+ERROR at line 26658: Unterminated quoted string
+ERROR at line 26667: Unterminated quoted string
+ERROR at line 26680: Unterminated quoted string
+ERROR at line 26689: Unterminated quoted string
+ERROR at line 26708: Unterminated quoted string
+ERROR at line 26717: Unterminated quoted string
+ERROR at line 26740: Unterminated quoted string
+ERROR at line 26749: Unterminated quoted string
+ERROR at line 26838: Unterminated quoted string
+ERROR at line 26979: Unterminated quoted string
+ERROR at line 26982: Unterminated quoted string
+ERROR at line 26983: Unterminated quoted string
+ERROR at line 26984: Unterminated quoted string
+ERROR at line 26987: Unterminated quoted string
+ERROR at line 27053: Unterminated quoted string
+ERROR at line 27119: Unterminated quoted string
+ERROR at line 27272: Unterminated quoted string
+ERROR at line 27392: Unterminated quoted string
+ERROR at line 27393: Unterminated quoted string
+ERROR at line 27395: Unterminated quoted string
+ERROR at line 27396: Unterminated quoted string
+ERROR at line 27399: Unterminated quoted string
+ERROR at line 27400: Unterminated quoted string
+ERROR at line 27404: Unterminated quoted string
+ERROR at line 27408: Unterminated quoted string
+ERROR at line 27411: Unterminated quoted string
+ERROR at line 27412: Unterminated quoted string
+ERROR at line 27413: Unterminated quoted string
+ERROR at line 27460: Unterminated quoted string
+ERROR at line 27461: Unterminated quoted string
+ERROR at line 27479: Unterminated quoted string
+ERROR at line 27497: Unterminated quoted string
+ERROR at line 27538: Unterminated quoted string
+ERROR at line 27541: Unterminated quoted string
+ERROR at line 27542: Unterminated quoted string
+ERROR at line 27543: Unterminated quoted string
+ERROR at line 27546: Unterminated quoted string
+ERROR at line 27612: Unterminated quoted string
+ERROR at line 27678: Unterminated quoted string
+ERROR at line 27832: Unterminated quoted string
+ERROR at line 27951: Unterminated quoted string
+ERROR at line 27953: Unterminated quoted string
+ERROR at line 27954: Unterminated quoted string
+ERROR at line 27956: Unterminated quoted string
+ERROR at line 27958: Unterminated quoted string
+ERROR at line 27960: Unterminated quoted string
+ERROR at line 27963: Unterminated quoted string
+ERROR at line 27968: Unterminated quoted string
+ERROR at line 27970: Unterminated quoted string
+ERROR at line 28020: Unterminated quoted string
+ERROR at line 28021: Unterminated quoted string
+ERROR at line 28039: Unterminated quoted string
+ERROR at line 28056: Unterminated quoted string
+ERROR at line 28098: Unterminated quoted string
+ERROR at line 28101: Unterminated quoted string
+ERROR at line 28102: Unterminated quoted string
+ERROR at line 28103: Unterminated quoted string
+ERROR at line 28106: Unterminated quoted string
+ERROR at line 28172: Unterminated quoted string
+ERROR at line 28238: Unterminated quoted string
+ERROR at line 28391: Unterminated quoted string
+ERROR at line 28511: Unterminated quoted string
+ERROR at line 28512: Unterminated quoted string
+ERROR at line 28514: Unterminated quoted string
+ERROR at line 28515: Unterminated quoted string
+ERROR at line 28518: Unterminated quoted string
+ERROR at line 28519: Unterminated quoted string
+ERROR at line 28523: Unterminated quoted string
+ERROR at line 28527: Unterminated quoted string
+ERROR at line 28530: Unterminated quoted string
+ERROR at line 28531: Unterminated quoted string
+ERROR at line 28532: Unterminated quoted string
+ERROR at line 28579: Unterminated quoted string
+ERROR at line 28580: Unterminated quoted string
+ERROR at line 28598: Unterminated quoted string
+ERROR at line 28616: Unterminated quoted string
+ERROR at line 28657: Unterminated quoted string
+ERROR at line 28660: Unterminated quoted string
+ERROR at line 28661: Unterminated quoted string
+ERROR at line 28662: Unterminated quoted string
+ERROR at line 28665: Unterminated quoted string
+ERROR at line 28731: Unterminated quoted string
+ERROR at line 28797: Unterminated quoted string
+ERROR at line 28951: Unterminated quoted string
+ERROR at line 29070: Unterminated quoted string
+ERROR at line 29072: Unterminated quoted string
+ERROR at line 29073: Unterminated quoted string
+ERROR at line 29075: Unterminated quoted string
+ERROR at line 29077: Unterminated quoted string
+ERROR at line 29079: Unterminated quoted string
+ERROR at line 29082: Unterminated quoted string
+ERROR at line 29087: Unterminated quoted string
+ERROR at line 29089: Unterminated quoted string
+ERROR at line 29139: Unterminated quoted string
+ERROR at line 29140: Unterminated quoted string
+ERROR at line 29158: Unterminated quoted string
+ERROR at line 29175: Unterminated quoted string
+ERROR at line 29215: Unterminated quoted string
+ERROR at line 29218: Unterminated quoted string
+ERROR at line 29219: Unterminated quoted string
+ERROR at line 29220: Unterminated quoted string
+ERROR at line 29223: Unterminated quoted string
+ERROR at line 29289: Unterminated quoted string
+ERROR at line 29355: Unterminated quoted string
+ERROR at line 29509: Unterminated quoted string
+ERROR at line 29627: Unterminated quoted string
+ERROR at line 29629: Unterminated quoted string
+ERROR at line 29630: Unterminated quoted string
+ERROR at line 29631: Unterminated quoted string
+ERROR at line 29634: Unterminated quoted string
+ERROR at line 29636: Unterminated quoted string
+ERROR at line 29639: Unterminated quoted string
+ERROR at line 29644: Unterminated quoted string
+ERROR at line 29646: Unterminated quoted string
+ERROR at line 29696: Unterminated quoted string
+ERROR at line 29697: Unterminated quoted string
+ERROR at line 29714: Unterminated quoted string
+ERROR at line 29732: Unterminated quoted string
+ERROR at line 29773: Unterminated quoted string
+ERROR at line 29777: Unterminated quoted string
+ERROR at line 29781: Unterminated quoted string
+ERROR at line 29846: Unterminated quoted string
+ERROR at line 29913: Unterminated quoted string
+ERROR at line 30066: Unterminated quoted string
+ERROR at line 30186: Unterminated quoted string
+ERROR at line 30187: Unterminated quoted string
+ERROR at line 30188: Unterminated quoted string
+ERROR at line 30190: Unterminated quoted string
+ERROR at line 30193: Unterminated quoted string
+ERROR at line 30194: Unterminated quoted string
+ERROR at line 30198: Unterminated quoted string
+ERROR at line 30202: Unterminated quoted string
+ERROR at line 30205: Unterminated quoted string
+ERROR at line 30206: Unterminated quoted string
+ERROR at line 30207: Unterminated quoted string
+ERROR at line 30253: Unterminated quoted string
+ERROR at line 30254: Unterminated quoted string
+ERROR at line 30272: Unterminated quoted string
+ERROR at line 30290: Unterminated quoted string
+ERROR at line 30331: Unterminated quoted string
+ERROR at line 30334: Unterminated quoted string
+ERROR at line 30335: Unterminated quoted string
+ERROR at line 30336: Unterminated quoted string
+ERROR at line 30339: Unterminated quoted string
+ERROR at line 30405: Unterminated quoted string
+ERROR at line 30471: Unterminated quoted string
+ERROR at line 30625: Unterminated quoted string
+ERROR at line 30743: Unterminated quoted string
+ERROR at line 30745: Unterminated quoted string
+ERROR at line 30746: Unterminated quoted string
+ERROR at line 30747: Unterminated quoted string
+ERROR at line 30750: Unterminated quoted string
+ERROR at line 30752: Unterminated quoted string
+ERROR at line 30755: Unterminated quoted string
+ERROR at line 30760: Unterminated quoted string
+ERROR at line 30762: Unterminated quoted string
+ERROR at line 30812: Unterminated quoted string
+ERROR at line 30813: Unterminated quoted string
+ERROR at line 30830: Unterminated quoted string
+ERROR at line 30848: Unterminated quoted string
+ERROR at line 30889: Unterminated quoted string
+ERROR at line 30893: Unterminated quoted string
+ERROR at line 30897: Unterminated quoted string
+ERROR at line 30962: Unterminated quoted string
+ERROR at line 31029: Unterminated quoted string
+ERROR at line 31182: Unterminated quoted string
+ERROR at line 31302: Unterminated quoted string
+ERROR at line 31303: Unterminated quoted string
+ERROR at line 31304: Unterminated quoted string
+ERROR at line 31306: Unterminated quoted string
+ERROR at line 31309: Unterminated quoted string
+ERROR at line 31310: Unterminated quoted string
+ERROR at line 31314: Unterminated quoted string
+ERROR at line 31318: Unterminated quoted string
+ERROR at line 31321: Unterminated quoted string
+ERROR at line 31322: Unterminated quoted string
+ERROR at line 31323: Unterminated quoted string
+ERROR at line 31369: Unterminated quoted string
+ERROR at line 31370: Unterminated quoted string
+ERROR at line 31388: Unterminated quoted string
+ERROR at line 31406: Unterminated quoted string
+ERROR at line 31445: Unterminated quoted string
+ERROR at line 31450: Unterminated quoted string
+ERROR at line 31454: Unterminated quoted string
+ERROR at line 31519: Unterminated quoted string
+ERROR at line 31586: Unterminated quoted string
+ERROR at line 31739: Unterminated quoted string
+ERROR at line 31859: Unterminated quoted string
+ERROR at line 31860: Unterminated quoted string
+ERROR at line 31861: Unterminated quoted string
+ERROR at line 31863: Unterminated quoted string
+ERROR at line 31866: Unterminated quoted string
+ERROR at line 31867: Unterminated quoted string
+ERROR at line 31871: Unterminated quoted string
+ERROR at line 31875: Unterminated quoted string
+ERROR at line 31878: Unterminated quoted string
+ERROR at line 31927: Unterminated quoted string
+ERROR at line 31928: Unterminated quoted string
+ERROR at line 31946: Unterminated quoted string
+ERROR at line 31964: Unterminated quoted string
+ERROR at line 32005: Unterminated quoted string
+ERROR at line 32008: Unterminated quoted string
+ERROR at line 32009: Unterminated quoted string
+ERROR at line 32010: Unterminated quoted string
+ERROR at line 32013: Unterminated quoted string
+ERROR at line 32079: Unterminated quoted string
+ERROR at line 32145: Unterminated quoted string
+ERROR at line 32299: Unterminated quoted string
+ERROR at line 32418: Unterminated quoted string
+ERROR at line 32419: Unterminated quoted string
+ERROR at line 32421: Unterminated quoted string
+ERROR at line 32422: Unterminated quoted string
+ERROR at line 32425: Unterminated quoted string
+ERROR at line 32427: Unterminated quoted string
+ERROR at line 32430: Unterminated quoted string
+ERROR at line 32434: Unterminated quoted string
+ERROR at line 32437: Unterminated quoted string
+ERROR at line 32486: Unterminated quoted string
+ERROR at line 32488: Unterminated quoted string
+ERROR at line 32505: Unterminated quoted string
+ERROR at line 32523: Unterminated quoted string
+ERROR at line 32564: Unterminated quoted string
+ERROR at line 32569: Unterminated quoted string
+ERROR at line 32573: Unterminated quoted string
+ERROR at line 32638: Unterminated quoted string
+ERROR at line 32705: Unterminated quoted string
+ERROR at line 32858: Unterminated quoted string
+ERROR at line 32978: Unterminated quoted string
+ERROR at line 32979: Unterminated quoted string
+ERROR at line 32980: Unterminated quoted string
+ERROR at line 32982: Unterminated quoted string
+ERROR at line 32985: Unterminated quoted string
+ERROR at line 32986: Unterminated quoted string
+ERROR at line 32990: Unterminated quoted string
+ERROR at line 32994: Unterminated quoted string
+ERROR at line 32997: Unterminated quoted string
+ERROR at line 33046: Unterminated quoted string
+ERROR at line 33047: Unterminated quoted string
+ERROR at line 33065: Unterminated quoted string
+ERROR at line 33083: Unterminated quoted string
+ERROR at line 33124: Unterminated quoted string
+ERROR at line 33127: Unterminated quoted string
+ERROR at line 33128: Unterminated quoted string
+ERROR at line 33129: Unterminated quoted string
+ERROR at line 33132: Unterminated quoted string
+ERROR at line 33198: Unterminated quoted string
+ERROR at line 33264: Unterminated quoted string
+ERROR at line 33418: Unterminated quoted string
+ERROR at line 33537: Unterminated quoted string
+ERROR at line 33538: Unterminated quoted string
+ERROR at line 33540: Unterminated quoted string
+ERROR at line 33541: Unterminated quoted string
+ERROR at line 33544: Unterminated quoted string
+ERROR at line 33546: Unterminated quoted string
+ERROR at line 33549: Unterminated quoted string
+ERROR at line 33553: Unterminated quoted string
+ERROR at line 33556: Unterminated quoted string
+ERROR at line 33605: Unterminated quoted string
+ERROR at line 33607: Unterminated quoted string
+ERROR at line 33624: Unterminated quoted string
+ERROR at line 33642: Unterminated quoted string
+ERROR at line 33683: Unterminated quoted string
+ERROR at line 33688: Unterminated quoted string
+ERROR at line 33692: Unterminated quoted string
+ERROR at line 33757: Unterminated quoted string
+ERROR at line 33824: Unterminated quoted string
+ERROR at line 33977: Unterminated quoted string
+ERROR at line 34097: Unterminated quoted string
+ERROR at line 34098: Unterminated quoted string
+ERROR at line 34099: Unterminated quoted string
+ERROR at line 34101: Unterminated quoted string
+ERROR at line 34104: Unterminated quoted string
+ERROR at line 34105: Unterminated quoted string
+ERROR at line 34109: Unterminated quoted string
+ERROR at line 34113: Unterminated quoted string
+ERROR at line 34116: Unterminated quoted string
+ERROR at line 34165: Unterminated quoted string
+ERROR at line 34166: Unterminated quoted string
+ERROR at line 34184: Unterminated quoted string
+ERROR at line 34202: Unterminated quoted string
+ERROR at line 34243: Unterminated quoted string
+ERROR at line 34246: Unterminated quoted string
+ERROR at line 34247: Unterminated quoted string
+ERROR at line 34248: Unterminated quoted string
+ERROR at line 34251: Unterminated quoted string
+ERROR at line 34317: Unterminated quoted string
+ERROR at line 34383: Unterminated quoted string
+ERROR at line 34537: Unterminated quoted string
+ERROR at line 34656: Unterminated quoted string
+ERROR at line 34657: Unterminated quoted string
+ERROR at line 34659: Unterminated quoted string
+ERROR at line 34660: Unterminated quoted string
+ERROR at line 34663: Unterminated quoted string
+ERROR at line 34665: Unterminated quoted string
+ERROR at line 34668: Unterminated quoted string
+ERROR at line 34672: Unterminated quoted string
+ERROR at line 34675: Unterminated quoted string
+ERROR at line 34724: Unterminated quoted string
+ERROR at line 34726: Unterminated quoted string
+ERROR at line 34743: Unterminated quoted string
+ERROR at line 34761: Unterminated quoted string
+ERROR at line 34802: Unterminated quoted string
+ERROR at line 34807: Unterminated quoted string
+ERROR at line 34811: Unterminated quoted string
+ERROR at line 34876: Unterminated quoted string
+ERROR at line 34943: Unterminated quoted string
+ERROR at line 35096: Unterminated quoted string
+ERROR at line 35216: Unterminated quoted string
+ERROR at line 35217: Unterminated quoted string
+ERROR at line 35218: Unterminated quoted string
+ERROR at line 35220: Unterminated quoted string
+ERROR at line 35223: Unterminated quoted string
+ERROR at line 35224: Unterminated quoted string
+ERROR at line 35228: Unterminated quoted string
+ERROR at line 35232: Unterminated quoted string
+ERROR at line 35235: Unterminated quoted string
+ERROR at line 35284: Unterminated quoted string
+ERROR at line 35285: Unterminated quoted string
+ERROR at line 35303: Unterminated quoted string
+ERROR at line 35321: Unterminated quoted string
+ERROR at line 35362: Unterminated quoted string
+ERROR at line 35365: Unterminated quoted string
+ERROR at line 35366: Unterminated quoted string
+ERROR at line 35367: Unterminated quoted string
+ERROR at line 35370: Unterminated quoted string
+ERROR at line 35436: Unterminated quoted string
+ERROR at line 35502: Unterminated quoted string
+ERROR at line 35656: Unterminated quoted string
+ERROR at line 35775: Unterminated quoted string
+ERROR at line 35776: Unterminated quoted string
+ERROR at line 35778: Unterminated quoted string
+ERROR at line 35779: Unterminated quoted string
+ERROR at line 35782: Unterminated quoted string
+ERROR at line 35784: Unterminated quoted string
+ERROR at line 35787: Unterminated quoted string
+ERROR at line 35791: Unterminated quoted string
+ERROR at line 35794: Unterminated quoted string
+ERROR at line 35843: Unterminated quoted string
+ERROR at line 35845: Unterminated quoted string
+ERROR at line 35862: Unterminated quoted string
+ERROR at line 35880: Unterminated quoted string
+ERROR at line 35921: Unterminated quoted string
+ERROR at line 35926: Unterminated quoted string
+ERROR at line 35930: Unterminated quoted string
+ERROR at line 35995: Unterminated quoted string
+ERROR at line 36062: Unterminated quoted string
+ERROR at line 36215: Unterminated quoted string
+ERROR at line 36335: Unterminated quoted string
+ERROR at line 36336: Unterminated quoted string
+ERROR at line 36337: Unterminated quoted string
+ERROR at line 36339: Unterminated quoted string
+ERROR at line 36342: Unterminated quoted string
+ERROR at line 36343: Unterminated quoted string
+ERROR at line 36347: Unterminated quoted string
+ERROR at line 36351: Unterminated quoted string
+ERROR at line 36354: Unterminated quoted string
+ERROR at line 36403: Unterminated quoted string
+ERROR at line 36404: Unterminated quoted string
+ERROR at line 36422: Unterminated quoted string
+ERROR at line 36440: Unterminated quoted string
+ERROR at line 36481: Unterminated quoted string
+ERROR at line 36484: Unterminated quoted string
+ERROR at line 36485: Unterminated quoted string
+ERROR at line 36486: Unterminated quoted string
+ERROR at line 36489: Unterminated quoted string
+ERROR at line 36555: Unterminated quoted string
+ERROR at line 36621: Unterminated quoted string
+ERROR at line 36775: Unterminated quoted string
+ERROR at line 36894: Unterminated quoted string
+ERROR at line 36895: Unterminated quoted string
+ERROR at line 36897: Unterminated quoted string
+ERROR at line 36898: Unterminated quoted string
+ERROR at line 36901: Unterminated quoted string
+ERROR at line 36903: Unterminated quoted string
+ERROR at line 36906: Unterminated quoted string
+ERROR at line 36910: Unterminated quoted string
+ERROR at line 36913: Unterminated quoted string
+ERROR at line 36962: Unterminated quoted string
+ERROR at line 36964: Unterminated quoted string
+ERROR at line 36981: Unterminated quoted string
+ERROR at line 36999: Unterminated quoted string
+ERROR at line 37040: Unterminated quoted string
+ERROR at line 37045: Unterminated quoted string
+ERROR at line 37049: Unterminated quoted string
+ERROR at line 37114: Unterminated quoted string
+ERROR at line 37181: Unterminated quoted string
+ERROR at line 37334: Unterminated quoted string
+ERROR at line 37454: Unterminated quoted string
+ERROR at line 37455: Unterminated quoted string
+ERROR at line 37456: Unterminated quoted string
+ERROR at line 37458: Unterminated quoted string
+ERROR at line 37461: Unterminated quoted string
+ERROR at line 37462: Unterminated quoted string
+ERROR at line 37466: Unterminated quoted string
+ERROR at line 37470: Unterminated quoted string
+ERROR at line 37473: Unterminated quoted string
+ERROR at line 37522: Unterminated quoted string
+ERROR at line 37523: Unterminated quoted string
+ERROR at line 37541: Unterminated quoted string
+ERROR at line 37559: Unterminated quoted string
+ERROR at line 37600: Unterminated quoted string
+ERROR at line 37603: Unterminated quoted string
+ERROR at line 37604: Unterminated quoted string
+ERROR at line 37605: Unterminated quoted string
+ERROR at line 37608: Unterminated quoted string
+ERROR at line 37674: Unterminated quoted string
+ERROR at line 37740: Unterminated quoted string
+ERROR at line 37894: Unterminated quoted string
+ERROR at line 38013: Unterminated quoted string
+ERROR at line 38014: Unterminated quoted string
+ERROR at line 38016: Unterminated quoted string
+ERROR at line 38017: Unterminated quoted string
+ERROR at line 38020: Unterminated quoted string
+ERROR at line 38022: Unterminated quoted string
+ERROR at line 38025: Unterminated quoted string
+ERROR at line 38029: Unterminated quoted string
+ERROR at line 38032: Unterminated quoted string
+ERROR at line 38081: Unterminated quoted string
+ERROR at line 38083: Unterminated quoted string
+ERROR at line 38100: Unterminated quoted string
+ERROR at line 38118: Unterminated quoted string
+ERROR at line 38159: Unterminated quoted string
+ERROR at line 38164: Unterminated quoted string
+ERROR at line 38168: Unterminated quoted string
+ERROR at line 38233: Unterminated quoted string
+ERROR at line 38300: Unterminated quoted string
+ERROR at line 38453: Unterminated quoted string
+ERROR at line 38573: Unterminated quoted string
+ERROR at line 38574: Unterminated quoted string
+ERROR at line 38575: Unterminated quoted string
+ERROR at line 38577: Unterminated quoted string
+ERROR at line 38580: Unterminated quoted string
+ERROR at line 38581: Unterminated quoted string
+ERROR at line 38585: Unterminated quoted string
+ERROR at line 38589: Unterminated quoted string
+ERROR at line 38592: Unterminated quoted string
+ERROR at line 38641: Unterminated quoted string
+ERROR at line 38642: Unterminated quoted string
+ERROR at line 38660: Unterminated quoted string
+ERROR at line 38678: Unterminated quoted string
+ERROR at line 38719: Unterminated quoted string
+ERROR at line 38722: Unterminated quoted string
+ERROR at line 38723: Unterminated quoted string
+ERROR at line 38724: Unterminated quoted string
+ERROR at line 38727: Unterminated quoted string
+ERROR at line 38793: Unterminated quoted string
+ERROR at line 38859: Unterminated quoted string
+ERROR at line 39013: Unterminated quoted string
+ERROR at line 39132: Unterminated quoted string
+ERROR at line 39133: Unterminated quoted string
+ERROR at line 39135: Unterminated quoted string
+ERROR at line 39136: Unterminated quoted string
+ERROR at line 39139: Unterminated quoted string
+ERROR at line 39141: Unterminated quoted string
+ERROR at line 39144: Unterminated quoted string
+ERROR at line 39148: Unterminated quoted string
+ERROR at line 39151: Unterminated quoted string
+ERROR at line 39200: Unterminated quoted string
+ERROR at line 39202: Unterminated quoted string
+ERROR at line 39219: Unterminated quoted string
+ERROR at line 39237: Unterminated quoted string
+ERROR at line 39278: Unterminated quoted string
+ERROR at line 39283: Unterminated quoted string
+ERROR at line 39287: Unterminated quoted string
+ERROR at line 39352: Unterminated quoted string
+ERROR at line 39419: Unterminated quoted string
+ERROR at line 39572: Unterminated quoted string
+ERROR at line 39692: Unterminated quoted string
+ERROR at line 39693: Unterminated quoted string
+ERROR at line 39694: Unterminated quoted string
+ERROR at line 39696: Unterminated quoted string
+ERROR at line 39699: Unterminated quoted string
+ERROR at line 39700: Unterminated quoted string
+ERROR at line 39704: Unterminated quoted string
+ERROR at line 39708: Unterminated quoted string
+ERROR at line 39711: Unterminated quoted string
+ERROR at line 39760: Unterminated quoted string
+ERROR at line 39761: Unterminated quoted string
+ERROR at line 39779: Unterminated quoted string
+ERROR at line 39797: Unterminated quoted string
+ERROR at line 39838: Unterminated quoted string
+ERROR at line 39841: Unterminated quoted string
+ERROR at line 39842: Unterminated quoted string
+ERROR at line 39843: Unterminated quoted string
+ERROR at line 39846: Unterminated quoted string
+ERROR at line 39912: Unterminated quoted string
+ERROR at line 39978: Unterminated quoted string
+ERROR at line 40132: Unterminated quoted string
+ERROR at line 40251: Unterminated quoted string
+ERROR at line 40252: Unterminated quoted string
+ERROR at line 40254: Unterminated quoted string
+ERROR at line 40255: Unterminated quoted string
+ERROR at line 40258: Unterminated quoted string
+ERROR at line 40260: Unterminated quoted string
+ERROR at line 40263: Unterminated quoted string
+ERROR at line 40267: Unterminated quoted string
+ERROR at line 40270: Unterminated quoted string
+ERROR at line 40319: Unterminated quoted string
+ERROR at line 40321: Unterminated quoted string
+ERROR at line 40338: Unterminated quoted string
+ERROR at line 40356: Unterminated quoted string
+ERROR at line 40398: Unterminated quoted string
+ERROR at line 40401: Unterminated quoted string
+ERROR at line 40402: Unterminated quoted string
+ERROR at line 40403: Unterminated quoted string
+ERROR at line 40406: Unterminated quoted string
+ERROR at line 40472: Unterminated quoted string
+ERROR at line 40538: Unterminated quoted string
+ERROR at line 40692: Unterminated quoted string
+ERROR at line 40811: Unterminated quoted string
+ERROR at line 40813: Unterminated quoted string
+ERROR at line 40814: Unterminated quoted string
+ERROR at line 40815: Unterminated quoted string
+ERROR at line 40818: Unterminated quoted string
+ERROR at line 40820: Unterminated quoted string
+ERROR at line 40823: Unterminated quoted string
+ERROR at line 40828: Unterminated quoted string
+ERROR at line 40830: Unterminated quoted string
+ERROR at line 40879: Unterminated quoted string
+ERROR at line 40880: Unterminated quoted string
+ERROR at line 40897: Unterminated quoted string
+ERROR at line 40915: Unterminated quoted string
+ERROR at line 40957: Unterminated quoted string
+ERROR at line 40960: Unterminated quoted string
+ERROR at line 40965: Unterminated quoted string
+ERROR at line 41031: Unterminated quoted string
+ERROR at line 41097: Unterminated quoted string
+ERROR at line 41250: Unterminated quoted string
+ERROR at line 41370: Unterminated quoted string
+ERROR at line 41371: Unterminated quoted string
+ERROR at line 41373: Unterminated quoted string
+ERROR at line 41374: Unterminated quoted string
+ERROR at line 41377: Unterminated quoted string
+ERROR at line 41378: Unterminated quoted string
+ERROR at line 41382: Unterminated quoted string
+ERROR at line 41386: Unterminated quoted string
+ERROR at line 41389: Unterminated quoted string
+ERROR at line 41390: Unterminated quoted string
+ERROR at line 41391: Unterminated quoted string
+ERROR at line 41438: Unterminated quoted string
+ERROR at line 41439: Unterminated quoted string
+ERROR at line 41457: Unterminated quoted string
+ERROR at line 41475: Unterminated quoted string
+ERROR at line 41516: Unterminated quoted string
+ERROR at line 41519: Unterminated quoted string
+ERROR at line 41520: Unterminated quoted string
+ERROR at line 41521: Unterminated quoted string
+ERROR at line 41524: Unterminated quoted string
+ERROR at line 41590: Unterminated quoted string
+ERROR at line 41656: Unterminated quoted string
+ERROR at line 41810: Unterminated quoted string
+ERROR at line 41929: Unterminated quoted string
+ERROR at line 41931: Unterminated quoted string
+ERROR at line 41932: Unterminated quoted string
+ERROR at line 41933: Unterminated quoted string
+ERROR at line 41936: Unterminated quoted string
+ERROR at line 41938: Unterminated quoted string
+ERROR at line 41941: Unterminated quoted string
+ERROR at line 41946: Unterminated quoted string
+ERROR at line 41948: Unterminated quoted string
+ERROR at line 41997: Unterminated quoted string
+ERROR at line 41998: Unterminated quoted string
+ERROR at line 42015: Unterminated quoted string
+ERROR at line 42033: Unterminated quoted string
+ERROR at line 42075: Unterminated quoted string
+ERROR at line 42078: Unterminated quoted string
+ERROR at line 42083: Unterminated quoted string
+ERROR at line 42149: Unterminated quoted string
+ERROR at line 42215: Unterminated quoted string
+ERROR at line 42368: Unterminated quoted string
+ERROR at line 42488: Unterminated quoted string
+ERROR at line 42489: Unterminated quoted string
+ERROR at line 42491: Unterminated quoted string
+ERROR at line 42492: Unterminated quoted string
+ERROR at line 42495: Unterminated quoted string
+ERROR at line 42496: Unterminated quoted string
+ERROR at line 42500: Unterminated quoted string
+ERROR at line 42504: Unterminated quoted string
+ERROR at line 42507: Unterminated quoted string
+ERROR at line 42508: Unterminated quoted string
+ERROR at line 42509: Unterminated quoted string
+ERROR at line 42556: Unterminated quoted string
+ERROR at line 42557: Unterminated quoted string
+ERROR at line 42575: Unterminated quoted string
+ERROR at line 42593: Unterminated quoted string
+ERROR at line 42621: Unterminated quoted string
+ERROR at line 42627: Unterminated quoted string
+ERROR at line 42652: Unterminated quoted string
+ERROR at line 42665: Unterminated quoted string
+ERROR at line 42666: Unterminated quoted string
+ERROR at line 42669: Unterminated quoted string
+ERROR at line 42671: Unterminated quoted string
+ERROR at line 42700: Unterminated quoted string
+ERROR at line 42719: Unterminated quoted string
+ERROR at line 42725: Unterminated quoted string
+ERROR at line 42737: Unterminated quoted string
+ERROR at line 43327: Unterminated quoted string
+ERROR at line 43776: Unterminated quoted string
+ERROR at line 43842: Unterminated quoted string
+ERROR at line 43995: Unterminated quoted string
+ERROR at line 44117: Unterminated quoted string
+ERROR at line 44125: Unterminated quoted string
+ERROR at line 44141: Unterminated quoted string
+ERROR at line 44142: Unterminated quoted string
+ERROR at line 44160: Unterminated quoted string
+ERROR at line 44214: Unterminated quoted string
+ERROR at line 44215: Unterminated quoted string
+ERROR at line 44223: Unterminated quoted string
+ERROR at line 44225: Unterminated quoted string
+ERROR at line 44306: Unterminated quoted string
+ERROR at line 44309: Unterminated quoted string
+ERROR at line 44326: Unterminated quoted string
+ERROR at line 44337: Unterminated quoted string
+ERROR at line 44464: Unterminated quoted string
+ERROR at line 46471: Unterminated quoted string
+ERROR at line 46634: Unterminated quoted string
+ERROR at line 46740: Unterminated quoted string
+ERROR at line 46742: Unterminated quoted string
+ERROR at line 46789: Unterminated quoted string
+ERROR at line 46894: Unterminated quoted string
+ERROR at line 46897: Unterminated quoted string
+ERROR at line 46919: Unterminated quoted string
+ERROR at line 47025: Unterminated quoted string
+ERROR at line 47027: Unterminated quoted string
+ERROR at line 47049: Unterminated quoted string
+ERROR at line 47155: Unterminated quoted string
+ERROR at line 47157: Unterminated quoted string
+ERROR at line 47166: Unterminated quoted string
+ERROR at line 47168: Unterminated quoted string
+ERROR at line 47178: Unterminated quoted string
+ERROR at line 47180: Unterminated quoted string
+ERROR at line 47438: Unterminated quoted string
+ERROR at line 47498: Unterminated quoted string
+ERROR at line 47502: Unterminated quoted string
+ERROR at line 47533: Unterminated quoted string
+ERROR at line 47544: Unterminated quoted string
+ERROR at line 47548: Unterminated quoted string
+ERROR at line 47578: Unterminated quoted string
+ERROR at line 47583: Unterminated quoted string
+ERROR at line 47622: Unterminated quoted string
+ERROR at line 47624: Unterminated quoted string
+ERROR at line 47713: Unterminated quoted string
+ERROR at line 47775: Unterminated quoted string
+ERROR at line 47779: Unterminated quoted string
+ERROR at line 47810: Unterminated quoted string
+ERROR at line 47820: Unterminated quoted string
+ERROR at line 47824: Unterminated quoted string
+ERROR at line 47855: Unterminated quoted string
+ERROR at line 47859: Unterminated quoted string
+ERROR at line 47899: Unterminated quoted string
+ERROR at line 47900: Unterminated quoted string
+ERROR at line 48010: Unterminated quoted string
+ERROR at line 48029: Unterminated quoted string
+ERROR at line 48124: Unterminated quoted string
+ERROR at line 48143: Unterminated quoted string
+ERROR at line 48237: Unterminated quoted string
+ERROR at line 48257: Unterminated quoted string
+ERROR at line 48351: Unterminated quoted string
+ERROR at line 48370: Unterminated quoted string
+ERROR at line 48465: Unterminated quoted string
+ERROR at line 48484: Unterminated quoted string
+ERROR at line 48578: Unterminated quoted string
+ERROR at line 48597: Unterminated quoted string
+ERROR at line 48676: Unterminated quoted string
+ERROR at line 48700: Unterminated quoted string
+ERROR at line 48705: Unterminated quoted string
+ERROR at line 48726: Unterminated quoted string
+ERROR at line 48728: Unterminated quoted string
+ERROR at line 48733: Unterminated quoted string
+ERROR at line 48736: Unterminated quoted string
+ERROR at line 49033: Unterminated quoted string
+ERROR at line 49067: Unterminated quoted string
+ERROR at line 49069: Unterminated quoted string
+ERROR at line 49077: Unterminated quoted string
+ERROR at line 49078: Unterminated quoted string
+ERROR at line 49087: Unterminated quoted string
+ERROR at line 49089: Unterminated quoted string
+ERROR at line 49100: Unterminated quoted string
+ERROR at line 49102: Unterminated quoted string
+ERROR at line 49110: Unterminated quoted string
+ERROR at line 49112: Unterminated quoted string
+ERROR at line 49120: Unterminated quoted string
+ERROR at line 49122: Unterminated quoted string
+ERROR at line 49134: Unterminated quoted string
+ERROR at line 49135: Unterminated quoted string
+ERROR at line 49144: Unterminated quoted string
+ERROR at line 49145: Unterminated quoted string
+ERROR at line 49154: Unterminated quoted string
+ERROR at line 49155: Unterminated quoted string
+ERROR at line 49167: Unterminated quoted string
+ERROR at line 49169: Unterminated quoted string
+ERROR at line 49177: Unterminated quoted string
+ERROR at line 49179: Unterminated quoted string
+ERROR at line 49187: Unterminated quoted string
+ERROR at line 49189: Unterminated quoted string
+ERROR at line 49201: Unterminated quoted string
+ERROR at line 49202: Unterminated quoted string
+ERROR at line 49211: Unterminated quoted string
+ERROR at line 49212: Unterminated quoted string
+ERROR at line 49221: Unterminated quoted string
+ERROR at line 49222: Unterminated quoted string
+ERROR at line 49234: Unterminated quoted string
+ERROR at line 49236: Unterminated quoted string
+ERROR at line 49244: Unterminated quoted string
+ERROR at line 49246: Unterminated quoted string
+ERROR at line 49254: Unterminated quoted string
+ERROR at line 49256: Unterminated quoted string
+ERROR at line 49268: Unterminated quoted string
+ERROR at line 49269: Unterminated quoted string
+ERROR at line 49278: Unterminated quoted string
+ERROR at line 49279: Unterminated quoted string
+ERROR at line 49288: Unterminated quoted string
+ERROR at line 49289: Unterminated quoted string
+ERROR at line 49301: Unterminated quoted string
+ERROR at line 49303: Unterminated quoted string
+ERROR at line 49311: Unterminated quoted string
+ERROR at line 49313: Unterminated quoted string
+ERROR at line 49321: Unterminated quoted string
+ERROR at line 49323: Unterminated quoted string
+ERROR at line 49335: Unterminated quoted string
+ERROR at line 49336: Unterminated quoted string
+ERROR at line 49345: Unterminated quoted string
+ERROR at line 49346: Unterminated quoted string
+ERROR at line 49355: Unterminated quoted string
+ERROR at line 49356: Unterminated quoted string
+ERROR at line 49368: Unterminated quoted string
+ERROR at line 49370: Unterminated quoted string
+ERROR at line 49378: Unterminated quoted string
+ERROR at line 49379: Unterminated quoted string
+ERROR at line 49388: Unterminated quoted string
+ERROR at line 49390: Unterminated quoted string
+ERROR at line 49401: Unterminated quoted string
+ERROR at line 49403: Unterminated quoted string
+ERROR at line 49412: Unterminated quoted string
+ERROR at line 49413: Unterminated quoted string
+ERROR at line 49421: Unterminated quoted string
+ERROR at line 49423: Unterminated quoted string
+ERROR at line 49435: Unterminated quoted string
+ERROR at line 49437: Unterminated quoted string
+ERROR at line 49445: Unterminated quoted string
+ERROR at line 49446: Unterminated quoted string
+ERROR at line 49455: Unterminated quoted string
+ERROR at line 49457: Unterminated quoted string
+ERROR at line 49468: Unterminated quoted string
+ERROR at line 49470: Unterminated quoted string
+ERROR at line 49479: Unterminated quoted string
+ERROR at line 49480: Unterminated quoted string
+ERROR at line 49488: Unterminated quoted string
+ERROR at line 49490: Unterminated quoted string
+ERROR at line 49502: Unterminated quoted string
+ERROR at line 49504: Unterminated quoted string
+ERROR at line 49512: Unterminated quoted string
+ERROR at line 49513: Unterminated quoted string
+ERROR at line 49522: Unterminated quoted string
+ERROR at line 49524: Unterminated quoted string
+ERROR at line 49535: Unterminated quoted string
+ERROR at line 49537: Unterminated quoted string
+ERROR at line 49546: Unterminated quoted string
+ERROR at line 49547: Unterminated quoted string
+ERROR at line 49555: Unterminated quoted string
+ERROR at line 49557: Unterminated quoted string
+ERROR at line 49569: Unterminated quoted string
+ERROR at line 49571: Unterminated quoted string
+ERROR at line 49579: Unterminated quoted string
+ERROR at line 49580: Unterminated quoted string
+ERROR at line 49589: Unterminated quoted string
+ERROR at line 49591: Unterminated quoted string
+ERROR at line 49602: Unterminated quoted string
+ERROR at line 49604: Unterminated quoted string
+ERROR at line 49613: Unterminated quoted string
+ERROR at line 49614: Unterminated quoted string
+ERROR at line 49622: Unterminated quoted string
+ERROR at line 49624: Unterminated quoted string
+ERROR at line 49636: Unterminated quoted string
+ERROR at line 49638: Unterminated quoted string
+ERROR at line 49646: Unterminated quoted string
+ERROR at line 49647: Unterminated quoted string
+ERROR at line 49656: Unterminated quoted string
+ERROR at line 49658: Unterminated quoted string
+ERROR at line 49669: Unterminated quoted string
+ERROR at line 49671: Unterminated quoted string
+ERROR at line 49680: Unterminated quoted string
+ERROR at line 49681: Unterminated quoted string
+ERROR at line 49689: Unterminated quoted string
+ERROR at line 49691: Unterminated quoted string
+ERROR at line 49703: Unterminated quoted string
+ERROR at line 49705: Unterminated quoted string
+ERROR at line 49713: Unterminated quoted string
+ERROR at line 49714: Unterminated quoted string
+ERROR at line 49723: Unterminated quoted string
+ERROR at line 49725: Unterminated quoted string
+ERROR at line 49736: Unterminated quoted string
+ERROR at line 49738: Unterminated quoted string
+ERROR at line 49747: Unterminated quoted string
+ERROR at line 49748: Unterminated quoted string
+ERROR at line 49756: Unterminated quoted string
+ERROR at line 49758: Unterminated quoted string
+ERROR at line 49770: Unterminated quoted string
+ERROR at line 49772: Unterminated quoted string
+ERROR at line 49780: Unterminated quoted string
+ERROR at line 49781: Unterminated quoted string
+ERROR at line 49790: Unterminated quoted string
+ERROR at line 49792: Unterminated quoted string
+ERROR at line 49803: Unterminated quoted string
+ERROR at line 49805: Unterminated quoted string
+ERROR at line 49814: Unterminated quoted string
+ERROR at line 49815: Unterminated quoted string
+ERROR at line 49823: Unterminated quoted string
+ERROR at line 49825: Unterminated quoted string
+ERROR at line 49837: Unterminated quoted string
+ERROR at line 49839: Unterminated quoted string
+ERROR at line 49847: Unterminated quoted string
+ERROR at line 49848: Unterminated quoted string
+ERROR at line 49857: Unterminated quoted string
+ERROR at line 49859: Unterminated quoted string
+ERROR at line 49871: Unterminated quoted string
+ERROR at line 49873: Unterminated quoted string
+ERROR at line 49881: Unterminated quoted string
+ERROR at line 49882: Unterminated quoted string
+ERROR at line 49891: Unterminated quoted string
+ERROR at line 49893: Unterminated quoted string
+ERROR at line 49904: Unterminated quoted string
+ERROR at line 49906: Unterminated quoted string
+ERROR at line 49915: Unterminated quoted string
+ERROR at line 49916: Unterminated quoted string
+ERROR at line 49924: Unterminated quoted string
+ERROR at line 49926: Unterminated quoted string
+ERROR at line 49938: Unterminated quoted string
+ERROR at line 49940: Unterminated quoted string
+ERROR at line 49948: Unterminated quoted string
+ERROR at line 49949: Unterminated quoted string
+ERROR at line 49958: Unterminated quoted string
+ERROR at line 49960: Unterminated quoted string
+ERROR at line 49971: Unterminated quoted string
+ERROR at line 49973: Unterminated quoted string
+ERROR at line 49982: Unterminated quoted string
+ERROR at line 49983: Unterminated quoted string
+ERROR at line 49991: Unterminated quoted string
+ERROR at line 49993: Unterminated quoted string
+ERROR at line 50005: Unterminated quoted string
+ERROR at line 50007: Unterminated quoted string
+ERROR at line 50015: Unterminated quoted string
+ERROR at line 50016: Unterminated quoted string
+ERROR at line 50025: Unterminated quoted string
+ERROR at line 50027: Unterminated quoted string
+ERROR at line 50038: Unterminated quoted string
+ERROR at line 50040: Unterminated quoted string
+ERROR at line 50048: Unterminated quoted string
+ERROR at line 50050: Unterminated quoted string
+ERROR at line 50058: Unterminated quoted string
+ERROR at line 50060: Unterminated quoted string
+ERROR at line 50076: Unterminated quoted string
+ERROR at line 50078: Unterminated quoted string
+ERROR at line 50086: Unterminated quoted string
+ERROR at line 50088: Unterminated quoted string
+ERROR at line 50096: Unterminated quoted string
+ERROR at line 50098: Unterminated quoted string
+ERROR at line 50110: Unterminated quoted string
+ERROR at line 50112: Unterminated quoted string
+ERROR at line 50120: Unterminated quoted string
+ERROR at line 50121: Unterminated quoted string
+ERROR at line 50130: Unterminated quoted string
+ERROR at line 50132: Unterminated quoted string
+ERROR at line 50137: Unterminated quoted string
+ERROR at line 50145: Unterminated quoted string
+ERROR at line 50154: Unterminated quoted string
+ERROR at line 50162: Unterminated quoted string
+ERROR at line 50170: Unterminated quoted string
+ERROR at line 50179: Unterminated quoted string
+ERROR at line 50187: Unterminated quoted string
+ERROR at line 50196: Unterminated quoted string
+ERROR at line 50200: Unterminated quoted string
+ERROR at line 50202: Unterminated quoted string
+ERROR at line 50205: Unterminated quoted string
+ERROR at line 50207: Unterminated quoted string
+ERROR at line 50281: Unterminated quoted string
+ERROR at line 50301: Unterminated quoted string
+ERROR at line 50359: Unterminated quoted string
+ERROR at line 50366: Unterminated quoted string
+ERROR at line 50389: Unterminated quoted string
+ERROR at line 50390: Unterminated quoted string
+ERROR at line 50409: Unterminated quoted string
+ERROR at line 50430: Unterminated quoted string
+ERROR at line 50451: Unterminated quoted string
+ERROR at line 50470: Unterminated quoted string
+ERROR at line 50484: Unterminated quoted string
+ERROR at line 50499: Unterminated quoted string
+ERROR at line 50561: Unterminated quoted string
+ERROR at line 50785: Unterminated quoted string
+ERROR at line 50787: Unterminated quoted string
+ERROR at line 50789: Unterminated quoted string
+ERROR at line 50792: Unterminated quoted string
+ERROR at line 50794: Unterminated quoted string
+ERROR at line 50797: Unterminated quoted string
+ERROR at line 50799: Unterminated quoted string
+ERROR at line 50801: Unterminated quoted string
+ERROR at line 50804: Unterminated quoted string
+ERROR at line 50806: Unterminated quoted string
+ERROR at line 50808: Unterminated quoted string
+ERROR at line 50811: Unterminated quoted string
+ERROR at line 50813: Unterminated quoted string
+ERROR at line 50816: Unterminated quoted string
+ERROR at line 50818: Unterminated quoted string
+ERROR at line 50820: Unterminated quoted string
+ERROR at line 50823: Unterminated quoted string
+ERROR at line 50825: Unterminated quoted string
+ERROR at line 50827: Unterminated quoted string
+ERROR at line 50830: Unterminated quoted string
+ERROR at line 50832: Unterminated quoted string
+ERROR at line 50835: Unterminated quoted string
+ERROR at line 50837: Unterminated quoted string
+ERROR at line 50839: Unterminated quoted string
+ERROR at line 50842: Unterminated quoted string
+ERROR at line 50844: Unterminated quoted string
+ERROR at line 50852: Unterminated quoted string
+ERROR at line 50855: Unterminated quoted string
+ERROR at line 50887: Unterminated quoted string
+ERROR at line 50890: Unterminated quoted string
+ERROR at line 50893: Unterminated quoted string
+ERROR at line 50896: Unterminated quoted string
+ERROR at line 50899: Unterminated quoted string
+ERROR at line 50902: Unterminated quoted string
+ERROR at line 50904: Unterminated quoted string
+ERROR at line 50907: Unterminated quoted string
+ERROR at line 50910: Unterminated quoted string
+ERROR at line 50913: Unterminated quoted string
+ERROR at line 50915: Unterminated quoted string
+ERROR at line 50918: Unterminated quoted string
+ERROR at line 50921: Unterminated quoted string
+ERROR at line 50924: Unterminated quoted string
+ERROR at line 50927: Unterminated quoted string
+ERROR at line 50930: Unterminated quoted string
+ERROR at line 50933: Unterminated quoted string
+ERROR at line 50936: Unterminated quoted string
+ERROR at line 50939: Unterminated quoted string
+ERROR at line 50942: Unterminated quoted string
+ERROR at line 50945: Unterminated quoted string
+ERROR at line 50948: Unterminated quoted string
+ERROR at line 50950: Unterminated quoted string
+ERROR at line 50953: Unterminated quoted string
+ERROR at line 50956: Unterminated quoted string
+ERROR at line 50959: Unterminated quoted string
+ERROR at line 50961: Unterminated quoted string
+ERROR at line 50964: Unterminated quoted string
+ERROR at line 50968: Unterminated quoted string
+ERROR at line 50971: Unterminated quoted string
+ERROR at line 50973: Unterminated quoted string
+ERROR at line 50976: Unterminated quoted string
+ERROR at line 51012: Unterminated quoted string
+ERROR at line 51015: Unterminated quoted string
+ERROR at line 51018: Unterminated quoted string
+ERROR at line 51021: Unterminated quoted string
+ERROR at line 51024: Unterminated quoted string
+ERROR at line 51027: Unterminated quoted string
+ERROR at line 51030: Unterminated quoted string
+ERROR at line 51033: Unterminated quoted string
+ERROR at line 51036: Unterminated quoted string
+ERROR at line 51039: Unterminated quoted string
+ERROR at line 51041: Unterminated quoted string
+ERROR at line 51044: Unterminated quoted string
+ERROR at line 51047: Unterminated quoted string
+ERROR at line 51050: Unterminated quoted string
+ERROR at line 51052: Unterminated quoted string
+ERROR at line 51055: Unterminated quoted string
+ERROR at line 51058: Unterminated quoted string
+ERROR at line 51061: Unterminated quoted string
+ERROR at line 51064: Unterminated quoted string
+ERROR at line 51067: Unterminated quoted string
+ERROR at line 51070: Unterminated quoted string
+ERROR at line 51073: Unterminated quoted string
+ERROR at line 51076: Unterminated quoted string
+ERROR at line 51079: Unterminated quoted string
+ERROR at line 51082: Unterminated quoted string
+ERROR at line 51085: Unterminated quoted string
+ERROR at line 51087: Unterminated quoted string
+ERROR at line 51090: Unterminated quoted string
+ERROR at line 51095: Unterminated quoted string
+ERROR at line 51098: Unterminated quoted string
+ERROR at line 51100: Unterminated quoted string
+ERROR at line 51103: Unterminated quoted string
+ERROR at line 51239: Unterminated quoted string
+ERROR at line 51243: Unterminated quoted string
+ERROR at line 51250: Unterminated quoted string
+ERROR at line 51254: Unterminated quoted string
+ERROR at line 51261: Unterminated quoted string
+ERROR at line 51265: Unterminated quoted string
+ERROR at line 51272: Unterminated quoted string
+ERROR at line 51276: Unterminated quoted string
+ERROR at line 51283: Unterminated quoted string
+ERROR at line 51287: Unterminated quoted string
+ERROR at line 51294: Unterminated quoted string
+ERROR at line 51298: Unterminated quoted string
+ERROR at line 51305: Unterminated quoted string
+ERROR at line 51309: Unterminated quoted string
+ERROR at line 51316: Unterminated quoted string
+ERROR at line 51320: Unterminated quoted string
+ERROR at line 51327: Unterminated quoted string
+ERROR at line 51331: Unterminated quoted string
+ERROR at line 51338: Unterminated quoted string
+ERROR at line 51342: Unterminated quoted string
+ERROR at line 51349: Unterminated quoted string
+ERROR at line 51353: Unterminated quoted string
+ERROR at line 51360: Unterminated quoted string
+ERROR at line 51364: Unterminated quoted string
+ERROR at line 51371: Unterminated quoted string
+ERROR at line 51375: Unterminated quoted string
+ERROR at line 51382: Unterminated quoted string
+ERROR at line 51386: Unterminated quoted string
+ERROR at line 51393: Unterminated quoted string
+ERROR at line 51397: Unterminated quoted string
+ERROR at line 51404: Unterminated quoted string
+ERROR at line 51408: Unterminated quoted string
+ERROR at line 51415: Unterminated quoted string
+ERROR at line 51419: Unterminated quoted string
+ERROR at line 51426: Unterminated quoted string
+ERROR at line 51430: Unterminated quoted string
+ERROR at line 51437: Unterminated quoted string
+ERROR at line 51441: Unterminated quoted string
+ERROR at line 51448: Unterminated quoted string
+ERROR at line 51452: Unterminated quoted string
+ERROR at line 51459: Unterminated quoted string
+ERROR at line 51463: Unterminated quoted string
+ERROR at line 51470: Unterminated quoted string
+ERROR at line 51474: Unterminated quoted string
+ERROR at line 51481: Unterminated quoted string
+ERROR at line 51485: Unterminated quoted string
+ERROR at line 51492: Unterminated quoted string
+ERROR at line 51496: Unterminated quoted string
+ERROR at line 51504: Unterminated quoted string
+ERROR at line 51509: Unterminated quoted string
+ERROR at line 51517: Unterminated quoted string
+ERROR at line 51522: Unterminated quoted string
+ERROR at line 51530: Unterminated quoted string
+ERROR at line 51535: Unterminated quoted string
+ERROR at line 51543: Unterminated quoted string
+ERROR at line 51548: Unterminated quoted string
+ERROR at line 51669: Unterminated quoted string
+ERROR at line 51672: Unterminated quoted string
+ERROR at line 51684: Unterminated quoted string
+ERROR at line 51688: Unterminated quoted string
+ERROR at line 51742: Unterminated quoted string
+ERROR at line 51775: Unterminated quoted string
+ERROR at line 51898: Unterminated quoted string
+ERROR at line 52039: Unterminated quoted string
+ERROR at line 52072: Unterminated quoted string
+ERROR at line 52087: Unterminated quoted string
+ERROR at line 52188: Unterminated quoted string
+ERROR at line 52193: Unterminated quoted string
+ERROR at line 52198: Unterminated quoted string
+ERROR at line 52203: Unterminated quoted string
+ERROR at line 52216: Unterminated quoted string
+ERROR at line 52317: Unterminated quoted string
+ERROR at line 52405: Unterminated quoted string
+ERROR at line 52410: Unterminated quoted string
+ERROR at line 52425: Unterminated quoted string
+ERROR at line 52633: Unterminated quoted string
+ERROR at line 52639: Unterminated quoted string
+ERROR at line 52656: Unterminated quoted string
+ERROR at line 52663: Unterminated quoted string
+ERROR at line 52741: Unterminated quoted string
+ERROR at line 52747: Unterminated quoted string
+ERROR at line 52772: Unterminated quoted string
+ERROR at line 52774: Unterminated quoted string
+ERROR at line 52779: Unterminated quoted string
+ERROR at line 52828: Unterminated quoted string
+ERROR at line 52829: Unterminated quoted string
+ERROR at line 52830: Unterminated quoted string
+ERROR at line 52839: Unterminated quoted string
+ERROR at line 52856: Unterminated quoted string
+ERROR at line 52940: Unterminated quoted string
+ERROR at line 53017: Unterminated quoted string
+ERROR at line 53034: Unterminated quoted string
+ERROR at line 53050: Unterminated quoted string
+ERROR at line 53052: Unterminated quoted string
+ERROR at line 53064: Unterminated quoted string
+ERROR at line 53080: Unterminated quoted string
+ERROR at line 53091: Unterminated quoted string
+ERROR at line 53100: Unterminated quoted string
+ERROR at line 53107: Unterminated quoted string
+ERROR at line 53113: Unterminated quoted string
+ERROR at line 53122: Unterminated quoted string
+ERROR at line 53142: Unterminated quoted string
+ERROR at line 53144: Unterminated quoted string
+**** EOF within comment/string 3
+
+Maximum error count (200) exceeded (aslerror.c)
+acpi_dump.dat      2:     0000: 4C 55 46 54 C2 4C 03 00 01 1B 4C 45 4E 4F 56 4F  LUFT.L....LENOVO
+Error    6313 -                ^ Invalid field label detected (found "0000" expected "Signature")
+
+acpi_dump.dat      2:     0000: 4C 55 46 54 C2 4C 03 00 01 1B 4C 45 4E 4F 56 4F  LUFT.L....LENOVO
+Error    6123 -                ^ String literal too long (Maximum 4 characters, found 65 characters [4C 55 46 54 C2 4C 03 00 01 1B 4C 45 4E 4F 56 4F  LUFT.L....LENOVO])
+
+acpi_dump.dat      3:     0010: 54 43 2D 4F 35 54 20 20 E0 13 00 00 41 4D 49 20  TC-O5T  ....AMI 
+Error    6313 -                ^ Invalid field label detected (found "0010" expected "Table Length")
+
+acpi_dump.dat      3:     0010: 54 43 2D 4F 35 54 20 20 E0 13 00 00 41 4D 49 20  TC-O5T  ....AMI 
+Error    6126 -   syntax error ^ 
+
+acpi_dump.dat      4:     0020: 13 00 01 00 00 00 00 00 02 00 3A 00 00 00 16 04  ..........:.....
+Error    6313 -                ^ Invalid field label detected (found "0020" expected "Revision")
+
+acpi_dump.dat      4:     0020: 13 00 01 00 00 00 00 00 02 00 3A 00 00 00 16 04  ..........:.....
+Error    6126 -   syntax error ^ 
+
+acpi_dump.dat      5:     0030: 00 00 F2 07 00 00 CE 0B 00 00 55 53 42 46 00 00  ..........USBF..
+Error    6313 -                ^ Invalid field label detected (found "0030" expected "Checksum")
+
+acpi_dump.dat      5:     0030: 00 00 F2 07 00 00 CE 0B 00 00 55 53 42 46 00 00  ..........USBF..
+Error    6126 -   syntax error ^ 
+
+acpi_dump.dat      6:     0040: 00 00 00 00 00 00 90 7D 00 00 AA 0F 00 00 50 D0  .......}......P.
+Error    6313 -                ^ Invalid field label detected (found "0040" expected "Oem ID")
+
+acpi_dump.dat      6:     0040: 00 00 00 00 00 00 90 7D 00 00 AA 0F 00 00 50 D0  .......}......P.
+Error    6123 -                ^ String literal too long (Maximum 6 characters, found 65 characters [00 00 00 00 00 00 90 7D 00 00 AA 0F 00 00 50 D0  .......}......P.])
+
+acpi_dump.dat      7:     0050: 00 00 3A 8D 00 00 7A 00 00 00 54 00 00 00 00 00  ..:...z...T.....
+Error    6313 -                ^ Invalid field label detected (found "0050" expected "Oem Table ID")
+
+acpi_dump.dat      7:     0050: 00 00 3A 8D 00 00 7A 00 00 00 54 00 00 00 00 00  ..:...z...T.....
+Error    6123 -                ^ String literal too long (Maximum 8 characters, found 65 characters [00 00 3A 8D 00 00 7A 00 00 00 54 00 00 00 00 00  ..:...z...T.....])
+
+acpi_dump.dat      8:     0060: 00 00 5C 00 00 00 00 00 00 00 64 00 00 00 00 00  ..\.......d.....
+Error    6313 -                ^ Invalid field label detected (found "0060" expected "Oem Revision")
+
+acpi_dump.dat      8:     0060: 00 00 5C 00 00 00 00 00 00 00 64 00 00 00 00 00  ..\.......d.....
+Error    6126 -   syntax error ^ 
+
+acpi_dump.dat      9:     0070: 00 00 6C 00 00 00 00 00 00 00 05 00 00 00 92 00  ..l.............
+Error    6313 -                ^ Invalid field label detected (found "0070" expected "Asl Compiler ID")
+
+acpi_dump.dat     10:     0080: 00 00 46 01 00 00 FA 01 00 00 AE 02 00 00 62 03  ..F...........b.
+Error    6313 -                ^ Invalid field label detected (found "0080" expected "Asl Compiler Revision")
+
+acpi_dump.dat     11:     0090: 00 00 C2 2C 03 00 72 00 00 00 05 00 00 00 B6 00  ...,..r.........
+Error    6305 -          ^ Invalid Field Name (Generic data type "0090" not found)
+
+acpi_dump.dat     12:     00A0: 00 00 CE 00 00 00 E6 00 00 00 FE 00 00 00 16 01  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "00A0" not found)
+
+acpi_dump.dat     13:     00B0: 00 00 2E 01 00 00 34 2D 03 00 18 00 00 00 01 00  ......4-........
+Error    6305 -          ^ Invalid Field Name (Generic data type "00B0" not found)
+
+acpi_dump.dat     14:     00C0: 00 00 4C 2D 03 00 0A 00 00 00 01 00 00 00 56 2D  ..L-..........V-
+Error    6305 -          ^ Invalid Field Name (Generic data type "00C0" not found)
+
+acpi_dump.dat     15:     00D0: 03 00 0C 00 00 00 01 00 00 00 62 2D 03 00 0E 00  ..........b-....
+Error    6305 -          ^ Invalid Field Name (Generic data type "00D0" not found)
+
+acpi_dump.dat     16:     00E0: 00 00 01 00 00 00 70 2D 03 00 0C 00 00 00 04 00  ......p-........
+Error    6305 -          ^ Invalid Field Name (Generic data type "00E0" not found)
+
+acpi_dump.dat     17:     00F0: 00 00 00 00 00 00 00 00 00 00 01 00 00 00 7C 2D  ..............|-
+Error    6305 -          ^ Invalid Field Name (Generic data type "00F0" not found)
+
+acpi_dump.dat     18:     0100: 03 00 0A 00 00 00 04 00 00 00 01 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0100" not found)
+
+acpi_dump.dat     19:     0110: 00 00 01 00 00 00 86 2D 03 00 08 00 00 00 04 00  .......-........
+Error    6305 -          ^ Invalid Field Name (Generic data type "0110" not found)
+
+acpi_dump.dat     20:     0120: 00 00 01 00 00 00 00 00 00 00 01 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0120" not found)
+
+acpi_dump.dat     21:     0130: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0130" not found)
+
+acpi_dump.dat     22:     0140: 00 00 FF 00 00 00 8E 2D 03 00 C0 00 00 00 01 00  .......-........
+Error    6305 -          ^ Invalid Field Name (Generic data type "0140" not found)
+
+acpi_dump.dat     23:     0150: 00 00 6A 01 00 00 00 00 00 00 00 00 00 00 00 00  ..j.............
+Error    6305 -          ^ Invalid Field Name (Generic data type "0150" not found)
+
+acpi_dump.dat     24:     0160: 00 00 00 00 00 00 00 00 00 00 4E 2E 03 00 1A 00  ..........N.....
+Error    6305 -          ^ Invalid Field Name (Generic data type "0160" not found)
+
+acpi_dump.dat     25:     0170: 00 00 07 00 00 00 4C 2D 03 00 0A 00 00 00 03 00  ......L-........
+Error    6305 -          ^ Invalid Field Name (Generic data type "0170" not found)
+
+acpi_dump.dat     26:     0180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0180" not found)
+
+acpi_dump.dat     27:     0190: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0190" not found)
+
+acpi_dump.dat     28:     01A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "01A0" not found)
+
+acpi_dump.dat     29:     01B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "01B0" not found)
+
+acpi_dump.dat     30:     01C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "01C0" not found)
+
+acpi_dump.dat     31:     01D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "01D0" not found)
+
+acpi_dump.dat     32:     01E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "01E0" not found)
+
+acpi_dump.dat     33:     01F0: 00 00 00 00 00 00 00 00 00 00 68 2E 03 00 C0 00  ..........h.....
+Error    6305 -          ^ Invalid Field Name (Generic data type "01F0" not found)
+
+acpi_dump.dat     34:     0200: 00 00 01 00 00 00 1E 02 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0200" not found)
+
+acpi_dump.dat     35:     0210: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 28 2F  ..............(/
+Error    6305 -          ^ Invalid Field Name (Generic data type "0210" not found)
+
+acpi_dump.dat     36:     0230: 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0230" not found)
+
+acpi_dump.dat     37:     0240: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0240" not found)
+
+acpi_dump.dat     38:     0250: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0250" not found)
+
+acpi_dump.dat     39:     0260: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0260" not found)
+
+acpi_dump.dat     40:     0270: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0270" not found)
+
+acpi_dump.dat     41:     0280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0280" not found)
+
+acpi_dump.dat     42:     0290: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0290" not found)
+
+acpi_dump.dat     43:     02A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 42 2F  ..............B/
+Error    6305 -          ^ Invalid Field Name (Generic data type "02A0" not found)
+
+acpi_dump.dat     44:     02C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "02C0" not found)
+
+acpi_dump.dat     45:     02D0: 00 00 28 2F 03 00 1A 00 00 00 07 00 00 00 4C 2D  ..(/..........L-
+Error    6305 -          ^ Invalid Field Name (Generic data type "02D0" not found)
+
+acpi_dump.dat     46:     02E0: 03 00 0A 00 00 00 03 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "02E0" not found)
+
+acpi_dump.dat     47:     02F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "02F0" not found)
+
+acpi_dump.dat     48:     0300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0300" not found)
+
+acpi_dump.dat     49:     0310: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0310" not found)
+
+acpi_dump.dat     50:     0320: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0320" not found)
+
+acpi_dump.dat     51:     0330: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0330" not found)
+
+acpi_dump.dat     52:     0340: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0340" not found)
+
+acpi_dump.dat     53:     0350: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0350" not found)
+
+acpi_dump.dat     54:     0360: 00 00 02 30 03 00 C0 00 00 00 01 00 00 00 86 03  ...0............
+Error    6305 -          ^ Invalid Field Name (Generic data type "0360" not found)
+
+acpi_dump.dat     55:     0370: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0370" not found)
+
+acpi_dump.dat     56:     0380: 00 00 00 00 00 00 4E 2E 03 00 1A 00 00 00 07 00  ......N.........
+Error    6305 -          ^ Invalid Field Name (Generic data type "0380" not found)
+
+acpi_dump.dat     57:     0390: 00 00 4C 2D 03 00 0A 00 00 00 03 00 00 00 00 00  ..L-............
+Error    6305 -          ^ Invalid Field Name (Generic data type "0390" not found)
+
+acpi_dump.dat     58:     03A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03A0" not found)
+
+acpi_dump.dat     59:     03B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03B0" not found)
+
+acpi_dump.dat     60:     03C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03C0" not found)
+
+acpi_dump.dat     61:     03D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03D0" not found)
+
+acpi_dump.dat     62:     03E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03E0" not found)
+
+acpi_dump.dat     63:     03F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "03F0" not found)
+
+acpi_dump.dat     64:     0400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0400" not found)
+
+acpi_dump.dat     65:     0410: 00 00 00 00 00 00 4C 55 46 54 00 00 00 00 00 00  ......LUFT......
+Error    6305 -          ^ Invalid Field Name (Generic data type "0410" not found)
+
+acpi_dump.dat     66:     0420: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0420" not found)
+
+acpi_dump.dat     67:     0430: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0430" not found)
+
+acpi_dump.dat     68:     0440: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0440" not found)
+
+acpi_dump.dat     69:     0450: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0450" not found)
+
+acpi_dump.dat     70:     0460: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0460" not found)
+
+acpi_dump.dat     71:     0470: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0470" not found)
+
+acpi_dump.dat     72:     0480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0480" not found)
+
+acpi_dump.dat     73:     0490: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0490" not found)
+
+acpi_dump.dat     74:     04A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04A0" not found)
+
+acpi_dump.dat     75:     04B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04B0" not found)
+
+acpi_dump.dat     76:     04C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04C0" not found)
+
+acpi_dump.dat     77:     04D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04D0" not found)
+
+acpi_dump.dat     78:     04E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04E0" not found)
+
+acpi_dump.dat     79:     04F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "04F0" not found)
+
+acpi_dump.dat     80:     0500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0500" not found)
+
+acpi_dump.dat     81:     0510: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0510" not found)
+
+acpi_dump.dat     82:     0520: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0520" not found)
+
+acpi_dump.dat     83:     0530: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0530" not found)
+
+acpi_dump.dat     84:     0540: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0540" not found)
+
+acpi_dump.dat     85:     0550: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0550" not found)
+
+acpi_dump.dat     86:     0560: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0560" not found)
+
+acpi_dump.dat     87:     0570: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0570" not found)
+
+acpi_dump.dat     88:     0580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0580" not found)
+
+acpi_dump.dat     89:     0590: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0590" not found)
+
+acpi_dump.dat     90:     05A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "05A0" not found)
+
+acpi_dump.dat     91:     05B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "05B0" not found)
+
+acpi_dump.dat     92:     05C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "05C0" not found)
+
+acpi_dump.dat     93:     05D0: 00 00 AA 55 AA 55 00 00 00 00 00 00 00 00 00 00  ...U.U..........
+Error    6305 -          ^ Invalid Field Name (Generic data type "05D0" not found)
+
+acpi_dump.dat     94:     05E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "05E0" not found)
+
+acpi_dump.dat     95:     05F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "05F0" not found)
+
+acpi_dump.dat     96:     0600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0600" not found)
+
+acpi_dump.dat     97:     0610: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0610" not found)
+
+acpi_dump.dat     98:     0620: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0620" not found)
+
+acpi_dump.dat     99:     0630: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0630" not found)
+
+acpi_dump.dat    100:     0640: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0640" not found)
+
+acpi_dump.dat    101:     0650: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0650" not found)
+
+acpi_dump.dat    102:     0660: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0660" not found)
+
+acpi_dump.dat    103:     0670: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0670" not found)
+
+acpi_dump.dat    104:     0680: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0680" not found)
+
+acpi_dump.dat    105:     0690: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0690" not found)
+
+acpi_dump.dat    106:     06A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06A0" not found)
+
+acpi_dump.dat    107:     06B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06B0" not found)
+
+acpi_dump.dat    108:     06C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06C0" not found)
+
+acpi_dump.dat    109:     06D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06D0" not found)
+
+acpi_dump.dat    110:     06E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06E0" not found)
+
+acpi_dump.dat    111:     06F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "06F0" not found)
+
+acpi_dump.dat    112:     0700: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0700" not found)
+
+acpi_dump.dat    113:     0710: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0710" not found)
+
+acpi_dump.dat    114:     0720: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0720" not found)
+
+acpi_dump.dat    115:     0730: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0730" not found)
+
+acpi_dump.dat    116:     0740: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0740" not found)
+
+acpi_dump.dat    117:     0750: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0750" not found)
+
+acpi_dump.dat    118:     0760: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0760" not found)
+
+acpi_dump.dat    119:     0770: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0770" not found)
+
+acpi_dump.dat    120:     0780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0780" not found)
+
+acpi_dump.dat    121:     0790: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0790" not found)
+
+acpi_dump.dat    122:     07A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "07A0" not found)
+
+acpi_dump.dat    123:     07B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "07B0" not found)
+
+acpi_dump.dat    124:     07C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "07C0" not found)
+
+acpi_dump.dat    125:     07D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "07D0" not found)
+
+acpi_dump.dat    126:     07E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "07E0" not found)
+
+acpi_dump.dat    127:     07F0: 00 00 4C 55 46 54 00 00 00 00 00 00 00 00 00 00  ..LUFT..........
+Error    6305 -          ^ Invalid Field Name (Generic data type "07F0" not found)
+
+acpi_dump.dat    128:     0800: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0800" not found)
+
+acpi_dump.dat    129:     0810: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0810" not found)
+
+acpi_dump.dat    130:     0820: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0820" not found)
+
+acpi_dump.dat    131:     0830: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0830" not found)
+
+acpi_dump.dat    132:     0840: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0840" not found)
+
+acpi_dump.dat    133:     0850: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0850" not found)
+
+acpi_dump.dat    134:     0860: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0860" not found)
+
+acpi_dump.dat    135:     0870: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0870" not found)
+
+acpi_dump.dat    136:     0880: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0880" not found)
+
+acpi_dump.dat    137:     0890: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0890" not found)
+
+acpi_dump.dat    138:     08A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08A0" not found)
+
+acpi_dump.dat    139:     08B0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08B0" not found)
+
+acpi_dump.dat    140:     08C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08C0" not found)
+
+acpi_dump.dat    141:     08D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08D0" not found)
+
+acpi_dump.dat    142:     08E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08E0" not found)
+
+acpi_dump.dat    143:     08F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "08F0" not found)
+
+acpi_dump.dat    144:     0900: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0900" not found)
+
+acpi_dump.dat    145:     0910: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0910" not found)
+
+acpi_dump.dat    146:     0920: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0920" not found)
+
+acpi_dump.dat    147:     0930: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0930" not found)
+
+acpi_dump.dat    148:     0940: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0940" not found)
+
+acpi_dump.dat    149:     0950: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0950" not found)
+
+acpi_dump.dat    150:     0960: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0960" not found)
+
+acpi_dump.dat    151:     0970: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0970" not found)
+
+acpi_dump.dat    152:     0980: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0980" not found)
+
+acpi_dump.dat    153:     0990: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0990" not found)
+
+acpi_dump.dat    154:     09A0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 AA 55  ...............U
+Error    6305 -          ^ Invalid Field Name (Generic data type "09A0" not found)
+
+acpi_dump.dat    155:     09B0: AA 55 00 00 00 00 00 00 00 00 00 00 00 00 00 00  .U..............
+Error    6305 -          ^ Invalid Field Name (Generic data type "09B0" not found)
+
+acpi_dump.dat    156:     09C0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "09C0" not found)
+
+acpi_dump.dat    157:     09D0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "09D0" not found)
+
+acpi_dump.dat    158:     09E0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "09E0" not found)
+
+acpi_dump.dat    159:     09F0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "09F0" not found)
+
+acpi_dump.dat    160:     0A00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A00" not found)
+
+acpi_dump.dat    161:     0A10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A10" not found)
+
+acpi_dump.dat    162:     0A20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A20" not found)
+
+acpi_dump.dat    163:     0A30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A30" not found)
+
+acpi_dump.dat    164:     0A40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A40" not found)
+
+acpi_dump.dat    165:     0A50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A50" not found)
+
+acpi_dump.dat    166:     0A60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A60" not found)
+
+acpi_dump.dat    167:     0A70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A70" not found)
+
+acpi_dump.dat    168:     0A80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A80" not found)
+
+acpi_dump.dat    169:     0A90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0A90" not found)
+
+acpi_dump.dat    170:     0AA0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AA0" not found)
+
+acpi_dump.dat    171:     0AB0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AB0" not found)
+
+acpi_dump.dat    172:     0AC0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AC0" not found)
+
+acpi_dump.dat    173:     0AD0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AD0" not found)
+
+acpi_dump.dat    174:     0AE0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AE0" not found)
+
+acpi_dump.dat    175:     0AF0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0AF0" not found)
+
+acpi_dump.dat    176:     0B00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B00" not found)
+
+acpi_dump.dat    177:     0B10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B10" not found)
+
+acpi_dump.dat    178:     0B20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B20" not found)
+
+acpi_dump.dat    179:     0B30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B30" not found)
+
+acpi_dump.dat    180:     0B40: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B40" not found)
+
+acpi_dump.dat    181:     0B50: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B50" not found)
+
+acpi_dump.dat    182:     0B60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B60" not found)
+
+acpi_dump.dat    183:     0B70: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B70" not found)
+
+acpi_dump.dat    184:     0B80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B80" not found)
+
+acpi_dump.dat    185:     0B90: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0B90" not found)
+
+acpi_dump.dat    186:     0BA0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BA0" not found)
+
+acpi_dump.dat    187:     0BB0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BB0" not found)
+
+acpi_dump.dat    188:     0BC0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 4C 55  ..............LU
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BC0" not found)
+
+acpi_dump.dat    189:     0BD0: 46 54 00 00 00 00 00 00 00 00 00 00 00 00 00 00  FT..............
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BD0" not found)
+
+acpi_dump.dat    190:     0BE0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BE0" not found)
+
+acpi_dump.dat    191:     0BF0: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0BF0" not found)
+
+acpi_dump.dat    192:     0C00: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0C00" not found)
+
+acpi_dump.dat    193:     0C10: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0C10" not found)
+
+acpi_dump.dat    194:     0C20: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0C20" not found)
+
+acpi_dump.dat    195:     0C30: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ................
+Error    6305 -          ^ Invalid Field Name (Generic data type "0C30" not found)
+
+
+Maximum error count (200) exceeded (aslcompile.c)
+Table Input:   acpi_dump.dat - 4708140 bytes      0 fields        0 source lines
+Binary Output: (null) -       0 bytes
+
+Compilation failed. 201 Errors, 0 Warnings, 0 Remarks
+
+──────────── COMMAND END ────────────
+
+[01:26:47] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ grep -RIn 'GPLD\|GUPC' *.dsl
+grep: *.dsl: No such file or directory
+
+──────────── COMMAND END ────────────
+
+[01:26:55] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi ~/output-for-dir-2026-03-08.txt
+ 
+──────────── COMMAND END ────────────
+
+[01:31:00] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi ~/output-for-dir-2026-03-08.2.txt
+
+──────────── COMMAND END ────────────
+
+[01:32:04] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ gh repo clone gnotree/acpica
+HTTP 401: Requires authentication (https://api.github.com/graphql)
+Try authenticating with:  gh auth login
+
+──────────── COMMAND END ────────────
+
+[01:48:17] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ gh repo clone gnotree/acpica
+HTTP 401: Requires authentication (https://api.github.com/graphql)
+Try authenticating with:  gh auth login
+
+──────────── COMMAND END ────────────
+
+[01:48:28] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ gh auth login
+? Where do you use GitHub? GitHub.com
+? What is your preferred protocol for Git operations on this host? HTTPS
+? How would you like to authenticate GitHub CLI? Login with a web browser
+
+! First copy your one-time code: 09BA-0F73
+Press Enter to open https://github.com/login/device in your browser... 
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as gnotree
+! You were already logged in to this account
+
+──────────── COMMAND END ────────────
+
+[01:49:01] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ gh repo clone gnotree/acpica
+Cloning into 'acpica'...
+remote: Enumerating objects: 148190, done.
+remote: Counting objects: 100% (2541/2541), done.
+remote: Compressing objects: 100% (661/661), done.
+remote: Total 148190 (delta 2220), reused 1896 (delta 1880), pack-reused 145649 (from 2)
+Receiving objects: 100% (148190/148190), 161.74 MiB | 8.59 MiB/s, done.
+Resolving deltas: 100% (105544/105544), done.
+remote: Enumerating objects: 106, done.
+remote: Counting objects: 100% (106/106), done.
+remote: Compressing objects: 100% (106/106), done.
+remote: Total 106 (delta 0), reused 106 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (106/106), 14.26 KiB | 561.00 KiB/s, done.
+From https://github.com/acpica/acpica
+ * [new branch]          master           -> upstream/master
+ * [new tag]             20250807         -> 20250807
+ * [new tag]             20251212         -> 20251212
+ * [new tag]             G20240322        -> G20240322
+ * [new tag]             R01_05_18        -> R01_05_18
+ * [new tag]             R01_05_21        -> R01_05_21
+ * [new tag]             R01_08_16        -> R01_08_16
+ * [new tag]             R01_08_19        -> R01_08_19
+ * [new tag]             R01_10_20        -> R01_10_20
+ * [new tag]             R01_11_12        -> R01_11_12
+ * [new tag]             R01_14_14        -> R01_14_14
+ * [new tag]             R01_17_13        -> R01_17_13
+ * [new tag]             R01_19_17        -> R01_19_17
+ * [new tag]             R02_04_15        -> R02_04_15
+ * [new tag]             R02_09_18        -> R02_09_18
+ * [new tag]             R02_12_16        -> R02_12_16
+ * [new tag]             R02_14_13        -> R02_14_13
+ * [new tag]             R02_14_14        -> R02_14_14
+ * [new tag]             R02_14_20        -> R02_14_20
+ * [new tag]             R02_15_12        -> R02_15_12
+ * [new tag]             R02_15_19        -> R02_15_19
+ * [new tag]             R02_24_17        -> R02_24_17
+ * [new tag]             R03_03_17        -> R03_03_17
+ * [new tag]             R03_13_18        -> R03_13_18
+ * [new tag]             R03_18_16        -> R03_18_16
+ * [new tag]             R03_20_12        -> R03_20_12
+ * [new tag]             R03_25_14        -> R03_25_14
+ * [new tag]             R03_26_20        -> R03_26_20
+ * [new tag]             R03_28_13        -> R03_28_13
+ * [new tag]             R03_29_19        -> R03_29_19
+ * [new tag]             R03_31_21        -> R03_31_21
+ * [new tag]             R03_31_22        -> R03_31_22
+ * [new tag]             R03_31_23        -> R03_31_23
+ * [new tag]             R04_05_19        -> R04_05_19
+ * [new tag]             R04_08_15        -> R04_08_15
+ * [new tag]             R04_18_13        -> R04_18_13
+ * [new tag]             R04_20_12        -> R04_20_12
+ * [new tag]             R04_22_16        -> R04_22_16
+ * [new tag]             R04_24_14        -> R04_24_14
+ * [new tag]             R04_27_18        -> R04_27_18
+ * [new tag]             R04_30_20        -> R04_30_20
+ * [new tag]             R05_08_18        -> R05_08_18
+ * [new tag]             R05_09_19        -> R05_09_19
+ * [new tag]             R05_15_15        -> R05_15_15
+ * [new tag]             R05_17_13        -> R05_17_13
+ * [new tag]             R05_18_12        -> R05_18_12
+ * [new tag]             R05_27_16        -> R05_27_16
+ * [new tag]             R05_28_20        -> R05_28_20
+ * [new tag]             R05_31_17        -> R05_31_17
+ * [new tag]             R05_31_18        -> R05_31_18
+ * [new tag]             R061615          -> R061615
+ * [new tag]             R06_04_21        -> R06_04_21
+ * [new tag]             R06_19_15        -> R06_19_15
+ * [new tag]             R06_20_12        -> R06_20_12
+ * [new tag]             R06_26_13        -> R06_26_13
+ * [new tag]             R06_27_14        -> R06_27_14
+ * [new tag]             R06_28_23        -> R06_28_23
+ * [new tag]             R06_29_17        -> R06_29_17
+ * [new tag]             R06_29_18        -> R06_29_18
+ * [new tag]             R07_03_19        -> R07_03_19
+ * [new tag]             R07_11_12        -> R07_11_12
+ * [new tag]             R07_17_15        -> R07_17_15
+ * [new tag]             R07_17_20        -> R07_17_20
+ * [new tag]             R07_24_14        -> R07_24_14
+ * [new tag]             R07_25_13        -> R07_25_13
+ * [new tag]             R07_28_17        -> R07_28_17
+ * [new tag]             R07_29_16        -> R07_29_16
+ * [new tag]             R07_30_21        -> R07_30_21
+ * [new tag]             R08_10_18        -> R08_10_18
+ * [new tag]             R08_16_12        -> R08_16_12
+ * [new tag]             R08_16_19        -> R08_16_19
+ * [new tag]             R08_18_15        -> R08_18_15
+ * [new tag]             R08_23_13        -> R08_23_13
+ * [new tag]             R08_28_14        -> R08_28_14
+ * [new tag]             R08_31_16        -> R08_31_16
+ * [new tag]             R08_31_17        -> R08_31_17
+ * [new tag]             R09_13_12        -> R09_13_12
+ * [new tag]             R09_22_11        -> R09_22_11
+ * [new tag]             R09_25_20        -> R09_25_20
+ * [new tag]             R09_26_14        -> R09_26_14
+ * [new tag]             R09_27_13        -> R09_27_13
+ * [new tag]             R09_27_18        -> R09_27_18
+ * [new tag]             R09_27_24        -> R09_27_24
+ * [new tag]             R09_29_17        -> R09_29_17
+ * [new tag]             R09_30_15        -> R09_30_15
+ * [new tag]             R09_30_16        -> R09_30_16
+ * [new tag]             R09_30_21        -> R09_30_21
+ * [new tag]             R10_03_18        -> R10_03_18
+ * [new tag]             R10_18_12        -> R10_18_12
+ * [new tag]             R10_18_19        -> R10_18_19
+ * [new tag]             R10_20_22        -> R10_20_22
+ * [new tag]             R10_31_18        -> R10_31_18
+ * [new tag]             R11_07_14        -> R11_07_14
+ * [new tag]             R11_10_17        -> R11_10_17
+ * [new tag]             R11_13_20        -> R11_13_20
+ * [new tag]             R11_14_12        -> R11_14_12
+ * [new tag]             R11_15_13        -> R11_15_13
+ * [new tag]             R11_17_16        -> R11_17_16
+ * [new tag]             R11_23_11        -> R11_23_11
+ * [new tag]             R11_24_15        -> R11_24_15
+ * [new tag]             R12_13_18        -> R12_13_18
+ * [new tag]             R12_13_19        -> R12_13_19
+ * [new tag]             R12_14_17        -> R12_14_17
+ * [new tag]             R12_15_17        -> R12_15_17
+ * [new tag]             R12_17_20        -> R12_17_20
+ * [new tag]             R12_17_21        -> R12_17_21
+ * [new tag]             R12_18_13        -> R12_18_13
+ * [new tag]             R12_18_15        -> R12_18_15
+ * [new tag]             R12_20_12        -> R12_20_12
+ * [new tag]             R12_22_16        -> R12_22_16
+ * [new tag]             R2024_12_12      -> R2024_12_12
+ * [new tag]             R2025_04_04      -> R2025_04_04
+ * [new tag]             version-20240827 -> version-20240827
+! Repository acpica/acpica set as the default repository. To learn more about the default repository, run: gh repo set-default --help
+
+──────────── COMMAND END ────────────
+
+[01:49:31] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ # Advisory: ACPI namespace collisions (AE_ALREADY_EXISTS) in Lenovo firmware ACPI tables cause USB port metadata and GPU _DSM method aborts
+
+## Summary
+A Lenovo platform firmware build for a system identifying as `LENOVO TC-O5T` exposes ACPI namespace collisions during Linux boot. The kernel ACPI interpreter logs repeated `AE_ALREADY_EXISTS` exceptions when loading ACPI tables, indicating duplicate object creation attempts.
+
+Collisions are observed for:
+- Root-scope helper methods `\GPLD` and `\GUPC`
+- Multiple USB XHCI root hub ports under `\_SB.PC00.XHCI.RHUB.HSxx` / `SSxx` involving `_UPC` and `_PLD`
+- A GPU device-specific method `_DSM` under `\_SB.PC00.PEG1.PEGP` where a buffer field `USRG` creation fails due to a name collision, causing `_DSM` to abort
+
+## Affected systems
+- Confirmed on: Lenovo system with ACPI DSDT header string `LENOVO TC-O5T` (see `artifacts/tables/dsdt.dat` header + `artifacts/dsl/dsdt.dsl`)
+- Likely affected: any firmware branch that ships the same DSDT/SSDT set (to be confirmed by additional reports)
+
+## Affected environments
+- Observed on Linux (kernel boot log via `journalctl -k -b`), with ACPI interpreter rejecting duplicate namespace objects.
+- The defect is firmware-resident (DSDT/SSDT AML) and may surface on other OSes depending on ACPI interpreter behaviour.
+
+## Impact
+- See `docs/` and `artifacts/` in this repository for logs and extracted tables (sanitised).e Owner Key (MOK) approach to sign a
+bash: LENOVO: command not found...
+
+
+^C
+bash: Collisions: command not found...
+bash: AE_ALREADY_EXISTS: command not found...
+^C
+bash: GPLD: command not found...
+^C
+bash: _SB.PC00.XHCI.RHUB.HSxx: command not found...
+bash: GUPC: command not found...
+^C
+bash: SSxx: command not found...
+bash: _DSM: command not found...
+^C
+-l: syntax error near unexpected token `('
+-l: syntax error near unexpected token `('
+-l: syntax error near unexpected token `('
+-l: syntax error near unexpected token `('
+bash: Primary: command not found...
+bash: _SB.PC00.PEG1.PEGP: command not found...
+^C
+-l: syntax error near unexpected token `('
+bash: _UPC: command not found...
+^C
+bash: _PLD: command not found...
+bash: _DSM: command not found...
+^C
+bash: Security: command not found...
+^C
+-l: syntax error near unexpected token `('
+bash: No: command not found...
+^C
+bash: Linux: command not found...
+^C
+-l: command substitution: line 1: syntax error near unexpected token `('
+-l: command substitution: line 1: `ACPI BIOS Error (bug): Failure creating named object [\GPLD], AE_ALREADY_EXISTS'
+bash: -: command not found...
+-l: command substitution: line 1: syntax error near unexpected token `('
+-l: command substitution: line 1: `ACPI BIOS Error (bug): Failure creating named object [\GUPC], AE_ALREADY_EXISTS'
+bash: -: command not found...
+-l: command substitution: line 1: syntax error near unexpected token `('
+-l: command substitution: line 1: `ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS01._UPC], AE_ALREADY_EXISTS'
+bash: -: command not found...
+-l: command substitution: line 1: syntax error near unexpected token `('
+-l: command substitution: line 1: `ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.PEG1.PEGP._DSM.USRG], AE_ALREADY_EXISTS'
+bash: -: command not found...
+bash: _DSM: command not found...
+^C
+-l: syntax error near unexpected token `('
+bash: 1.: command not found...
+^C
+bash: 2.: command not found...
+^C
+bash: -: command not found...
+bash: 3.: command not found...
+^C
+[sudo] password for cyberian-cherubim: 
+sudo: a password is required
+
+bash: -: command not found...
+bash: 4.: command not found...
+File appears to be binary: found 206615 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file dsdt.dat, Length 0x9236C (598892) bytes
+ACPI: DSDT 0x0000000000000000 09236C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [DSDT]
+Pass 2 parse of [DSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    dsdt.dsl - 4425287 bytes
+
+ iASL Warning: There were 225 external control methods found during
+ disassembly, but only 481 were resolved (4294967040 unresolved). Additional
+ ACPI tables may be required to properly disassemble the code. This
+ resulting disassembler output file may not compile because the
+ disassembler did not know how many arguments to assign to the
+ unresolved methods. Note: SSDTs can be dynamically loaded at
+ runtime and may or may not be available via the host OS.
+
+ To specify the tables needed to resolve external control method
+ references, the -e option can be used to specify the filenames.
+ Example iASL invocations:
+     iasl -e ssdt1.aml ssdt2.aml ssdt3.aml -d dsdt.aml
+     iasl -e dsdt.aml ssdt2.aml -d ssdt1.aml
+     iasl -e ssdt*.aml -d dsdt.aml
+
+ In addition, the -fe option can be used to specify a file containing
+ control method external declarations with the associated method
+ argument counts. Each line of the file must be of the form:
+     External (<method pathname>, MethodObj, <argument count>)
+ Invocation:
+     iasl -fe refs.txt -d dsdt.aml
+
+File appears to be binary: found 1573 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt10.dat, Length 0x2A83 (10883) bytes
+ACPI: SSDT 0x0000000000000000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt10.dsl - 28799 bytes
+File appears to be binary: found 3114 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt11.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt11.dsl - 46401 bytes
+File appears to be binary: found 1000 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt12.dat, Length 0x1349 (4937) bytes
+ACPI: SSDT 0x0000000000000000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt12.dsl - 20835 bytes
+File appears to be binary: found 1541 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt13.dat, Length 0x1BAF (7087) bytes
+ACPI: SSDT 0x0000000000000000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt13.dsl - 37674 bytes
+File appears to be binary: found 172 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt14.dat, Length 0x1AB (427) bytes
+ACPI: SSDT 0x0000000000000000 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt14.dsl - 2749 bytes
+File appears to be binary: found 387 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt15.dat, Length 0x394 (916) bytes
+ACPI: SSDT 0x0000000000000000 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt15.dsl - 6042 bytes
+File appears to be binary: found 777 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt16.dat, Length 0xFBB (4027) bytes
+ACPI: SSDT 0x0000000000000000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt16.dsl - 18450 bytes
+File appears to be binary: found 801 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt17.dat, Length 0x1038 (4152) bytes
+ACPI: SSDT 0x0000000000000000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt17.dsl - 18718 bytes
+File appears to be binary: found 719 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt18.dat, Length 0x4B5 (1205) bytes
+ACPI: SSDT 0x0000000000000000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt18.dsl - 13809 bytes
+File appears to be binary: found 865 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt19.dat, Length 0x560 (1376) bytes
+ACPI: SSDT 0x0000000000000000 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt19.dsl - 10099 bytes
+File appears to be binary: found 4412 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt1.dat, Length 0x334F (13135) bytes
+ACPI: SSDT 0x0000000000000000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt1.dsl - 84647 bytes
+File appears to be binary: found 5055 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt2.dat, Length 0x5D34 (23860) bytes
+ACPI: SSDT 0x0000000000000000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt2.dsl - 117145 bytes
+File appears to be binary: found 1659 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt3.dat, Length 0x15CA (5578) bytes
+ACPI: SSDT 0x0000000000000000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+File appears to be binary: found 10240 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt4.dat, Length 0x92F4 (37620) bytes
+ACPI: SSDT 0x0000000000000000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt4.dsl - 322508 bytes
+File appears to be binary: found 846 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt5.dat, Length 0x1F1A (7962) bytes
+ACPI: SSDT 0x0000000000000000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt5.dsl - 37170 bytes
+File appears to be binary: found 2471 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt6.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt6.dsl - 47207 bytes
+File appears to be binary: found 3504 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt7.dat, Length 0x2AA5 (10917) bytes
+ACPI: SSDT 0x0000000000000000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt7.dsl - 74088 bytes
+File appears to be binary: found 490 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt8.dsl - 9966 bytes
+File appears to be binary: found 1222 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt9.dat, Length 0x190A (6410) bytes
+ACPI: SSDT 0x0000000000000000 00190A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt9.dsl - 27880 bytes
+bash: -: command not found...
+bash: 5.: command not found...
+grep: Unmatched ( or \(
+bash: -: command not found...
+grep: Unmatched ( or \(
+bash: -: command not found...
+bash: -: command not found...
+bash: -: command not found...
+bash: -: command not found...
+bash: _DSM: command not found...
+bash: however,: command not found...
+bash: -: command not found...
+bash: kernel: command not found...
+-l: syntax error near unexpected token `('
+bash: Reported: command not found...
+bash: -: command not found...
+bash: advisory: command not found...
+-l: syntax error near unexpected token `('
+
+──────────── COMMAND END ────────────
+
+[03:28:31] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ mv ssdt9.dat ssdt9.bak
+iasl -e ssdt*.dat -d dsdt.dat ssdt*.dat
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+File appears to be binary: found 206615 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file dsdt.dat, Length 0x9236C (598892) bytes
+ACPI: DSDT 0x0000000000000000 09236C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt7.dat
+Input file ssdt7.dat, Length 0x2AA5 (10917) bytes
+ACPI: SSDT 0x0000000000000000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt6.dat
+Input file ssdt6.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt5.dat
+Input file ssdt5.dat, Length 0x1F1A (7962) bytes
+ACPI: SSDT 0x0000000000000000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt4.dat
+Input file ssdt4.dat, Length 0x92F4 (37620) bytes
+ACPI: SSDT 0x0000000000000000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt3.dat
+Input file ssdt3.dat, Length 0x15CA (5578) bytes
+ACPI: SSDT 0x0000000000000000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt2.dat
+Input file ssdt2.dat, Length 0x5D34 (23860) bytes
+ACPI: SSDT 0x0000000000000000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file        ssdt1.dat
+Input file ssdt1.dat, Length 0x334F (13135) bytes
+ACPI: SSDT 0x0000000000000000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt19.dat
+Input file ssdt19.dat, Length 0x560 (1376) bytes
+ACPI: SSDT 0x0000000000000000 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt18.dat
+Input file ssdt18.dat, Length 0x4B5 (1205) bytes
+ACPI: SSDT 0x0000000000000000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt17.dat
+Input file ssdt17.dat, Length 0x1038 (4152) bytes
+ACPI: SSDT 0x0000000000000000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt16.dat
+Input file ssdt16.dat, Length 0xFBB (4027) bytes
+ACPI: SSDT 0x0000000000000000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt15.dat
+Input file ssdt15.dat, Length 0x394 (916) bytes
+ACPI: SSDT 0x0000000000000000 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt14.dat
+Input file ssdt14.dat, Length 0x1AB (427) bytes
+ACPI: SSDT 0x0000000000000000 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt13.dat
+Input file ssdt13.dat, Length 0x1BAF (7087) bytes
+ACPI: SSDT 0x0000000000000000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt12.dat
+Input file ssdt12.dat, Length 0x1349 (4937) bytes
+ACPI: SSDT 0x0000000000000000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt11.dat
+Input file ssdt11.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+External object resolution file       ssdt10.dat
+Input file ssdt10.dat, Length 0x2A83 (10883) bytes
+ACPI: SSDT 0x0000000000000000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Pass 1 parse of [DSDT]
+Firmware Error (ACPI): Failure creating named object [GPLD], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 1573 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt10.dat, Length 0x2A83 (10883) bytes
+ACPI: SSDT 0x0000000000000000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 3114 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt11.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 1000 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt12.dat, Length 0x1349 (4937) bytes
+ACPI: SSDT 0x0000000000000000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 1541 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt13.dat, Length 0x1BAF (7087) bytes
+ACPI: SSDT 0x0000000000000000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 172 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt14.dat, Length 0x1AB (427) bytes
+ACPI: SSDT 0x0000000000000000 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 387 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt15.dat, Length 0x394 (916) bytes
+ACPI: SSDT 0x0000000000000000 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 777 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt16.dat, Length 0xFBB (4027) bytes
+ACPI: SSDT 0x0000000000000000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 801 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt17.dat, Length 0x1038 (4152) bytes
+ACPI: SSDT 0x0000000000000000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 719 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt18.dat, Length 0x4B5 (1205) bytes
+ACPI: SSDT 0x0000000000000000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 865 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt19.dat, Length 0x560 (1376) bytes
+ACPI: SSDT 0x0000000000000000 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 4412 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt1.dat, Length 0x334F (13135) bytes
+ACPI: SSDT 0x0000000000000000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 5055 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt2.dat, Length 0x5D34 (23860) bytes
+ACPI: SSDT 0x0000000000000000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 1659 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt3.dat, Length 0x15CA (5578) bytes
+ACPI: SSDT 0x0000000000000000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 10240 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt4.dat, Length 0x92F4 (37620) bytes
+ACPI: SSDT 0x0000000000000000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 846 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt5.dat, Length 0x1F1A (7962) bytes
+ACPI: SSDT 0x0000000000000000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 2471 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt6.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 3504 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt7.dat, Length 0x2AA5 (10917) bytes
+ACPI: SSDT 0x0000000000000000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt8.dat
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+File appears to be binary: found 490 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+External object resolution file        ssdt7.dat
+Input file ssdt7.dat, Length 0x2AA5 (10917) bytes
+ACPI: SSDT 0x0000000000000000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Firmware Error (ACPI): Failure creating named object [\_SB.PC00.PEG0.CPRA], AE_ALREADY_EXISTS (20240322/dswload-387)
+ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240322/psobject-264)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+
+──────────── COMMAND END ────────────
+[04:20:06] cyberian-cherubim@CYB3R14:/mnt/                                                     OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi
+-bughunt $ iasl -d dsdt.dat
+iasl -d ssdt*.dat
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+File appears to be binary: found 206615 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file dsdt.dat, Length 0x9236C (598892) bytes
+ACPI: DSDT 0x0000000000000000 09236C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [DSDT]
+Pass 2 parse of [DSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    dsdt.dsl - 4425287 bytes
+
+ iASL Warning: There were 225 external control methods found during
+ disassembly, but only 481 were resolved (4294967040 unresolved). Additional
+ ACPI tables may be required to properly disassemble the code. This
+ resulting disassembler output file may not compile because the
+ disassembler did not know how many arguments to assign to the
+ unresolved methods. Note: SSDTs can be dynamically loaded at
+ runtime and may or may not be available via the host OS.
+
+ To specify the tables needed to resolve external control method
+ references, the -e option can be used to specify the filenames.
+ Example iASL invocations:
+     iasl -e ssdt1.aml ssdt2.aml ssdt3.aml -d dsdt.aml
+     iasl -e dsdt.aml ssdt2.aml -d ssdt1.aml
+     iasl -e ssdt*.aml -d dsdt.aml
+
+ In addition, the -fe option can be used to specify a file containing
+ control method external declarations with the associated method
+ argument counts. Each line of the file must be of the form:
+     External (<method pathname>, MethodObj, <argument count>)
+ Invocation:
+     iasl -fe refs.txt -d dsdt.aml
+
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+File appears to be binary: found 1573 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt10.dat, Length 0x2A83 (10883) bytes
+ACPI: SSDT 0x0000000000000000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt10.dsl - 28799 bytes
+File appears to be binary: found 3114 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt11.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt11.dsl - 46401 bytes
+File appears to be binary: found 1000 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt12.dat, Length 0x1349 (4937) bytes
+ACPI: SSDT 0x0000000000000000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt12.dsl - 20835 bytes
+File appears to be binary: found 1541 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt13.dat, Length 0x1BAF (7087) bytes
+ACPI: SSDT 0x0000000000000000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt13.dsl - 37674 bytes
+File appears to be binary: found 172 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt14.dat, Length 0x1AB (427) bytes
+ACPI: SSDT 0x0000000000000000 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt14.dsl - 2749 bytes
+File appears to be binary: found 387 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt15.dat, Length 0x394 (916) bytes
+ACPI: SSDT 0x0000000000000000 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt15.dsl - 6042 bytes
+File appears to be binary: found 777 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt16.dat, Length 0xFBB (4027) bytes
+ACPI: SSDT 0x0000000000000000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt16.dsl - 18450 bytes
+File appears to be binary: found 801 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt17.dat, Length 0x1038 (4152) bytes
+ACPI: SSDT 0x0000000000000000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt17.dsl - 18718 bytes
+File appears to be binary: found 719 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt18.dat, Length 0x4B5 (1205) bytes
+ACPI: SSDT 0x0000000000000000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt18.dsl - 13809 bytes
+File appears to be binary: found 865 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt19.dat, Length 0x560 (1376) bytes
+ACPI: SSDT 0x0000000000000000 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt19.dsl - 10099 bytes
+File appears to be binary: found 4412 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt1.dat, Length 0x334F (13135) bytes
+ACPI: SSDT 0x0000000000000000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt1.dsl - 84647 bytes
+File appears to be binary: found 5055 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt2.dat, Length 0x5D34 (23860) bytes
+ACPI: SSDT 0x0000000000000000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt2.dsl - 117145 bytes
+File appears to be binary: found 1659 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt3.dat, Length 0x15CA (5578) bytes
+ACPI: SSDT 0x0000000000000000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt3.dsl - 36384 bytes
+File appears to be binary: found 10240 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt4.dat, Length 0x92F4 (37620) bytes
+ACPI: SSDT 0x0000000000000000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt4.dsl - 319472 bytes
+File appears to be binary: found 846 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt5.dat, Length 0x1F1A (7962) bytes
+ACPI: SSDT 0x0000000000000000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt5.dsl - 37170 bytes
+File appears to be binary: found 2471 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt6.dat, Length 0x39DA (14810) bytes
+ACPI: SSDT 0x0000000000000000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt6.dsl - 47039 bytes
+File appears to be binary: found 3504 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt7.dat, Length 0x2AA5 (10917) bytes
+ACPI: SSDT 0x0000000000000000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt7.dsl - 74088 bytes
+File appears to be binary: found 490 non-ASCII characters, disassembling
+Binary file appears to be a valid ACPI table, disassembling
+Input file ssdt8.dat, Length 0x38C (908) bytes
+ACPI: SSDT 0x0000000000000000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Pass 1 parse of [SSDT]
+Pass 2 parse of [SSDT]
+Parsing Deferred Opcodes (Methods/Buffers/Packages/Regions)
+
+Parsing completed
+Disassembly completed
+ASL Output:    ssdt8.dsl - 9966 bytes
+
+──────────── COMMAND END ────────────
+
+[04:20:18] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi /mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt/GHSA-DRAFT.md
+
+──────────── COMMAND END ────────────
+
+[04:22:39] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi /mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt/EVIDENCE.md
+
+──────────── COMMAND END ────────────
+
+[04:22:52] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi /mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt/TIMELINE.md
+
+──────────── COMMAND END ────────────
+
+[04:23:33] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $ vi /mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt/LIMITATIONS.md
+
+──────────── COMMAND END ────────────
+
+[04:23:56] cyberian-cherubim@CYB3R14:/mnt/OfanimS34L/SILICON-SERAPHIM/dev-repos/acpi-bughunt $  
+

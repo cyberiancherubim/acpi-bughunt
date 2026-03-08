@@ -1,0 +1,314 @@
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000075775000-0x00000000758fbfff] ACPI data
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000758fc000-0x0000000075a20fff] ACPI NVS
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000075775000-0x00000000758fbfff] ACPI data
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000758fc000-0x0000000075a20fff] ACPI NVS
+Mar 07 16:47:31 CYB3R14 kernel: efi: ACPI=0x758fb000 ACPI 2.0=0x758fb014 TPMFinalLog=0x7599d000 SMBIOS=0x7636d000 SMBIOS 3.0=0x7636c000 MEMATTR=0x69eb4098 ESRT=0x6c063898 MOKvar=0x760b7000 RNG=0x757f8018 TPMEventLog=0x757ea018 
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Early table checksum verification disabled
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: RSDP 0x00000000758FB014 000024 (v02 LENOVO)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: XSDT 0x00000000758FA728 00010C (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FACP 0x00000000758F9000 000114 (v06 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DSDT 0x0000000075866000 09236C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FACS 0x0000000075A20000 000040
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FIDT 0x0000000075865000 00009C (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075864000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007585E000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: MSDM 0x000000007585D000 000055 (v03 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007585A000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075856000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: HPET 0x0000000075855000 000038 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: APIC 0x0000000075854000 0001DC (v05 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: MCFG 0x0000000075853000 00003C (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075851000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: UEFI 0x0000000075984000 000048 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: NHLT 0x0000000075850000 00002D (v00 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LPIT 0x000000007584F000 0000CC (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007584B000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075841000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DBGP 0x0000000075840000 000034 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DBG2 0x000000007583F000 000054 (v00 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007583D000 00190A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DMAR 0x000000007583C000 000050 (v01 LENOVO TC-O5T   000013E0      01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FPDT 0x000000007583B000 000044 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075839000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075835000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075831000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LUFT 0x00000000757FB000 034CC2 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PHAT 0x00000000757FA000 000A43 (v01 LENOVO TC-O5T   000013E0 MSFT 0100000D)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: TPM2 0x00000000757F9000 00004C (v04 LENOVO TC-O5T   000013E0 AMI  00000000)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: WSMT 0x000000007584E000 000028 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: BGRT 0x0000000075830000 000038 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FACP table memory at [mem 0x758f9000-0x758f9113]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DSDT table memory at [mem 0x75866000-0x758f836b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FACS table memory at [mem 0x75a20000-0x75a2003f]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FIDT table memory at [mem 0x75865000-0x7586509b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75864000-0x7586438b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7585e000-0x75863d33]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving MSDM table memory at [mem 0x7585d000-0x7585d054]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7585a000-0x7585caa4]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75856000-0x7585934e]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving HPET table memory at [mem 0x75855000-0x75855037]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving APIC table memory at [mem 0x75854000-0x758541db]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving MCFG table memory at [mem 0x75853000-0x7585303b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75851000-0x75852f19]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving UEFI table memory at [mem 0x75984000-0x75984047]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving NHLT table memory at [mem 0x75850000-0x7585002c]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving LPIT table memory at [mem 0x7584f000-0x7584f0cb]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7584b000-0x7584da82]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75841000-0x7584a2f3]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DBGP table memory at [mem 0x75840000-0x75840033]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DBG2 table memory at [mem 0x7583f000-0x7583f053]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7583d000-0x7583e909]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DMAR table memory at [mem 0x7583c000-0x7583c04f]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FPDT table memory at [mem 0x7583b000-0x7583b043]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75839000-0x7583a5c9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75835000-0x758389d9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75831000-0x758349d9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving LUFT table memory at [mem 0x757fb000-0x7582fcc1]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving PHAT table memory at [mem 0x757fa000-0x757faa42]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving TPM2 table memory at [mem 0x757f9000-0x757f904b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving WSMT table memory at [mem 0x7584e000-0x7584e027]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving BGRT table memory at [mem 0x75830000-0x75830037]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM-Timer IO Port: 0x1808
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Core revision 20240827
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM: Registering ACPI NVS region [mem 0x758fc000-0x75a20fff] (1200128 bytes)
+Mar 07 16:47:31 CYB3R14 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Module Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Processor Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\GPLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\GUPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS01._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS01._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS02._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS02._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS03._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS03._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS04._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS04._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS05._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS05._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS06._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS06._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS07._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS07._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS08._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS08._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS09._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS09._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS10._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS10._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS11._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS11._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS12._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS12._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS13._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS13._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS14._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS14._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS01._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS01._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS02._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS02._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS03._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS03._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS04._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS04._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS05._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS05._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS06._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS06._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS07._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS07._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS08._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS08._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS09._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS09._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS10._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS10._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: 12 ACPI AML tables successfully acquired and loaded
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018B7400 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018BE800 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F20191BA00 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018BD000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F5A000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F58000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F5C000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018A8000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Interpreter enabled
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Using IOAPIC for interrupt routing
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Enabled 6 GPEs in block 00 to 7F
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_SB_.PC00.XHCI.RHUB.HS14.BTRT: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN00: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN01: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN02: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN03: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN04: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \PIN_: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+Mar 07 16:47:31 CYB3R14 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Mar 07 16:47:31 CYB3R14 kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 1
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type USB registered
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Using ACPI for IRQ routing
+Mar 07 16:47:31 CYB3R14 kernel: pnp: PnP ACPI init
+Mar 07 16:47:31 CYB3R14 kernel: pnp: PnP ACPI: found 5 devices
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type thunderbolt registered
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Sleep Button [SLPB]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Power Button [PWRB]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Power Button [PWRF]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: thermal: Thermal Zone [TZ00] (28 C)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type drm_connector registered
+Mar 07 16:49:35 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.PEG1.PEGP._DSM.USRG], AE_ALREADY_EXISTS (20240827/dsfield-184)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, CreateBufferField failure (20240827/dswload2-477)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: Aborting method \_SB.PC00.PEG1.PEGP._DSM due to previous error (AE_ALREADY_EXISTS) (20240827/psparse-529)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.PEG1.PEGP._DSM.USRG], AE_ALREADY_EXISTS (20240827/dsfield-184)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, CreateBufferField failure (20240827/dswload2-477)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: Aborting method \_SB.PC00.PEG1.PEGP._DSM due to previous error (AE_ALREADY_EXISTS) (20240827/psparse-529)

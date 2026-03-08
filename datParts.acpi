@@ -1,0 +1,83 @@
+
+Intel ACPI Component Architecture
+ASL+ Optimizing Compiler/Disassembler version 20240322
+Copyright (c) 2000 - 2023 Intel Corporation
+
+External object resolution file        ssdt9.dat
+External object resolution file        ssdt8.dat
+External object resolution file        ssdt7.dat
+External object resolution file        ssdt6.dat
+External object resolution file        ssdt5.dat
+External object resolution file        ssdt4.dat
+External object resolution file        ssdt3.dat
+External object resolution file        ssdt2.dat
+External object resolution file        ssdt1.dat
+External object resolution file       ssdt19.dat
+External object resolution file       ssdt18.dat
+External object resolution file       ssdt17.dat
+External object resolution file       ssdt16.dat
+External object resolution file       ssdt15.dat
+External object resolution file       ssdt14.dat
+External object resolution file       ssdt13.dat
+External object resolution file       ssdt12.dat
+External object resolution file       ssdt11.dat
+External object resolution file       ssdt10.dat
+Firmware Error (ACPI): Failure creating named object [GPLD], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt9.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.UBTC], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS
+External object resolution file        ssdt8.dat
+Firmware Error (ACPI): Failure creating named object [\_SB.PMAX], AE_ALREADY_EXISTS (20240322/dswload-387)
+Could not parse external ACPI tables, AE_ALREADY_EXISTS

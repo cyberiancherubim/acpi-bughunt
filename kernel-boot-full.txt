@@ -1,0 +1,1839 @@
+Mar 07 16:47:31 CYB3R14 kernel: Linux version 6.12.0-124.40.1.el10_1.x86_64 (mockbuild@ef9b175910b2430fa37f7286f8f1732e) (gcc (GCC) 14.3.1 20250617 (Red Hat 14.3.1-2), GNU ld version 2.41-58.el10_1.2) #1 SMP PREEMPT_DYNAMIC Thu Feb 19 19:08:39 EST 2026
+Mar 07 16:47:31 CYB3R14 kernel: Command line: BOOT_IMAGE=(hd3,gpt1)/vmlinuz-6.12.0-124.40.1.el10_1.x86_64 root=/dev/mapper/What--The--Rheliii-RHIZOME ro boot=UUID=b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79 resume=UUID=8829afeb-743a-4ced-a97d-ac2bb248e19e rd.lvm.lv=What-The-Rheliii/RHIZOME rd.luks.uuid=luks-359cd55d-5003-4eb3-8c4c-418c142b1e03 rd.lvm.lv=What-The-Rheliii/EL1SH4-SP1R1T fips=1 spec_store_bypass_disable=on intel_iommu=on iommu=pt rd.driver.pre=nouveau video=efifb:mode=1920x1080 rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nouveau.modeset=0 crashkernel=2G-64G:256M,64G-:512M
+Mar 07 16:47:31 CYB3R14 kernel: x86/split lock detection: #AC: crashing the kernel on kernel split_locks and warning on user-space split_locks
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-provided physical RAM map:
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x000000000009e000-0x000000000009efff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x000000000009f000-0x000000000009ffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000000100000-0x000000006e79cfff] usable
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x000000006e79d000-0x0000000075774fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000075775000-0x00000000758fbfff] ACPI data
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000758fc000-0x0000000075a20fff] ACPI NVS
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000075a21000-0x00000000767fefff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000767ff000-0x00000000767fffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000076800000-0x000000007cffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x000000007dc00000-0x000000007fffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: BIOS-e820: [mem 0x0000000100000000-0x000000147fffffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: NX (Execute Disable) protection: active
+Mar 07 16:47:31 CYB3R14 kernel: APIC: Static calls initialized
+Mar 07 16:47:31 CYB3R14 kernel: e820: update [mem 0x5f76e018-0x5f792657] usable ==> usable
+Mar 07 16:47:31 CYB3R14 kernel: extended physical RAM map:
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000000000000-0x000000000009dfff] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000000009e000-0x000000000009efff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000000009f000-0x000000000009ffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000000100000-0x000000005f76e017] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000005f76e018-0x000000005f792657] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000005f792658-0x000000006e79cfff] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000006e79d000-0x0000000075774fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000075775000-0x00000000758fbfff] ACPI data
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000758fc000-0x0000000075a20fff] ACPI NVS
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000075a21000-0x00000000767fefff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000767ff000-0x00000000767fffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000076800000-0x000000007cffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x000000007dc00000-0x000000007fffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: reserve setup_data: [mem 0x0000000100000000-0x000000147fffffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: efi: EFI v2.8 by American Megatrends
+Mar 07 16:47:31 CYB3R14 kernel: efi: ACPI=0x758fb000 ACPI 2.0=0x758fb014 TPMFinalLog=0x7599d000 SMBIOS=0x7636d000 SMBIOS 3.0=0x7636c000 MEMATTR=0x69eb4098 ESRT=0x6c063898 MOKvar=0x760b7000 RNG=0x757f8018 TPMEventLog=0x757ea018 
+Mar 07 16:47:31 CYB3R14 kernel: random: crng init done
+Mar 07 16:47:31 CYB3R14 kernel: efi: Remove mem158: MMIO range=[0xc0000000-0xcfffffff] (256MB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: e820: remove [mem 0xc0000000-0xcfffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: efi: Not removing mem159: MMIO range=[0xfe000000-0xfe010fff] (68KB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: efi: Not removing mem160: MMIO range=[0xfec00000-0xfec00fff] (4KB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: efi: Not removing mem161: MMIO range=[0xfed00000-0xfed00fff] (4KB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: efi: Not removing mem163: MMIO range=[0xfee00000-0xfee00fff] (4KB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: efi: Remove mem164: MMIO range=[0xff000000-0xffffffff] (16MB) from e820 map
+Mar 07 16:47:31 CYB3R14 kernel: e820: remove [mem 0xff000000-0xffffffff] reserved
+Mar 07 16:47:31 CYB3R14 kernel: secureboot: Secure boot enabled
+Mar 07 16:47:31 CYB3R14 kernel: Kernel is locked down from EFI Secure Boot mode; see man kernel_lockdown.7
+Mar 07 16:47:31 CYB3R14 kernel: SMBIOS 3.6.0 present.
+Mar 07 16:47:31 CYB3R14 kernel: DMI: LENOVO R3J4GU4R/3769, BIOS O5TKT3EA 09/18/2025
+Mar 07 16:47:31 CYB3R14 kernel: DMI: Memory slots populated: 4/4
+Mar 07 16:47:31 CYB3R14 kernel: tsc: Detected 2500.000 MHz processor
+Mar 07 16:47:31 CYB3R14 kernel: tsc: Detected 2496.000 MHz TSC
+Mar 07 16:47:31 CYB3R14 kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Mar 07 16:47:31 CYB3R14 kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Mar 07 16:47:31 CYB3R14 kernel: last_pfn = 0x1480000 max_arch_pfn = 0x400000000
+Mar 07 16:47:31 CYB3R14 kernel: MTRR map: 5 entries (3 fixed + 2 variable; max 23), built from 10 variable MTRRs
+Mar 07 16:47:31 CYB3R14 kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Mar 07 16:47:31 CYB3R14 kernel: last_pfn = 0x76800 max_arch_pfn = 0x400000000
+Mar 07 16:47:31 CYB3R14 kernel: esrt: Reserving ESRT space from 0x000000006c063898 to 0x000000006c063948.
+Mar 07 16:47:31 CYB3R14 kernel: e820: update [mem 0x6c063000-0x6c063fff] usable ==> reserved
+Mar 07 16:47:31 CYB3R14 kernel: Using GB pages for direct mapping
+Mar 07 16:47:31 CYB3R14 kernel: secureboot: Secure boot enabled
+Mar 07 16:47:31 CYB3R14 kernel: RAMDISK: [mem 0x4b1e1000-0x50accfff]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Early table checksum verification disabled
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: RSDP 0x00000000758FB014 000024 (v02 LENOVO)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: XSDT 0x00000000758FA728 00010C (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FACP 0x00000000758F9000 000114 (v06 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DSDT 0x0000000075866000 09236C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FACS 0x0000000075A20000 000040
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FIDT 0x0000000075865000 00009C (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075864000 00038C (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007585E000 005D34 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: MSDM 0x000000007585D000 000055 (v03 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007585A000 002AA5 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075856000 00334F (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: HPET 0x0000000075855000 000038 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: APIC 0x0000000075854000 0001DC (v05 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: MCFG 0x0000000075853000 00003C (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075851000 001F1A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: UEFI 0x0000000075984000 000048 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: NHLT 0x0000000075850000 00002D (v00 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LPIT 0x000000007584F000 0000CC (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007584B000 002A83 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075841000 0092F4 (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DBGP 0x0000000075840000 000034 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DBG2 0x000000007583F000 000054 (v00 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x000000007583D000 00190A (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: DMAR 0x000000007583C000 000050 (v01 LENOVO TC-O5T   000013E0      01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: FPDT 0x000000007583B000 000044 (v01 LENOVO TC-O5T   000013E0 AMI  01000013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075839000 0015CA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075835000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0x0000000075831000 0039DA (v02 LENOVO TC-O5T   000013E0 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LUFT 0x00000000757FB000 034CC2 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PHAT 0x00000000757FA000 000A43 (v01 LENOVO TC-O5T   000013E0 MSFT 0100000D)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: TPM2 0x00000000757F9000 00004C (v04 LENOVO TC-O5T   000013E0 AMI  00000000)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: WSMT 0x000000007584E000 000028 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: BGRT 0x0000000075830000 000038 (v01 LENOVO TC-O5T   000013E0 AMI  00010013)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FACP table memory at [mem 0x758f9000-0x758f9113]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DSDT table memory at [mem 0x75866000-0x758f836b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FACS table memory at [mem 0x75a20000-0x75a2003f]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FIDT table memory at [mem 0x75865000-0x7586509b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75864000-0x7586438b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7585e000-0x75863d33]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving MSDM table memory at [mem 0x7585d000-0x7585d054]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7585a000-0x7585caa4]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75856000-0x7585934e]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving HPET table memory at [mem 0x75855000-0x75855037]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving APIC table memory at [mem 0x75854000-0x758541db]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving MCFG table memory at [mem 0x75853000-0x7585303b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75851000-0x75852f19]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving UEFI table memory at [mem 0x75984000-0x75984047]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving NHLT table memory at [mem 0x75850000-0x7585002c]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving LPIT table memory at [mem 0x7584f000-0x7584f0cb]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7584b000-0x7584da82]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75841000-0x7584a2f3]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DBGP table memory at [mem 0x75840000-0x75840033]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DBG2 table memory at [mem 0x7583f000-0x7583f053]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x7583d000-0x7583e909]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving DMAR table memory at [mem 0x7583c000-0x7583c04f]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving FPDT table memory at [mem 0x7583b000-0x7583b043]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75839000-0x7583a5c9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75835000-0x758389d9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving SSDT table memory at [mem 0x75831000-0x758349d9]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving LUFT table memory at [mem 0x757fb000-0x7582fcc1]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving PHAT table memory at [mem 0x757fa000-0x757faa42]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving TPM2 table memory at [mem 0x757f9000-0x757f904b]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving WSMT table memory at [mem 0x7584e000-0x7584e027]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Reserving BGRT table memory at [mem 0x75830000-0x75830037]
+Mar 07 16:47:31 CYB3R14 kernel: No NUMA configuration found
+Mar 07 16:47:31 CYB3R14 kernel: Faking a node at [mem 0x0000000000000000-0x000000147fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: NODE_DATA(0) allocated [mem 0x147ffd2cc0-0x147fffdfff]
+Mar 07 16:47:31 CYB3R14 kernel: crashkernel reserved: 0x000000002b000000 - 0x000000004b000000 (512 MB)
+Mar 07 16:47:31 CYB3R14 kernel: Zone ranges:
+Mar 07 16:47:31 CYB3R14 kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Mar 07 16:47:31 CYB3R14 kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Mar 07 16:47:31 CYB3R14 kernel:   Normal   [mem 0x0000000100000000-0x000000147fffffff]
+Mar 07 16:47:31 CYB3R14 kernel:   Device   empty
+Mar 07 16:47:31 CYB3R14 kernel: Movable zone start for each node
+Mar 07 16:47:31 CYB3R14 kernel: Early memory node ranges
+Mar 07 16:47:31 CYB3R14 kernel:   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+Mar 07 16:47:31 CYB3R14 kernel:   node   0: [mem 0x000000000009f000-0x000000000009ffff]
+Mar 07 16:47:31 CYB3R14 kernel:   node   0: [mem 0x0000000000100000-0x000000006e79cfff]
+Mar 07 16:47:31 CYB3R14 kernel:   node   0: [mem 0x00000000767ff000-0x00000000767fffff]
+Mar 07 16:47:31 CYB3R14 kernel:   node   0: [mem 0x0000000100000000-0x000000147fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000147fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Mar 07 16:47:31 CYB3R14 kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Mar 07 16:47:31 CYB3R14 kernel: On node 0, zone DMA: 96 pages in unavailable ranges
+Mar 07 16:47:31 CYB3R14 kernel: On node 0, zone DMA32: 32866 pages in unavailable ranges
+Mar 07 16:47:31 CYB3R14 kernel: On node 0, zone Normal: 6144 pages in unavailable ranges
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM-Timer IO Port: 0x1808
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+Mar 07 16:47:31 CYB3R14 kernel: IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+Mar 07 16:47:31 CYB3R14 kernel: e820: update [mem 0x64437000-0x6452afff] usable ==> reserved
+Mar 07 16:47:31 CYB3R14 kernel: TSC deadline timer available
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Max. logical packages:   1
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Max. logical dies:       1
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Max. dies per package:   1
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Max. threads per core:   1
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Num. cores per package:    10
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Num. threads per package:  10
+Mar 07 16:47:31 CYB3R14 kernel: CPU topo: Allowing 10 present CPUs plus 0 hotplug CPUs
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x0009e000-0x0009efff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x5f76e000-0x5f76efff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x5f792000-0x5f792fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x64437000-0x6452afff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x6c063000-0x6c063fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x6e79d000-0x75774fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x75775000-0x758fbfff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x758fc000-0x75a20fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x75a21000-0x767fefff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x76800000-0x7cffffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x7d000000-0x7dbfffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x7dc00000-0x7fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0x80000000-0xfdffffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfe000000-0xfe010fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfe011000-0xfebfffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed00000-0xfed00fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed01000-0xfed1ffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed20000-0xfed7ffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfed80000-0xfedfffff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Mar 07 16:47:31 CYB3R14 kernel: PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xffffffff]
+Mar 07 16:47:31 CYB3R14 kernel: [mem 0x80000000-0xfdffffff] available for PCI devices
+Mar 07 16:47:31 CYB3R14 kernel: Booting paravirtualized kernel on bare hardware
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Mar 07 16:47:31 CYB3R14 kernel: setup_percpu: NR_CPUS:8192 nr_cpumask_bits:10 nr_cpu_ids:10 nr_node_ids:1
+Mar 07 16:47:31 CYB3R14 kernel: percpu: Embedded 62 pages/cpu s217088 r8192 d28672 u524288
+Mar 07 16:47:31 CYB3R14 kernel: pcpu-alloc: s217088 r8192 d28672 u524288 alloc=1*2097152
+Mar 07 16:47:31 CYB3R14 kernel: pcpu-alloc: [0] 00 01 02 03 [0] 04 05 06 07 
+Mar 07 16:47:31 CYB3R14 kernel: pcpu-alloc: [0] 08 09 -- -- 
+Mar 07 16:47:31 CYB3R14 kernel: Kernel command line: BOOT_IMAGE=(hd3,gpt1)/vmlinuz-6.12.0-124.40.1.el10_1.x86_64 root=/dev/mapper/What--The--Rheliii-RHIZOME ro boot=UUID=b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79 resume=UUID=8829afeb-743a-4ced-a97d-ac2bb248e19e rd.lvm.lv=What-The-Rheliii/RHIZOME rd.luks.uuid=luks-359cd55d-5003-4eb3-8c4c-418c142b1e03 rd.lvm.lv=What-The-Rheliii/EL1SH4-SP1R1T fips=1 spec_store_bypass_disable=on intel_iommu=on iommu=pt rd.driver.pre=nouveau video=efifb:mode=1920x1080 rd.driver.blacklist=nouveau modprobe.blacklist=nouveau nouveau.modeset=0 crashkernel=2G-64G:256M,64G-:512M
+Mar 07 16:47:31 CYB3R14 kernel: fips mode: enabled
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: IOMMU enabled
+Mar 07 16:47:31 CYB3R14 kernel: Unknown kernel command line parameters "BOOT_IMAGE=(hd3,gpt1)/vmlinuz-6.12.0-124.40.1.el10_1.x86_64 boot=UUID=b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79 spec_store_bypass_disable=on", will be passed to user space.
+Mar 07 16:47:31 CYB3R14 kernel: Dentry cache hash table entries: 8388608 (order: 14, 67108864 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: Inode-cache hash table entries: 4194304 (order: 13, 33554432 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: Fallback order for Node 0: 0 
+Mar 07 16:47:31 CYB3R14 kernel: Built 1 zonelists, mobility grouping on.  Total pages: 20899644
+Mar 07 16:47:31 CYB3R14 kernel: Policy zone: Normal
+Mar 07 16:47:31 CYB3R14 kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Mar 07 16:47:31 CYB3R14 kernel: software IO TLB: area num 16.
+Mar 07 16:47:31 CYB3R14 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=10, Nodes=1
+Mar 07 16:47:31 CYB3R14 kernel: ftrace: allocating 53248 entries in 208 pages
+Mar 07 16:47:31 CYB3R14 kernel: ftrace: allocated 208 pages with 3 groups
+Mar 07 16:47:31 CYB3R14 kernel: Dynamic Preempt: voluntary
+Mar 07 16:47:31 CYB3R14 kernel: rcu: Preemptible hierarchical RCU implementation.
+Mar 07 16:47:31 CYB3R14 kernel: rcu:         RCU event tracing is enabled.
+Mar 07 16:47:31 CYB3R14 kernel: rcu:         RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=10.
+Mar 07 16:47:31 CYB3R14 kernel:         Trampoline variant of Tasks RCU enabled.
+Mar 07 16:47:31 CYB3R14 kernel:         Rude variant of Tasks RCU enabled.
+Mar 07 16:47:31 CYB3R14 kernel:         Tracing variant of Tasks RCU enabled.
+Mar 07 16:47:31 CYB3R14 kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Mar 07 16:47:31 CYB3R14 kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=10
+Mar 07 16:47:31 CYB3R14 kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=10.
+Mar 07 16:47:31 CYB3R14 kernel: RCU Tasks Rude: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=10.
+Mar 07 16:47:31 CYB3R14 kernel: RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=10.
+Mar 07 16:47:31 CYB3R14 kernel: NR_IRQS: 524544, nr_irqs: 2136, preallocated irqs: 16
+Mar 07 16:47:31 CYB3R14 kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Mar 07 16:47:31 CYB3R14 kernel: kfence: initialized - using 2097152 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+Mar 07 16:47:31 CYB3R14 kernel: Console: colour dummy device 80x25
+Mar 07 16:47:31 CYB3R14 kernel: printk: legacy console [tty0] enabled
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Core revision 20240827
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 99544814920 ns
+Mar 07 16:47:31 CYB3R14 kernel: APIC: Switch to symmetric I/O mode setup
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: Host address width 39
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: dmar0: reg_base_addr fed91000 ver 5:0 cap d2008c40660462 ecap f050da
+Mar 07 16:47:31 CYB3R14 kernel: DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 0
+Mar 07 16:47:31 CYB3R14 kernel: DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+Mar 07 16:47:31 CYB3R14 kernel: DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+Mar 07 16:47:31 CYB3R14 kernel: DMAR-IR: Enabled IRQ remapping in x2apic mode
+Mar 07 16:47:31 CYB3R14 kernel: x2apic enabled
+Mar 07 16:47:31 CYB3R14 kernel: APIC: Switched APIC routing to: cluster x2apic
+Mar 07 16:47:31 CYB3R14 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x23fa772cf26, max_idle_ns: 440795269835 ns
+Mar 07 16:47:31 CYB3R14 kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 4992.00 BogoMIPS (lpj=2496000)
+Mar 07 16:47:31 CYB3R14 kernel: CPU0: Thermal monitoring enabled (TM1)
+Mar 07 16:47:31 CYB3R14 kernel: x86/cpu: User Mode Instruction Prevention (UMIP) activated
+Mar 07 16:47:31 CYB3R14 kernel: CET detected: Indirect Branch Tracking enabled
+Mar 07 16:47:31 CYB3R14 kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Mar 07 16:47:31 CYB3R14 kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Mar 07 16:47:31 CYB3R14 kernel: process: using mwait in idle threads
+Mar 07 16:47:31 CYB3R14 kernel: Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled
+Mar 07 16:47:31 CYB3R14 kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Mar 07 16:47:31 CYB3R14 kernel: Register File Data Sampling: Mitigation: Clear Register File
+Mar 07 16:47:31 CYB3R14 kernel: VMSCAPE: Mitigation: IBPB before exit to userspace
+Mar 07 16:47:31 CYB3R14 kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Mar 07 16:47:31 CYB3R14 kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Mar 07 16:47:31 CYB3R14 kernel: Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Supporting XSAVE feature 0x800: 'Control-flow User registers'
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: xstate_offset[11]:  840, xstate_sizes[11]:   16
+Mar 07 16:47:31 CYB3R14 kernel: x86/fpu: Enabled xstate features 0xa07, context size is 856 bytes, using 'compacted' format.
+Mar 07 16:47:31 CYB3R14 kernel: Freeing SMP alternatives memory: 40K
+Mar 07 16:47:31 CYB3R14 kernel: pid_max: default: 32768 minimum: 301
+Mar 07 16:47:31 CYB3R14 kernel: LSM: initializing lsm=lockdown,capability,yama,selinux,bpf,landlock,ima,evm
+Mar 07 16:47:31 CYB3R14 kernel: Yama: becoming mindful.
+Mar 07 16:47:31 CYB3R14 kernel: SELinux:  Initializing.
+Mar 07 16:47:31 CYB3R14 kernel: LSM support for eBPF active
+Mar 07 16:47:31 CYB3R14 kernel: landlock: Up and running.
+Mar 07 16:47:31 CYB3R14 kernel: Mount-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: Mountpoint-cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: smpboot: CPU0: 13th Gen Intel(R) Core(TM) i5-13400F (family: 0x6, model: 0xbf, stepping: 0x2)
+Mar 07 16:47:31 CYB3R14 kernel: Performance Events: XSAVE Architectural LBR, PEBS fmt4+-baseline,  AnyThread deprecated, Alderlake Hybrid events, 32-deep LBR, full-width counters, Intel PMU driver.
+Mar 07 16:47:31 CYB3R14 kernel: core: cpu_core PMU driver: 
+Mar 07 16:47:31 CYB3R14 kernel: ... version:                5
+Mar 07 16:47:31 CYB3R14 kernel: ... bit width:              48
+Mar 07 16:47:31 CYB3R14 kernel: ... generic registers:      8
+Mar 07 16:47:31 CYB3R14 kernel: ... value mask:             0000ffffffffffff
+Mar 07 16:47:31 CYB3R14 kernel: ... max period:             00007fffffffffff
+Mar 07 16:47:31 CYB3R14 kernel: ... fixed-purpose events:   4
+Mar 07 16:47:31 CYB3R14 kernel: ... event mask:             0001000f000000ff
+Mar 07 16:47:31 CYB3R14 kernel: signal: max sigframe size: 3632
+Mar 07 16:47:31 CYB3R14 kernel: Estimated ratio of average max frequency by base frequency (times 1024): 1843
+Mar 07 16:47:31 CYB3R14 kernel: rcu: Hierarchical SRCU implementation.
+Mar 07 16:47:31 CYB3R14 kernel: rcu:         Max phase no-delay instances is 400.
+Mar 07 16:47:31 CYB3R14 kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Mar 07 16:47:31 CYB3R14 kernel: NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+Mar 07 16:47:31 CYB3R14 kernel: smp: Bringing up secondary CPUs ...
+Mar 07 16:47:31 CYB3R14 kernel: smpboot: x86: Booting SMP configuration:
+Mar 07 16:47:31 CYB3R14 kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9
+Mar 07 16:47:31 CYB3R14 kernel: core: cpu_atom PMU driver: 
+Mar 07 16:47:31 CYB3R14 kernel: ... version:                5
+Mar 07 16:47:31 CYB3R14 kernel: ... bit width:              48
+Mar 07 16:47:31 CYB3R14 kernel: ... generic registers:      6
+Mar 07 16:47:31 CYB3R14 kernel: ... value mask:             0000ffffffffffff
+Mar 07 16:47:31 CYB3R14 kernel: ... max period:             00007fffffffffff
+Mar 07 16:47:31 CYB3R14 kernel: ... fixed-purpose events:   3
+Mar 07 16:47:31 CYB3R14 kernel: ... event mask:             000000070000003f
+Mar 07 16:47:31 CYB3R14 kernel: smp: Brought up 1 node, 10 CPUs
+Mar 07 16:47:31 CYB3R14 kernel: smpboot: Total of 10 processors activated (49920.00 BogoMIPS)
+Mar 07 16:47:31 CYB3R14 kernel: node 0 deferred pages initialised in 50ms
+Mar 07 16:47:31 CYB3R14 kernel: Memory: 81434548K/83598576K available (18432K kernel code, 5805K rwdata, 14280K rodata, 4348K init, 6684K bss, 2150928K reserved, 0K cma-reserved)
+Mar 07 16:47:31 CYB3R14 kernel: devtmpfs: initialized
+Mar 07 16:47:31 CYB3R14 kernel: x86/mm: Memory block size: 2048MB
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM: Registering ACPI NVS region [mem 0x758fc000-0x75a20fff] (1200128 bytes)
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Mar 07 16:47:31 CYB3R14 kernel: futex hash table entries: 4096 (order: 6, 262144 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: pinctrl core: initialized pinctrl subsystem
+Mar 07 16:47:31 CYB3R14 kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Mar 07 16:47:31 CYB3R14 kernel: DMA: preallocated 4096 KiB GFP_KERNEL pool for atomic allocations
+Mar 07 16:47:31 CYB3R14 kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Mar 07 16:47:31 CYB3R14 kernel: DMA: preallocated 4096 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Mar 07 16:47:31 CYB3R14 kernel: audit: initializing netlink subsys (disabled)
+Mar 07 16:47:31 CYB3R14 kernel: audit: type=2000 audit(1772920050.087:1): state=initialized audit_enabled=0 res=1
+Mar 07 16:47:31 CYB3R14 kernel: thermal_sys: Registered thermal governor 'fair_share'
+Mar 07 16:47:31 CYB3R14 kernel: thermal_sys: Registered thermal governor 'step_wise'
+Mar 07 16:47:31 CYB3R14 kernel: thermal_sys: Registered thermal governor 'user_space'
+Mar 07 16:47:31 CYB3R14 kernel: cpuidle: using governor menu
+Mar 07 16:47:31 CYB3R14 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Mar 07 16:47:31 CYB3R14 kernel: PCI: ECAM [mem 0xc0000000-0xcfffffff] (base 0xc0000000) for domain 0000 [bus 00-ff]
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Using configuration type 1 for base access
+Mar 07 16:47:31 CYB3R14 kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Mar 07 16:47:31 CYB3R14 kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+Mar 07 16:47:31 CYB3R14 kernel: HugeTLB: 16380 KiB vmemmap can be freed for a 1.00 GiB page
+Mar 07 16:47:31 CYB3R14 kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Mar 07 16:47:31 CYB3R14 kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Mar 07 16:47:31 CYB3R14 kernel: cryptd: max_cpu_qlen set to 1000
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Module Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Processor Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\GPLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\GUPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS01._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS01._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS02._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS02._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS03._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS03._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS04._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS04._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS05._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS05._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS06._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS06._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS07._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS07._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS08._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS08._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS09._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS09._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS10._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS10._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS11._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS11._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS12._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS12._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS13._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS13._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS14._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.HS14._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS01._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS01._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS02._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS02._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS03._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS03._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS04._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS04._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS05._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS05._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS06._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS06._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS07._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS07._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS08._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS08._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS09._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS09._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS10._UPC], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.XHCI.RHUB.SS10._PLD], AE_ALREADY_EXISTS (20240827/dswload2-326)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, During name lookup/catalog (20240827/psobject-220)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Skipping parse of AML opcode: OpcodeName unavailable (0x0014)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: 12 ACPI AML tables successfully acquired and loaded
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018B7400 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018BE800 000560 (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F20191BA00 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018BD000 0004B5 (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F5A000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F58000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F200F5C000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Dynamic OEM Table Load:
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: SSDT 0xFFFF88F2018A8000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Interpreter enabled
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PM: (supports S0 S3 S4 S5)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Using IOAPIC for interrupt routing
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Ignoring E820 reservations for host bridge windows
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: Enabled 6 GPEs in block 00 to 7F
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_SB_.PC00.XHCI.RHUB.HS14.BTRT: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_SB_.PC00.CNVW.WRST: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN00: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN01: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN02: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN03: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \_TZ_.FN04: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: \PIN_: New power resource
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+Mar 07 16:47:31 CYB3R14 kernel: acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI EDR HPX-Type3]
+Mar 07 16:47:31 CYB3R14 kernel: acpi PNP0A08:00: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR DPC]
+Mar 07 16:47:31 CYB3R14 kernel: PCI host bridge to bus 0000:00
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [mem 0x000e0000-0x000effff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [mem 0x80000000-0xbfffffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: root bus resource [bus 00-fe]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:00.0: [8086:4648] type 00 class 0x060000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: [8086:460d] type 01 class 0x060400 PCIe Root Port
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [io  0x4000-0x4fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [mem 0x80000000-0x810fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [mem 0x4000000000-0x4011ffffff 64bit pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: PME# supported from D0 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: PTM enabled (root), 4ns granularity
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: [8086:464d] type 01 class 0x060400 PCIe Root Port
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: PCI bridge to [bus 02]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0:   bridge window [mem 0x81300000-0x813fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: PTM enabled (root), 4ns granularity
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:0a.0: [8086:467d] type 00 class 0x118000 PCIe Root Complex Integrated Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:0a.0: BAR 0 [mem 0x4012110000-0x4012117fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:0a.0: enabling Extended Tags
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.0: [8086:7ae0] type 00 class 0x0c0330 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.0: BAR 0 [mem 0x4012100000-0x401210ffff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.0: PME# supported from D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.2: [8086:7aa7] type 00 class 0x050000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.2: BAR 0 [mem 0x4012128000-0x401212bfff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.2: BAR 2 [mem 0x4012134000-0x4012134fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.3: [8086:7af0] type 00 class 0x028000 PCIe Root Complex Integrated Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.3: BAR 0 [mem 0x4012124000-0x4012127fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.3: PME# supported from D0 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.0: [8086:7acc] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.1: [8086:7acd] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.1: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.2: [8086:7ace] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.2: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.3: [8086:7acf] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.3: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:16.0: [8086:7ae8] type 00 class 0x078000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:16.0: BAR 0 [mem 0x401212f000-0x401212ffff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:16.0: PME# supported from D3hot
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: [8086:7ae2] type 00 class 0x010601 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 0 [mem 0x81400000-0x81401fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 1 [mem 0x81403000-0x814030ff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 2 [io  0x5050-0x5057]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 3 [io  0x5040-0x5043]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 4 [io  0x5020-0x503f]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: BAR 5 [mem 0x81402000-0x814027ff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: PME# supported from D3hot
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.0: [8086:7afc] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.0: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.1: [8086:7afd] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.1: BAR 0 [mem 0x00000000-0x00000fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: [8086:7ac8] type 01 class 0x060400 PCIe Root Port
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: PCI bridge to [bus 03]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0:   bridge window [mem 0x81200000-0x812fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: PME# supported from D0 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: PTM enabled (root), 4ns granularity
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: [8086:7ab8] type 01 class 0x060400 PCIe Root Port
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: PCI bridge to [bus 04]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0:   bridge window [mem 0x81100000-0x811fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: PTM enabled (root), 4ns granularity
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.0: [8086:7a86] type 00 class 0x060100 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.3: [8086:7ad0] type 00 class 0x040300 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.3: BAR 0 [mem 0x4012120000-0x4012123fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.3: BAR 4 [mem 0x4012000000-0x40120fffff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.3: PME# supported from D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.4: [8086:7aa3] type 00 class 0x0c0500 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.4: BAR 0 [mem 0x401212c000-0x401212c0ff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.4: BAR 4 [io  0xefa0-0xefbf]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.5: [8086:7aa4] type 00 class 0x0c8000 conventional PCI endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: [10de:2504] type 00 class 0x030000 PCIe Legacy Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: BAR 0 [mem 0x80000000-0x80ffffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: BAR 1 [mem 0x4000000000-0x400fffffff 64bit pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: BAR 3 [mem 0x4010000000-0x4011ffffff 64bit pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: BAR 5 [io  0x4000-0x407f]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: ROM [mem 0x81000000-0x8107ffff pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: PME# supported from D0 D3hot
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.1: [10de:228e] type 00 class 0x040300 PCIe Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.1: BAR 0 [mem 0x81080000-0x81083fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:02:00.0: [2646:5017] type 00 class 0x010802 PCIe Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:02:00.0: BAR 0 [mem 0x81300000-0x81303fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: PCI bridge to [bus 02]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:03:00.0: [1e4b:1602] type 00 class 0x010802 PCIe Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:03:00.0: BAR 0 [mem 0x81200000-0x81203fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: PCI bridge to [bus 03]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: [10ec:8125] type 00 class 0x020000 PCIe Endpoint
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: BAR 0 [io  0x3000-0x30ff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: BAR 2 [mem 0x81100000-0x8110ffff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: BAR 4 [mem 0x81110000-0x81113fff 64bit]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: supports D1 D2
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: PCI bridge to [bus 04]
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 1
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKE configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKF configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKG configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: PCI: Interrupt link LNKH configured for IRQ 0
+Mar 07 16:47:31 CYB3R14 kernel: iommu: Default domain type: Passthrough (set via kernel command line)
+Mar 07 16:47:31 CYB3R14 kernel: SCSI subsystem initialized
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type USB registered
+Mar 07 16:47:31 CYB3R14 kernel: usbcore: registered new interface driver usbfs
+Mar 07 16:47:31 CYB3R14 kernel: usbcore: registered new interface driver hub
+Mar 07 16:47:31 CYB3R14 kernel: usbcore: registered new device driver usb
+Mar 07 16:47:31 CYB3R14 kernel: pps_core: LinuxPPS API ver. 1 registered
+Mar 07 16:47:31 CYB3R14 kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Mar 07 16:47:31 CYB3R14 kernel: PTP clock support registered
+Mar 07 16:47:31 CYB3R14 kernel: EDAC MC: Ver: 3.0.0
+Mar 07 16:47:31 CYB3R14 kernel: efivars: Registered efivars operations
+Mar 07 16:47:31 CYB3R14 kernel: NetLabel: Initializing
+Mar 07 16:47:31 CYB3R14 kernel: NetLabel:  domain hash size = 128
+Mar 07 16:47:31 CYB3R14 kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Mar 07 16:47:31 CYB3R14 kernel: NetLabel:  unlabeled traffic allowed by default
+Mar 07 16:47:31 CYB3R14 kernel: PCI: Using ACPI for IRQ routing
+Mar 07 16:47:31 CYB3R14 kernel: PCI: pci_cache_line_size set to 64 bytes
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.5: BAR 0 [mem 0xfe010000-0xfe010fff]: can't claim; no compatible bridge window
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x0009e000-0x0009ffff]
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x5f76e018-0x5fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x64437000-0x67ffffff]
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x6c063000-0x6fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x6e79d000-0x6fffffff]
+Mar 07 16:47:31 CYB3R14 kernel: e820: reserve RAM buffer [mem 0x76800000-0x77ffffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: vgaarb: setting as boot VGA device
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: vgaarb: bridge control possible
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: vgaarb: VGA device added: decodes=io+mem,owns=none,locks=none
+Mar 07 16:47:31 CYB3R14 kernel: vgaarb: loaded
+Mar 07 16:47:31 CYB3R14 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+Mar 07 16:47:31 CYB3R14 kernel: hpet0: 8 comparators, 64-bit 19.200000 MHz counter
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: Switched to clocksource tsc-early
+Mar 07 16:47:31 CYB3R14 kernel: VFS: Disk quotas dquot_6.6.0
+Mar 07 16:47:31 CYB3R14 kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Mar 07 16:47:31 CYB3R14 kernel: pnp: PnP ACPI init
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a00-0x0a0f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a10-0x0a1f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a20-0x0a2f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a30-0x0a3f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a40-0x0a4f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a50-0x0a5f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a60-0x0a6f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a70-0x0a7f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:00: [io  0x0a80-0x0a8f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:01: [io  0x0680-0x069f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:01: [io  0x164e-0x164f] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfedc0000-0xfedc7fff] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfeda0000-0xfeda0fff] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfeda1000-0xfeda1fff] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xc0000000-0xcfffffff] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfed20000-0xfed7ffff] could not be reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfed90000-0xfed93fff] could not be reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfed45000-0xfed8ffff] could not be reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:02: [mem 0xfee00000-0xfeefffff] could not be reserved
+Mar 07 16:47:31 CYB3R14 kernel: system 00:03: [io  0x2000-0x20fe] has been reserved
+Mar 07 16:47:31 CYB3R14 kernel: pnp: PnP ACPI: found 5 devices
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Mar 07 16:47:31 CYB3R14 kernel: NET: Registered PF_INET protocol family
+Mar 07 16:47:31 CYB3R14 kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: tcp_listen_portaddr_hash hash table entries: 65536 (order: 8, 1048576 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: TCP established hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: TCP: Hash tables configured (established 524288 bind 65536)
+Mar 07 16:47:31 CYB3R14 kernel: MPTCP token hash table entries: 65536 (order: 8, 1572864 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: UDP hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: UDP-Lite hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Mar 07 16:47:31 CYB3R14 kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Mar 07 16:47:31 CYB3R14 kernel: NET: Registered PF_XDP protocol family
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.0: BAR 0 [mem 0x4012118000-0x4012118fff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.1: BAR 0 [mem 0x4012119000-0x4012119fff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.2: BAR 0 [mem 0x401211a000-0x401211afff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.3: BAR 0 [mem 0x401211b000-0x401211bfff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.0: BAR 0 [mem 0x401211c000-0x401211cfff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.1: BAR 0 [mem 0x401211d000-0x401211dfff 64bit]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.5: BAR 0 [mem 0x81404000-0x81404fff]: assigned
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: PCI bridge to [bus 01]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [io  0x4000-0x4fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [mem 0x80000000-0x810fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0:   bridge window [mem 0x4000000000-0x4011ffffff 64bit pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: PCI bridge to [bus 02]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0:   bridge window [mem 0x81300000-0x813fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: PCI bridge to [bus 03]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0:   bridge window [mem 0x81200000-0x812fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: PCI bridge to [bus 04]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0:   bridge window [mem 0x81100000-0x811fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 7 [mem 0x000e0000-0x000effff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 8 [mem 0x80000000-0xbfffffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:00: resource 9 [mem 0x4000000000-0x7fffffffff window]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:01: resource 0 [io  0x4000-0x4fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:01: resource 1 [mem 0x80000000-0x810fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:01: resource 2 [mem 0x4000000000-0x4011ffffff 64bit pref]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:02: resource 1 [mem 0x81300000-0x813fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:03: resource 1 [mem 0x81200000-0x812fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:04: resource 0 [io  0x3000-0x3fff]
+Mar 07 16:47:31 CYB3R14 kernel: pci_bus 0000:04: resource 1 [mem 0x81100000-0x811fffff]
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.1: extending delay after power-on from D3hot to 20 msec
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.1: D0 power state depends on 0000:01:00.0
+Mar 07 16:47:31 CYB3R14 kernel: PCI: CLS 64 bytes, default 64
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: No RMRR found
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: No ATSR found
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: No SATC found
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: dmar0: Using Queued invalidation
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:00.0: Adding to iommu group 0
+Mar 07 16:47:31 CYB3R14 kernel: Trying to unpack rootfs image as initramfs...
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:01.0: Adding to iommu group 1
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:06.0: Adding to iommu group 2
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:0a.0: Adding to iommu group 3
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.0: Adding to iommu group 4
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.2: Adding to iommu group 4
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:14.3: Adding to iommu group 5
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.0: Adding to iommu group 6
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.1: Adding to iommu group 6
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.2: Adding to iommu group 6
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:15.3: Adding to iommu group 6
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:16.0: Adding to iommu group 7
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:17.0: Adding to iommu group 8
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.0: Adding to iommu group 9
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:19.1: Adding to iommu group 9
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1a.0: Adding to iommu group 10
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1c.0: Adding to iommu group 11
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.0: Adding to iommu group 12
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.3: Adding to iommu group 12
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.4: Adding to iommu group 12
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:00:1f.5: Adding to iommu group 12
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.0: Adding to iommu group 13
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:01:00.1: Adding to iommu group 13
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:02:00.0: Adding to iommu group 14
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:03:00.0: Adding to iommu group 15
+Mar 07 16:47:31 CYB3R14 kernel: pci 0000:04:00.0: Adding to iommu group 16
+Mar 07 16:47:31 CYB3R14 kernel: DMAR: Intel(R) Virtualization Technology for Directed I/O
+Mar 07 16:47:31 CYB3R14 kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Mar 07 16:47:31 CYB3R14 kernel: software IO TLB: mapped [mem 0x0000000065eb4000-0x0000000069eb4000] (64MB)
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type thunderbolt registered
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x23fa772cf26, max_idle_ns: 440795269835 ns
+Mar 07 16:47:31 CYB3R14 kernel: clocksource: Switched to clocksource tsc
+Mar 07 16:47:31 CYB3R14 kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+Mar 07 16:47:31 CYB3R14 kernel: Initialise system trusted keyrings
+Mar 07 16:47:31 CYB3R14 kernel: Key type blacklist registered
+Mar 07 16:47:31 CYB3R14 kernel: workingset: timestamp_bits=36 max_order=25 bucket_order=0
+Mar 07 16:47:31 CYB3R14 kernel: zbud: loaded
+Mar 07 16:47:31 CYB3R14 kernel: integrity: Platform Keyring initialized
+Mar 07 16:47:31 CYB3R14 kernel: integrity: Machine keyring initialized
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for sha3-256-generic (sha3-256) passed
+Mar 07 16:47:31 CYB3R14 kernel: NET: Registered PF_ALG protocol family
+Mar 07 16:47:31 CYB3R14 kernel: Key type asymmetric registered
+Mar 07 16:47:31 CYB3R14 kernel: Asymmetric key parser 'x509' registered
+Mar 07 16:47:31 CYB3R14 kernel: Freeing initrd memory: 91056K
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for sha256-ni (sha256) passed
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for hmac(sha256-ni) (hmac(sha256)) passed
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for CTR-KDF (hmac(sha256)) passed
+Mar 07 16:47:31 CYB3R14 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 246)
+Mar 07 16:47:31 CYB3R14 kernel: io scheduler mq-deadline registered
+Mar 07 16:47:31 CYB3R14 kernel: io scheduler kyber registered
+Mar 07 16:47:31 CYB3R14 kernel: io scheduler bfq registered
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for crct10dif-generic (crct10dif) passed
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for crc32c-generic (crc32c) passed
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for crc64-rocksoft-generic (crc64-rocksoft) passed
+Mar 07 16:47:31 CYB3R14 kernel: atomic64_test: passed for x86-64 platform with CX8 and with SSE
+Mar 07 16:47:31 CYB3R14 kernel: alg: self-tests for sha1-ni (sha1) passed
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:01.0: PME: Signaling with IRQ 121
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:01.0: AER: enabled with IRQ 121
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:06.0: PME: Signaling with IRQ 122
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:06.0: AER: enabled with IRQ 122
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:1a.0: PME: Signaling with IRQ 123
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:1a.0: AER: enabled with IRQ 123
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:1c.0: PME: Signaling with IRQ 124
+Mar 07 16:47:31 CYB3R14 kernel: pcieport 0000:00:1c.0: AER: enabled with IRQ 124
+Mar 07 16:47:31 CYB3R14 kernel: shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Mar 07 16:47:31 CYB3R14 kernel: Monitor-Mwait will be used to enter C-1 state
+Mar 07 16:47:31 CYB3R14 kernel: Monitor-Mwait will be used to enter C-2 state
+Mar 07 16:47:31 CYB3R14 kernel: Monitor-Mwait will be used to enter C-3 state
+Mar 07 16:47:31 CYB3R14 kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Sleep Button [SLPB]
+Mar 07 16:47:31 CYB3R14 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Power Button [PWRB]
+Mar 07 16:47:31 CYB3R14 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: button: Power Button [PWRF]
+Mar 07 16:47:31 CYB3R14 kernel: thermal LNXTHERM:00: registered as thermal_zone0
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: thermal: Thermal Zone [TZ00] (28 C)
+Mar 07 16:47:31 CYB3R14 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Mar 07 16:47:31 CYB3R14 kernel: serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+Mar 07 16:47:31 CYB3R14 kernel: Non-volatile memory driver v1.3
+Mar 07 16:47:31 CYB3R14 kernel: ACPI: bus type drm_connector registered
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:15.0: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:15.1: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:15.2: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:15.3: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:19.0: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: intel-lpss 0000:00:19.1: enabling device (0004 -> 0006)
+Mar 07 16:47:31 CYB3R14 kernel: rdac: device handler registered
+Mar 07 16:47:31 CYB3R14 kernel: hp_sw: device handler registered
+Mar 07 16:47:31 CYB3R14 kernel: emc: device handler registered
+Mar 07 16:47:31 CYB3R14 kernel: alua: device handler registered
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000200009810
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: xHCI Host Controller
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+Mar 07 16:47:31 CYB3R14 kernel: xhci_hcd 0000:00:14.0: Host supports USB 3.2 Enhanced SuperSpeed
+Mar 07 16:47:33 CYB3R14 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.12
+Mar 07 16:47:33 CYB3R14 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Mar 07 16:47:33 CYB3R14 kernel: usb usb1: Product: xHCI Host Controller
+Mar 07 16:47:33 CYB3R14 kernel: usb usb1: Manufacturer: Linux 6.12.0-124.40.1.el10_1.x86_64 xhci-hcd
+Mar 07 16:47:33 CYB3R14 kernel: usb usb1: SerialNumber: 0000:00:14.0
+Mar 07 16:47:33 CYB3R14 kernel: hub 1-0:1.0: USB hub found
+Mar 07 16:47:33 CYB3R14 kernel: hub 1-0:1.0: 16 ports detected
+Mar 07 16:47:33 CYB3R14 kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 6.12
+Mar 07 16:47:33 CYB3R14 kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Mar 07 16:47:33 CYB3R14 kernel: usb usb2: Product: xHCI Host Controller
+Mar 07 16:47:33 CYB3R14 kernel: usb usb2: Manufacturer: Linux 6.12.0-124.40.1.el10_1.x86_64 xhci-hcd
+Mar 07 16:47:33 CYB3R14 kernel: usb usb2: SerialNumber: 0000:00:14.0
+Mar 07 16:47:33 CYB3R14 kernel: hub 2-0:1.0: USB hub found
+Mar 07 16:47:33 CYB3R14 kernel: hub 2-0:1.0: 10 ports detected
+Mar 07 16:47:33 CYB3R14 kernel: usb: port power management may be unreliable
+Mar 07 16:47:33 CYB3R14 kernel: usbcore: registered new interface driver usbserial_generic
+Mar 07 16:47:33 CYB3R14 kernel: usbserial: USB Serial support registered for generic
+Mar 07 16:47:33 CYB3R14 kernel: i8042: PNP: No PS/2 controller found.
+Mar 07 16:47:33 CYB3R14 kernel: mousedev: PS/2 mouse device common for all mice
+Mar 07 16:47:33 CYB3R14 kernel: rtc_cmos rtc_cmos: RTC can wake from S4
+Mar 07 16:47:33 CYB3R14 kernel: rtc_cmos rtc_cmos: registered as rtc0
+Mar 07 16:47:33 CYB3R14 kernel: rtc_cmos rtc_cmos: setting system clock to 2026-03-07T21:47:31 UTC (1772920051)
+Mar 07 16:47:33 CYB3R14 kernel: rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram
+Mar 07 16:47:33 CYB3R14 kernel: intel_pstate: Intel P-state driver initializing
+Mar 07 16:47:33 CYB3R14 kernel: Hybrid CPU capacity scaling enabled
+Mar 07 16:47:33 CYB3R14 kernel: intel_pstate: HWP enabled
+Mar 07 16:47:33 CYB3R14 kernel: [drm] Initialized simpledrm 1.0.0 for simple-framebuffer.0 on minor 0
+Mar 07 16:47:33 CYB3R14 kernel: Console: switching to colour frame buffer device 240x67
+Mar 07 16:47:33 CYB3R14 kernel: simple-framebuffer simple-framebuffer.0: [drm] fb0: simpledrmdrmfb frame buffer device
+Mar 07 16:47:33 CYB3R14 kernel: hid: raw HID events driver (C) Jiri Kosina
+Mar 07 16:47:33 CYB3R14 kernel: usbcore: registered new interface driver usbhid
+Mar 07 16:47:33 CYB3R14 kernel: usbhid: USB HID core driver
+Mar 07 16:47:33 CYB3R14 kernel: drop_monitor: Initializing network drop monitor service
+Mar 07 16:47:33 CYB3R14 kernel: Initializing XFRM netlink socket
+Mar 07 16:47:33 CYB3R14 kernel: NET: Registered PF_INET6 protocol family
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha1-ni) (hmac(sha1)) passed
+Mar 07 16:47:33 CYB3R14 kernel: Segment Routing with IPv6
+Mar 07 16:47:33 CYB3R14 kernel: In-situ OAM (IOAM) with IPv6
+Mar 07 16:47:33 CYB3R14 kernel: NET: Registered PF_PACKET protocol family
+Mar 07 16:47:33 CYB3R14 kernel: mpls_gso: MPLS GSO support
+Mar 07 16:47:33 CYB3R14 kernel: ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+Mar 07 16:47:33 CYB3R14 kernel: microcode: Current revision: 0x0000003d
+Mar 07 16:47:33 CYB3R14 kernel: microcode: Updated early from: 0x00000020
+Mar 07 16:47:33 CYB3R14 kernel: IPI shorthand broadcast: enabled
+Mar 07 16:47:33 CYB3R14 kernel: AES CTR mode by8 optimization enabled
+Mar 07 16:47:33 CYB3R14 kernel: sched_clock: Marking stable (563000801, 4787237)->(572571905, -4783867)
+Mar 07 16:47:33 CYB3R14 kernel: registered taskstats version 1
+Mar 07 16:47:33 CYB3R14 kernel: Loading compiled-in X.509 certificates
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha512-avx2 (sha512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rsa-generic (rsa) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for pkcs1pad(rsa-generic,sha512) (pkcs1pad(rsa,sha512)) passed
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: d5c070778b2e44852f9fb698cde1b7550509024b'
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for pkcs1pad(rsa-generic,sha256) (pkcs1pad(rsa,sha256)) passed
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux Driver Update Program (key 3): bf57f3e87362bc7229d9f465321773dfd1f77a80'
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kpatch signing key: 4d38fd864ebe18c5f0b72e3852e2014c3a676fc8'
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Nvidia GPU OOT signing 001: 55e1cef88193e60419f0b0ec379c49f77545acf0'
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'RH-IMA-CA: Red Hat IMA CA: fb31825dd0e073685b264e3038963673f753959a'
+Mar 07 16:47:33 CYB3R14 kernel: Demotion targets for Node 0: null
+Mar 07 16:47:33 CYB3R14 kernel: page_owner is disabled
+Mar 07 16:47:33 CYB3R14 kernel: Key type .fscrypt registered
+Mar 07 16:47:33 CYB3R14 kernel: Key type fscrypt-provisioning registered
+Mar 07 16:47:33 CYB3R14 kernel: Key type big_key registered
+Mar 07 16:47:33 CYB3R14 kernel: Key type trusted registered
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for aes-aesni (aes) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecb(aes-aesni) (ecb(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cbc(ecb(aes-aesni)) (cbc(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: Key type encrypted registered
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Lenovo UEFI CA 2014: 4b91a68732eaefdd2c8ffffc6b027ec3449e9c8f'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Trust - Lenovo Certificate: bc19ccf68446c18b4a08dce9b1cb4deb'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Microsoft UEFI CA 2023: 81aa6b3244c935bce0d6628af39827421e32497d'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Microsoft Option ROM UEFI CA 2023: 514fbf937fa46fb57bf07af8bed84b3b864b1711'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation: Windows UEFI CA 2023: aefc5fbbbe055d8f8daa585473499417ab5a5272'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Microsoft Corporation UEFI CA 2011: 13adbf4309bd82709c8cd54f316ed522988a1bd4'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:db
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Microsoft Windows Production PCA 2011: a92902398e16c49778cd90f99e4f9ae17c55af53'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Red Hat Secure Boot CA 5: cc6fa5e72868ba494e939bbd680b9144769a9f8f'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Red Hat Secure Boot CA 8: e1c6c580aa1e21d585aad9bf20f3929e5ec1f08b'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'VMware: 895610442d9b8bcb19b30ccfa154b62d81e046c4'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'HYP3R-P4NTH3R Secure Boot: e563940a7c00403e4f94c9966f96b177fc5aa12d'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'DKMS module signing key: c432bc627d027036e3b74455738edefc4d012ba7'
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loading X.509 certificate: UEFI:MokListRT (MOKvar table)
+Mar 07 16:47:33 CYB3R14 kernel: integrity: Loaded X.509 cert 'Local Module Signing: c64786e21b12225e78a297824b1e890330ec2f24'
+Mar 07 16:47:33 CYB3R14 kernel: Loading compiled-in module X.509 certificates
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Red Hat Enterprise Linux kernel signing key: d5c070778b2e44852f9fb698cde1b7550509024b'
+Mar 07 16:47:33 CYB3R14 kernel: ima: Allocated hash algorithm: sha256
+Mar 07 16:47:33 CYB3R14 kernel: evm: Initialising EVM extended attributes:
+Mar 07 16:47:33 CYB3R14 kernel: audit: type=1807 audit(1772920051.556:2): action=measure func=KEXEC_KERNEL_CHECK res=1
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.selinux
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.SMACK64 (disabled)
+Mar 07 16:47:33 CYB3R14 kernel: audit: type=1807 audit(1772920051.556:3): action=appraise func=POLICY_CHECK appraise_type=imasig res=1
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.SMACK64EXEC (disabled)
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.SMACK64TRANSMUTE (disabled)
+Mar 07 16:47:33 CYB3R14 kernel: audit: type=1807 audit(1772920051.556:4): action=measure func=MODULE_CHECK res=1
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.SMACK64MMAP (disabled)
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.apparmor (disabled)
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.ima
+Mar 07 16:47:33 CYB3R14 kernel: evm: security.capability
+Mar 07 16:47:33 CYB3R14 kernel: evm: HMAC attrs: 0x1
+Mar 07 16:47:33 CYB3R14 kernel: alg: xctr(aes) (xctr-aes-aesni) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for jitterentropy_rng (jitterentropy_rng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: poly1305 (poly1305-simd) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: xchacha12 (xchacha12-simd) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: xchacha20 (xchacha20-simd) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: chacha20 (chacha20-simd) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ecdh-nist-p384 (ecdh-nist-p384-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ecdh-nist-p256 (ecdh-nist-p256-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ecdh-nist-p192 (ecdh-nist-p192-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ghash (ghash-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_sha512 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_hmac_sha512 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_sha512 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_ctr_aes256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_ctr_aes192 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: md5 (md5-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecb-cipher_null (ecb(cipher_null)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: digest_null (digest_null-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: compress_null (compress_null-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ecdsa-nist-p192 (ecdsa-nist-p192-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: dh (dh-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for lzo-rle-scomp (lzo-rle) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for lzo-rle-generic (lzo-rle) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for lzo-scomp (lzo) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for lzo-generic (lzo) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for deflate-scomp (deflate) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for deflate-generic (deflate) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for aes-generic (aes) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cipher_null-generic (cipher_null) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha384-avx (sha384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha384-ssse3 (sha384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha256-ssse3 (sha256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha512-ssse3 (sha512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224-avx (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha512-avx (sha512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224-ni (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha256-avx2 (sha256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224-avx2 (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha384-avx2 (sha384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha256-avx (sha256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-512-generic (sha3-512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224-ssse3 (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha1-avx2 (sha1) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha1-avx (sha1) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha1-ssse3 (sha1) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-384-generic (sha3-384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-224-generic (sha3-224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha384-generic (sha384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha512-generic (sha512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224-generic (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha256-generic (sha256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_sha256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha1-generic (sha1) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecb-aes-aesni (ecb(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecdsa-nist-p256-generic (ecdsa-nist-p256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_hmac_sha256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_hmac_sha256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_sha256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xts-aes-aesni (xts(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cbc-aes-aesni (cbc(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for generic-gcm-aesni-avx (gcm(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc4106-gcm-aesni-avx (rfc4106(gcm(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xts-aes-vaes-avx2 (xts(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xts-aes-aesni-avx (xts(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ctr-aes-aesni (ctr(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_ctr_aes192 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_pr_ctr_aes128 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for generic-gcm-aesni (gcm(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_ctr_aes128 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc4106-gcm-aesni (rfc4106(gcm(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_ctr_aes256 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha512-avx2) (hmac(sha512)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cts-cbc-aes-aesni (cts(cbc(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for drbg_nopr_hmac_sha512 (stdrng) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecdsa-nist-p521-generic (ecdsa-nist-p521) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecdsa-nist-p384-generic (ecdsa-nist-p384) passed
+Mar 07 16:47:33 CYB3R14 kernel: Running certificate verification RSA selftest
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Certificate verification self-testing key: f58703bb33ce1b73ee02eccdee5b8817518fe3db'
+Mar 07 16:47:33 CYB3R14 kernel: Running certificate verification ECDSA selftest
+Mar 07 16:47:33 CYB3R14 kernel: Loaded X.509 cert 'Certificate verification ECDSA self-testing key: 2900bcea1deb7bc8479a84a23d758efdfdd2b2d3'
+Mar 07 16:47:33 CYB3R14 kernel: Lockdown: swapper/0: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:47:33 CYB3R14 kernel: clk: Disabling unused clocks
+Mar 07 16:47:33 CYB3R14 kernel: PM: genpd: Disabling unused power domains
+Mar 07 16:47:33 CYB3R14 kernel: Freeing unused decrypted memory: 2028K
+Mar 07 16:47:33 CYB3R14 kernel: Freeing unused kernel image (initmem) memory: 4348K
+Mar 07 16:47:33 CYB3R14 kernel: Write protecting the kernel read-only data: 32768k
+Mar 07 16:47:33 CYB3R14 kernel: Freeing unused kernel image (rodata/data gap) memory: 56K
+Mar 07 16:47:33 CYB3R14 kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Mar 07 16:47:33 CYB3R14 kernel: Run /init as init process
+Mar 07 16:47:33 CYB3R14 kernel:   with arguments:
+Mar 07 16:47:33 CYB3R14 kernel:     /init
+Mar 07 16:47:33 CYB3R14 kernel:   with environment:
+Mar 07 16:47:33 CYB3R14 kernel:     HOME=/
+Mar 07 16:47:33 CYB3R14 kernel:     TERM=linux
+Mar 07 16:47:33 CYB3R14 kernel:     BOOT_IMAGE=(hd3,gpt1)/vmlinuz-6.12.0-124.40.1.el10_1.x86_64
+Mar 07 16:47:33 CYB3R14 kernel:     boot=UUID=b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79
+Mar 07 16:47:33 CYB3R14 kernel:     spec_store_bypass_disable=on
+Mar 07 16:47:33 CYB3R14 systemd[1]: Successfully made /usr/ read-only.
+Mar 07 16:47:33 CYB3R14 systemd[1]: systemd 257-13.el10-g833aa52 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +IPE +SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +SYSVINIT +LIBARCHIVE)
+Mar 07 16:47:33 CYB3R14 systemd[1]: Detected architecture x86-64.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Running in initrd.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Hostname set to <CYB3R14>.
+Mar 07 16:47:33 CYB3R14 kernel: Lockdown: systemd: /dev/mem,kmem,port is restricted; see man kernel_lockdown.7
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-1: new full-speed USB device number 2 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Mar 07 16:47:33 CYB3R14 systemd[1]: Configuration file /usr/lib/systemd/system/iscsiuio.socket.d/dracut.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Configuration file /usr/lib/systemd/system/iscsiuio.service.d/dracut.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Configuration file /usr/lib/systemd/system/iscsid.service.d/dracut.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Configuration file /usr/lib/systemd/system/iscsi-shutdown.service is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Configuration file /usr/lib/systemd/system/iscsid.socket.d/dracut.conf is marked world-inaccessible. This has no effect as configuration data is accessible via APIs without restrictions. Proceeding anyway.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Queued start job for default target initrd.target.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Created slice system-modprobe.slice - Slice /system/modprobe.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Created slice system-systemd\x2dcryptsetup.slice - Slice /system/systemd-cryptsetup.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-359cd55d\x2d5003\x2d4eb3\x2d8c4c\x2d418c142b1e03.device - /dev/disk/by-uuid/359cd55d-5003-4eb3-8c4c-418c142b1e03...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-8829afeb\x2d743a\x2d4ced\x2da97d\x2dac2bb248e19e.device - /dev/disk/by-uuid/8829afeb-743a-4ced-a97d-ac2bb248e19e...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Expecting device dev-mapper-What\x2d\x2dThe\x2d\x2dRheliii\x2dRHIZOME.device - /dev/mapper/What--The--Rheliii-RHIZOME...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target initrd-usr-fs.target - Initrd /usr File System.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target slices.target - Slice Units.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target swap.target - Swaps.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target timers.target - Timer Units.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on dbus.socket - D-Bus System Message Bus Socket.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on iscsid.socket - Open-iSCSI iscsid Socket.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on iscsiuio.socket - Open-iSCSI iscsiuio Socket.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on systemd-journald-dev-log.socket - Journal Socket (/dev/log).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on systemd-journald.socket - Journal Sockets.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target sockets.target - Socket Units.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Mar 07 16:47:33 CYB3R14 systemd[1]: memstrack.service - Memstrack Anylazing Service was skipped because no trigger condition checks were met.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting modprobe@dm_multipath.service - Load Kernel Module dm_multipath...
+Mar 07 16:47:33 CYB3R14 systemd[1]: multipathd-configure.service - Device-Mapper Multipath Default Configuration was skipped because of an unmet condition check (ConditionKernelCommandLine=rd.multipath=default).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-journald.service - Journal Service...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Mar 07 16:47:33 CYB3R14 systemd[1]: systemd-pcrphase-initrd.service - TPM PCR Barrier (initrd) was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-vconsole-setup.service - Virtual Console Setup...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully...
+Mar 07 16:47:33 CYB3R14 kernel: i2c_dev: i2c /dev entries driver
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-tmpfiles-setup-dev-early.service - Create Static Device Nodes in /dev gracefully.
+Mar 07 16:47:33 CYB3R14 systemd-journald[334]: Collecting audit messages is disabled.
+Mar 07 16:47:33 CYB3R14 kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Mar 07 16:47:33 CYB3R14 kernel: device-mapper: uevent: version 1.0.3
+Mar 07 16:47:33 CYB3R14 kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-sysusers.service - Create System Users...
+Mar 07 16:47:33 CYB3R14 systemd[1]: modprobe@dm_multipath.service: Deactivated successfully.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished modprobe@dm_multipath.service - Load Kernel Module dm_multipath.
+Mar 07 16:47:33 CYB3R14 systemd[1]: multipathd.service - Device-Mapper Multipath Device Controller was skipped because of an unmet condition check (ConditionPathExists=/etc/multipath.conf).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-sysusers.service - Create System Users.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev...
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-1: New USB device found, idVendor=046d, idProduct=c52b, bcdDevice=12.11
+Mar 07 16:47:33 CYB3R14 kernel: fuse: init (API version 7.41)
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-1: Product: USB Receiver
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-1: Manufacturer: Logitech
+Mar 07 16:47:33 CYB3R14 kernel: input: Logitech USB Receiver as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.0/0003:046D:C52B.0001/input/input3
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-tmpfiles-setup-dev.service - Create Static Device Nodes in /dev.
+Mar 07 16:47:33 CYB3R14 kernel: VFIO - User Level meta-driver version: 0.3
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-vconsole-setup.service - Virtual Console Setup.
+Mar 07 16:47:33 CYB3R14 systemd[1]: dracut-cmdline-ask.service - dracut ask for additional cmdline parameters was skipped because no trigger condition checks were met.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting dracut-cmdline.service - dracut cmdline hook...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-modules-load.service - Load Kernel Modules.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-sysctl.service - Apply Kernel Variables...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-sysctl.service - Apply Kernel Variables.
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:046D:C52B.0001: input,hidraw0: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:00:14.0-1/input0
+Mar 07 16:47:33 CYB3R14 kernel: input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:046D:C52B.0002/input/input4
+Mar 07 16:47:33 CYB3R14 kernel: input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:046D:C52B.0002/input/input5
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: new SuperSpeed USB device number 2 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: New USB device found, idVendor=13fe, idProduct=2580, bcdDevice= 1.00
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: New USB device strings: Mfr=2, Product=3, SerialNumber=1
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: Product: P300
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: Manufacturer: PHILIPS
+Mar 07 16:47:33 CYB3R14 kernel: usb 2-2: SerialNumber: 511240311081B000394
+Mar 07 16:47:33 CYB3R14 kernel: input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.1/0003:046D:C52B.0002/input/input6
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:046D:C52B.0002: input,hiddev96,hidraw1: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:00:14.0-1/input1
+Mar 07 16:47:33 CYB3R14 kernel: Loading iSCSI transport class v2.0-870.
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:046D:C52B.0003: hiddev97,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:00:14.0-1/input2
+Mar 07 16:47:33 CYB3R14 kernel: iscsi: registered transport (tcp)
+Mar 07 16:47:33 CYB3R14 kernel: libcxgbi:libcxgbi_init_module: Chelsio iSCSI driver library libcxgbi v0.9.1-ko (Apr. 2015)
+Mar 07 16:47:33 CYB3R14 kernel: Chelsio T4-T6 iSCSI Driver cxgb4i v0.9.5-ko (Apr. 2015)
+Mar 07 16:47:33 CYB3R14 kernel: iscsi: registered transport (cxgb4i)
+Mar 07 16:47:33 CYB3R14 kernel: Warning: Unmaintained driver is detected: cnic
+Mar 07 16:47:33 CYB3R14 kernel: Warning: Unmaintained driver is detected: cnic_init
+Mar 07 16:47:33 CYB3R14 kernel: cnic: QLogic cnicDriver v2.5.22 (July 20, 2015)
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-2: new full-speed USB device number 3 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 kernel: Warning: Unmaintained driver is detected: bnx2i
+Mar 07 16:47:33 CYB3R14 kernel: Warning: Unmaintained driver is detected: bnx2i_mod_init
+Mar 07 16:47:33 CYB3R14 kernel: QLogic NetXtreme II iSCSI Driver bnx2i v2.7.10.1 (Jul 16, 2014)
+Mar 07 16:47:33 CYB3R14 kernel: iscsi: registered transport (bnx2i)
+Mar 07 16:47:33 CYB3R14 kernel: iscsi: registered transport (be2iscsi)
+Mar 07 16:47:33 CYB3R14 kernel: In beiscsi_module_init, tt=00000000cab320d1
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-2: New USB device found, idVendor=3938, idProduct=1192, bcdDevice= 3.11
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-2: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-2: Product: 2.4G RF Keyboard & Mouse
+Mar 07 16:47:33 CYB3R14 kernel: input: 2.4G RF Keyboard & Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.0/0003:3938:1192.0004/input/input8
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished dracut-cmdline.service - dracut cmdline hook.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting dracut-pre-udev.service - dracut pre-udev hook...
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for crc32c-intel (crc32c) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for crct10dif-pclmul (crct10dif) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: ghash (ghash-clmulni) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: des3_ede (des3_ede-asm) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: ecb(des3_ede) (ecb-des3_ede-asm) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: cbc(des3_ede) (cbc-des3_ede-asm) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: des (des-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: des3_ede (des3_ede-generic) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:3938:1192.0004: input,hidraw3: USB HID v1.10 Keyboard [2.4G RF Keyboard & Mouse] on usb-0000:00:14.0-2/input0
+Mar 07 16:47:33 CYB3R14 kernel: input: 2.4G RF Keyboard & Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:3938:1192.0005/input/input9
+Mar 07 16:47:33 CYB3R14 kernel: input: 2.4G RF Keyboard & Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:3938:1192.0005/input/input10
+Mar 07 16:47:33 CYB3R14 kernel: input: 2.4G RF Keyboard & Mouse Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:3938:1192.0005/input/input11
+Mar 07 16:47:33 CYB3R14 kernel: input: 2.4G RF Keyboard & Mouse System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-2/1-2:1.1/0003:3938:1192.0005/input/input12
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:3938:1192.0005: input,hiddev98,hidraw4: USB HID v1.10 Mouse [2.4G RF Keyboard & Mouse] on usb-0000:00:14.0-2/input1
+Mar 07 16:47:33 CYB3R14 kernel: alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha1 (sha1) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha256 (sha256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ecb(aes) (ecb(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cbc(aes) (cbc(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xts(aes) (xts(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ctr(aes) (ctr(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc3686(ctr-aes-aesni) (rfc3686(ctr(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc3686(ctr(aes)) (rfc3686(ctr(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha384 (sha384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha512 (sha512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for deflate (deflate) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for crc32c (crc32c) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha224 (sha224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for gcm(aes) (gcm(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for lzo (lzo) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: cbcmac(aes) (cbcmac(aes-aesni)) is disabled due to FIPS
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ccm_base(ctr-aes-aesni,cbcmac(aes-aesni)) (ccm(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ccm(aes) (ccm(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cts(cbc(aes)) (cts(cbc(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xxhash64-generic (xxhash64) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for xxhash64 (xxhash64) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc4309(ccm_base(ctr-aes-aesni,cbcmac(aes-aesni))) (rfc4309(ccm(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc4309(ccm(aes)) (rfc4309(ccm(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for crct10dif (crct10dif) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-224 (sha3-224) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-256 (sha3-256) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-384 (sha3-384) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for sha3-512 (sha3-512) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha1) (hmac(sha1)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha256) (hmac(sha256)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha384-avx2) (hmac(sha384)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha384) (hmac(sha384)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha512) (hmac(sha512)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha224-ni) (hmac(sha224)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha224) (hmac(sha224)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-224-generic) (hmac(sha3-224)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-224) (hmac(sha3-224)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-256-generic) (hmac(sha3-256)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-256) (hmac(sha3-256)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-384-generic) (hmac(sha3-384)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-384) (hmac(sha3-384)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-512-generic) (hmac(sha3-512)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for hmac(sha3-512) (hmac(sha3-512)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for rfc4106(gcm(aes)) (rfc4106(gcm(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cmac(aes-aesni) (cmac(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for cmac(aes) (cmac(aes)) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for authenc(hmac(sha1-ni),cbc-aes-aesni) (authenc(hmac(sha1),cbc(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for authenc(hmac(sha1),cbc(aes)) (authenc(hmac(sha1),cbc(aes))) passed
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: new full-speed USB device number 4 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ffdhe2048(dh-generic) (ffdhe2048(dh)) passed
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: New USB device found, idVendor=0d8c, idProduct=0005, bcdDevice= 1.00
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: Product: Blue Snowball 
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: Manufacturer: BLUE MICROPHONE
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-4: SerialNumber: 201204
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:0D8C:0005.0006: No inputs registered, leaving
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:0D8C:0005.0006: hidraw5: USB HID v1.11 Device [BLUE MICROPHONE Blue Snowball ] on usb-0000:00:14.0-4/input2
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for ffdhe2048(dh) (ffdhe2048(dh)) passed
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-8: new high-speed USB device number 5 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 kernel: RPC: Registered named UNIX socket transport module.
+Mar 07 16:47:33 CYB3R14 kernel: RPC: Registered udp transport module.
+Mar 07 16:47:33 CYB3R14 kernel: RPC: Registered tcp transport module.
+Mar 07 16:47:33 CYB3R14 kernel: RPC: Registered tcp-with-tls transport module.
+Mar 07 16:47:33 CYB3R14 kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Mar 07 16:47:33 CYB3R14 kernel: wmi_bus wmi_bus-PNP0C14:02: [Firmware Info]: 93A57CD3-BBC6-46AB-951D-31F17CC968A0 has zero instances
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-8: New USB device found, idVendor=046d, idProduct=0825, bcdDevice= 0.12
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-8: New USB device strings: Mfr=0, Product=0, SerialNumber=2
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-8: SerialNumber: 9D0237E0
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-9: new full-speed USB device number 6 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished dracut-pre-udev.service - dracut pre-udev hook.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-udevd.service - Rule-based Manager for Device Events and Files...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Started systemd-udevd.service - Rule-based Manager for Device Events and Files.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting dracut-pre-trigger.service - dracut pre-trigger hook...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished dracut-pre-trigger.service - dracut pre-trigger hook.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-9: New USB device found, idVendor=17ef, idProduct=c955, bcdDevice= 0.03
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-9: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-9: Product: ITE Device(8297)
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-9: Manufacturer: ITE Tech. Inc.
+Mar 07 16:47:33 CYB3R14 kernel: hid-generic 0003:17EF:C955.0007: hiddev99,hidraw6: USB HID v1.10 Device [ITE Tech. Inc. ITE Device(8297)] on usb-0000:00:14.0-9/input0
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-udev-trigger.service - Coldplug All udev Devices.
+Mar 07 16:47:33 CYB3R14 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target tpm2.target - Trusted Platform Module.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Mounting sys-kernel-config.mount - Kernel Configuration File System...
+Mar 07 16:47:33 CYB3R14 systemd[1]: nm-initrd.service was skipped because of an unmet condition check (ConditionPathExists=/run/NetworkManager/initrd/neednet).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target network.target - Network.
+Mar 07 16:47:33 CYB3R14 systemd[1]: nm-wait-online-initrd.service was skipped because of an unmet condition check (ConditionPathExists=/run/NetworkManager/initrd/neednet).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting dracut-initqueue.service - dracut initqueue hook...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting plymouth-start.service - Show Plymouth Boot Screen...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Mounted sys-kernel-config.mount - Kernel Configuration File System.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Received SIGRTMIN+20 from PID 810 (plymouthd).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Started plymouth-start.service - Show Plymouth Boot Screen.
+Mar 07 16:47:33 CYB3R14 systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch was skipped because of an unmet condition check (ConditionPathExists=!/run/plymouth/pid).
+Mar 07 16:47:33 CYB3R14 systemd[1]: Started systemd-ask-password-plymouth.path - Forward Password Requests to Plymouth Directory Watch.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Reached target paths.target - Path Units.
+Mar 07 16:47:33 CYB3R14 systemd[1]: systemd-battery-check.service - Check battery level during early boot was skipped because of an unmet condition check (ConditionDirectoryNotEmpty=/sys/class/power_supply).
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-11: new high-speed USB device number 7 using xhci_hcd
+Mar 07 16:47:33 CYB3R14 kernel: alg: self-tests for crc32-pclmul (crc32) passed
+Mar 07 16:47:33 CYB3R14 systemd[1]: systemd-vconsole-setup.service: Deactivated successfully.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Stopped systemd-vconsole-setup.service - Virtual Console Setup.
+Mar 07 16:47:33 CYB3R14 systemd[1]: Stopping systemd-vconsole-setup.service - Virtual Console Setup...
+Mar 07 16:47:33 CYB3R14 systemd[1]: Starting systemd-vconsole-setup.service - Virtual Console Setup...
+Mar 07 16:47:33 CYB3R14 kernel: libata version 3.00 loaded.
+Mar 07 16:47:33 CYB3R14 kernel: r8169 0000:04:00.0 eth0: RTL8125B, 6c:24:08:d8:71:83, XID 641, IRQ 133
+Mar 07 16:47:33 CYB3R14 kernel: r8169 0000:04:00.0 eth0: jumbo features [frames: 16362 bytes, tx checksumming: ko]
+Mar 07 16:47:33 CYB3R14 kernel: Key type psk registered
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme0: pci function 0000:02:00.0
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme1: pci function 0000:03:00.0
+Mar 07 16:47:33 CYB3R14 kernel: r8169 0000:04:00.0 enp4s0: renamed from eth0
+Mar 07 16:47:33 CYB3R14 kernel: ahci 0000:00:17.0: version 3.0
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme1: allocated 40 MiB host memory buffer (10 segments).
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme0: allocated 64 MiB host memory buffer (16 segments).
+Mar 07 16:47:33 CYB3R14 kernel: ahci 0000:00:17.0: AHCI vers 0001.0301, 32 command slots, 6 Gbps, SATA mode
+Mar 07 16:47:33 CYB3R14 kernel: ahci 0000:00:17.0: 4/4 ports implemented (port mask 0xf0)
+Mar 07 16:47:33 CYB3R14 kernel: ahci 0000:00:17.0: flags: 64bit ncq sntf pm led clo only pio slum part ems deso sadm sds 
+Mar 07 16:47:33 CYB3R14 kernel: scsi host0: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host1: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host2: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host3: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host4: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host5: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host6: ahci
+Mar 07 16:47:33 CYB3R14 kernel: scsi host7: ahci
+Mar 07 16:47:33 CYB3R14 kernel: ata1: DUMMY
+Mar 07 16:47:33 CYB3R14 kernel: ata2: DUMMY
+Mar 07 16:47:33 CYB3R14 kernel: ata3: DUMMY
+Mar 07 16:47:33 CYB3R14 kernel: ata4: DUMMY
+Mar 07 16:47:33 CYB3R14 kernel: ata5: SATA max UDMA/133 abar m2048@0x81402000 port 0x81402300 irq 136 lpm-pol 0
+Mar 07 16:47:33 CYB3R14 kernel: ata6: SATA max UDMA/133 abar m2048@0x81402000 port 0x81402380 irq 136 lpm-pol 0
+Mar 07 16:47:33 CYB3R14 kernel: ata7: SATA max UDMA/133 abar m2048@0x81402000 port 0x81402400 irq 136 lpm-pol 0
+Mar 07 16:47:33 CYB3R14 kernel: ata8: SATA max UDMA/133 abar m2048@0x81402000 port 0x81402480 irq 136 lpm-pol 0
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme0: 8/0/0 default/read/poll queues
+Mar 07 16:47:33 CYB3R14 kernel: nvme nvme1: 10/0/0 default/read/poll queues
+Mar 07 16:47:33 CYB3R14 systemd[1]: Finished systemd-vconsole-setup.service - Virtual Console Setup.
+Mar 07 16:47:33 CYB3R14 kernel:  nvme0n1: p1 p2
+Mar 07 16:47:33 CYB3R14 kernel:  nvme1n1: p1 p2
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-11: New USB device found, idVendor=2109, idProduct=2815, bcdDevice= 7.54
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-11: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-11: Product: USB2.0 Hub             
+Mar 07 16:47:33 CYB3R14 kernel: usb 1-11: Manufacturer: VIA Labs, Inc.         
+Mar 07 16:47:33 CYB3R14 kernel: hub 1-11:1.0: USB hub found
+Mar 07 16:47:33 CYB3R14 kernel: hub 1-11:1.0: 5 ports detected
+Mar 07 16:47:33 CYB3R14 systemd[1]: Started systemd-journald.service - Journal Service.
+Mar 07 16:47:33 CYB3R14 kernel: ata5: SATA link down (SStatus 0 SControl 300)
+Mar 07 16:47:33 CYB3R14 kernel: ata7: SATA link down (SStatus 0 SControl 300)
+Mar 07 16:47:33 CYB3R14 kernel: ata8: SATA link down (SStatus 0 SControl 300)
+Mar 07 16:47:33 CYB3R14 kernel: ata6: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+Mar 07 16:47:33 CYB3R14 kernel: ata6.00: ATA-9: ST2000DM001-1ER164, CC27, max UDMA/133
+Mar 07 16:47:33 CYB3R14 kernel: ata6.00: 3907029168 sectors, multi 16: LBA48 NCQ (depth 32), AA
+Mar 07 16:47:33 CYB3R14 kernel: ata6.00: configured for UDMA/133
+Mar 07 16:47:33 CYB3R14 kernel: scsi 5:0:0:0: Direct-Access     ATA      ST2000DM001-1ER1 CC27 PQ: 0 ANSI: 5
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] 3907029168 512-byte logical blocks: (2.00 TB/1.82 TiB)
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] 4096-byte physical blocks
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] Write Protect is off
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] Preferred minimum I/O size 4096 bytes
+Mar 07 16:47:33 CYB3R14 kernel:  sda: sda1
+Mar 07 16:47:33 CYB3R14 kernel: sd 5:0:0:0: [sda] Attached SCSI disk
+Mar 07 16:47:33 CYB3R14 kernel: logitech-djreceiver 0003:046D:C52B.0003: hiddev96,hidraw0: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:00:14.0-1/input2
+Mar 07 16:47:34 CYB3R14 kernel: input: Logitech Wireless Device PID:405e Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/0003:046D:405E.0008/input/input15
+Mar 07 16:47:34 CYB3R14 kernel: input: Logitech Wireless Device PID:405e Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/0003:046D:405E.0008/input/input16
+Mar 07 16:47:34 CYB3R14 kernel: hid-generic 0003:046D:405E.0008: input,hidraw1: USB HID v1.11 Keyboard [Logitech Wireless Device PID:405e] on usb-0000:00:14.0-1/input2:2
+Mar 07 16:47:34 CYB3R14 kernel: input: Logitech M720 Triathlon as /devices/pci0000:00/0000:00:14.0/usb1/1-1/1-1:1.2/0003:046D:C52B.0003/0003:046D:405E.0008/input/input20
+Mar 07 16:47:34 CYB3R14 kernel: logitech-hidpp-device 0003:046D:405E.0008: input,hidraw1: USB HID v1.11 Keyboard [Logitech M720 Triathlon] on usb-0000:00:14.0-1/input2:2
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.2: new full-speed USB device number 8 using xhci_hcd
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.2: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.2: Product: YubiKey OTP+FIDO+CCID
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.2: Manufacturer: Yubico
+Mar 07 16:47:34 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.2/1-11.2:1.0/0003:1050:0407.0009/input/input21
+Mar 07 16:47:34 CYB3R14 kernel: hid-generic 0003:1050:0407.0009: input,hidraw2: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input0
+Mar 07 16:47:34 CYB3R14 kernel: hid-generic 0003:1050:0407.000A: hiddev97,hidraw7: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input1
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: new high-speed USB device number 9 using xhci_hcd
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: New USB device found, idVendor=050d, idProduct=006b, bcdDevice= 0.01
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: Product: USB-C 4-in-1 Multiport Adapter
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: Manufacturer: Belkin International   
+Mar 07 16:47:34 CYB3R14 kernel: usb 1-11.5: SerialNumber: 0000000000000001
+Mar 07 16:49:21 CYB3R14 kernel: usb 1-11.4: new full-speed USB device number 10 using xhci_hcd
+Mar 07 16:49:22 CYB3R14 kernel: usb 1-11.4: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 16:49:22 CYB3R14 kernel: usb 1-11.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 16:49:22 CYB3R14 kernel: usb 1-11.4: Product: YubiKey OTP+FIDO+CCID
+Mar 07 16:49:22 CYB3R14 kernel: usb 1-11.4: Manufacturer: Yubico
+Mar 07 16:49:22 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.4/1-11.4:1.0/0003:1050:0407.000B/input/input22
+Mar 07 16:49:22 CYB3R14 kernel: hid-generic 0003:1050:0407.000B: input,hidraw8: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input0
+Mar 07 16:49:22 CYB3R14 kernel: hid-generic 0003:1050:0407.000C: hiddev100,hidraw9: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input1
+Mar 07 16:49:29 CYB3R14 kernel: Lockdown: systemd-hiberna: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:49:29 CYB3R14 kernel: SGI XFS with ACLs, security attributes, scrub, quota, no debug enabled
+Mar 07 16:49:29 CYB3R14 kernel: XFS (dm-1): Mounting V5 Filesystem 0b72e282-a463-432c-b979-3d81ab25c227
+Mar 07 16:49:29 CYB3R14 kernel: XFS (dm-1): Ending clean mount
+Mar 07 16:49:29 CYB3R14 kernel: XFS (nvme1n1p1): Mounting V5 Filesystem b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79
+Mar 07 16:49:29 CYB3R14 kernel: XFS (nvme1n1p1): Ending clean mount
+Mar 07 16:49:29 CYB3R14 kernel: XFS (nvme1n1p1): Unmounting Filesystem b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79
+Mar 07 16:49:30 CYB3R14 systemd-journald[334]: Received SIGTERM from PID 1 (systemd).
+Mar 07 16:49:30 CYB3R14 kernel: audit: type=1404 audit(1772920170.251:5): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability network_peer_controls=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability open_perms=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability extended_socket_class=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability always_check_network=0
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability cgroup_seclabel=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability nnp_nosuid_transition=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability genfs_seclabel_symlinks=1
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability ioctl_skip_cloexec=0
+Mar 07 16:49:30 CYB3R14 kernel: SELinux:  policy capability userspace_initial_context=0
+Mar 07 16:49:30 CYB3R14 kernel: audit: type=1403 audit(1772920170.370:6): auid=4294967295 ses=4294967295 lsm=selinux res=1
+Mar 07 16:49:30 CYB3R14 systemd[1]: Successfully loaded SELinux policy in 120.340ms.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Relabeled /dev/, /dev/shm/, /run/ in 23.104ms.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd 257-13.el10-g833aa52 running in system mode (+PAM +AUDIT +SELINUX -APPARMOR +IMA +IPE +SMACK +SECCOMP -GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN -IPTC +KMOD +LIBCRYPTSETUP +LIBCRYPTSETUP_PLUGINS +LIBFDISK +PCRE2 +PWQUALITY +P11KIT -QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD +BPF_FRAMEWORK +BTF +XKBCOMMON +UTMP +SYSVINIT +LIBARCHIVE)
+Mar 07 16:49:30 CYB3R14 systemd[1]: Detected architecture x86-64.
+Mar 07 16:49:30 CYB3R14 kernel: Lockdown: systemd: /dev/mem,kmem,port is restricted; see man kernel_lockdown.7
+Mar 07 16:49:30 CYB3R14 systemd[1]: bpf-restrict-fs: LSM BPF program attached
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-ask-password-plymouth.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: initrd-switch-root.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped initrd-switch-root.service - Switch Root.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-journald.service: Scheduled restart job, restart counter is at 1.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Created slice machine.slice - Virtual Machine and Container Slice.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Created slice system-getty.slice - Slice /system/getty.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Created slice system-systemd\x2dfsck.slice - Slice /system/systemd-fsck.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Created slice user.slice - User and Session Slice.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-ask-password-console.path - Dispatch Password Requests to Console Directory Watch was skipped because of an unmet condition check (ConditionPathExists=!/run/plymouth/pid).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Started systemd-ask-password-wall.path - Forward Password Requests to Wall Directory Watch.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Set up automount proc-sys-fs-binfmt_misc.automount - Arbitrary Executable File Formats File System Automount Point.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2dlabel-KDUMP.device - /dev/disk/by-label/KDUMP...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-460A\x2d83E8.device - /dev/disk/by-uuid/460A-83E8...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-652cb2b7\x2d3721\x2d4009\x2d9f42\x2d7616f2e13ee7.device - /dev/disk/by-uuid/652cb2b7-3721-4009-9f42-7616f2e13ee7...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-95fc3e05\x2d75e7\x2d4e2e\x2da709\x2d7434c2d50959.device - /dev/disk/by-uuid/95fc3e05-75e7-4e2e-a709-7434c2d50959...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-b3e6ae76\x2da2b9\x2d4607\x2da7b7\x2dbf0cab3e8c79.device - /dev/disk/by-uuid/b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-f6beab7f\x2d85f2\x2d4790\x2dba76\x2dfc179c57d885.device - /dev/disk/by-uuid/f6beab7f-85f2-4790-ba76-fc179c57d885...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Expecting device dev-disk-by\x2duuid-fc2fcf62\x2dd843\x2d4917\x2dbf26\x2d65ce1f3b87c9.device - /dev/disk/by-uuid/fc2fcf62-d843-4917-bf26-65ce1f3b87c9...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Reached target blockdev@dev-mapper-luks\x2d359cd55d\x2d5003\x2d4eb3\x2d8c4c\x2d418c142b1e03.target - Block Device Preparation for /dev/mapper/luks-359cd55d-5003-4eb3-8c4c-418c142b1e03.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Reached target getty.target - Login Prompts.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped target initrd-switch-root.target - Switch Root.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped target initrd-fs.target - Initrd File Systems.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped target initrd-root-fs.target - Initrd Root File System.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Reached target integritysetup.target - Local Integrity Protected Volumes.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Reached target slices.target - Slice Units.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Reached target veritysetup.target - Local Verity Protected Volumes.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on dm-event.socket - Device-mapper event daemon FIFOs.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on lvm2-lvmpolld.socket - LVM2 poll daemon socket.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-coredump.socket - Process Core Dump Socket.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-creds.socket - Credential Encryption/Decryption.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-initctl.socket - initctl Compatibility Named Pipe.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-pcrextend.socket - TPM PCR Measurements was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-pcrlock.socket - Make TPM PCR Policy was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-udevd-control.socket - udev Control Socket.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-udevd-kernel.socket - udev Kernel Socket.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Listening on systemd-userdbd.socket - User Database Manager Socket.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Activating swap dev-disk-by\x2duuid-8829afeb\x2d743a\x2d4ced\x2da97d\x2dac2bb248e19e.swap - /dev/disk/by-uuid/8829afeb-743a-4ced-a97d-ac2bb248e19e...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounting dev-hugepages.mount - Huge Pages File System...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounting dev-mqueue.mount - POSIX Message Queue File System...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounting sys-kernel-debug.mount - Kernel Debug File System...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounting sys-kernel-tracing.mount - Kernel Trace File System...
+Mar 07 16:49:30 CYB3R14 systemd[1]: auth-rpcgss-module.service - Kernel Module supporting RPCSEC_GSS was skipped because of an unmet condition check (ConditionPathExists=/etc/krb5.keytab).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Started debug-shell.service - Early root shell on /dev/tty9 FOR DEBUGGING ONLY.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting fips-crypto-policy-overlay.service - Bind-mount FIPS crypto-policy in FIPS mode...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting kmod-static-nodes.service - Create List of Static Device Nodes...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting lvm2-monitor.service - Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@configfs.service - Load Kernel Module configfs...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@dm_mod.service - Load Kernel Module dm_mod...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@dm_multipath.service - Load Kernel Module dm_multipath...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@drm.service - Load Kernel Module drm...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@efi_pstore.service - Load Kernel Module efi_pstore...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@fuse.service - Load Kernel Module fuse...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting modprobe@loop.service - Load Kernel Module loop...
+Mar 07 16:49:30 CYB3R14 systemd[1]: plymouth-switch-root.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped plymouth-switch-root.service - Plymouth switch root service.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-fsck-root.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Stopped systemd-fsck-root.service - File System Check on Root Device.
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-hibernate-clear.service - Clear Stale Hibernate Storage Info was skipped because of an unmet condition check (ConditionPathExists=/sys/firmware/efi/efivars/HibernateLocation-8cf2644b-4b0b-428f-9387-6d876050dc67).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-journald.service - Journal Service...
+Mar 07 16:49:30 CYB3R14 kernel: Adding 83886076k swap on /dev/mapper/What--The--Rheliii-EL1SH4--SP1R1T.  Priority:-2 extents:1 across:83886076k SS
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-modules-load.service - Load Kernel Modules...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-network-generator.service - Generate network units from Kernel command line...
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-pcrmachine.service - TPM PCR Machine ID Measurement was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-remount-fs.service - Remount Root and Kernel File Systems...
+Mar 07 16:49:30 CYB3R14 systemd[1]: systemd-tpm2-setup-early.service - Early TPM SRK Setup was skipped because of an unmet condition check (ConditionSecurity=measured-uki).
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-udev-load-credentials.service - Load udev Rules from Credentials...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Starting systemd-udev-trigger.service - Coldplug All udev Devices...
+Mar 07 16:49:30 CYB3R14 systemd[1]: Activated swap dev-disk-by\x2duuid-8829afeb\x2d743a\x2d4ced\x2da97d\x2dac2bb248e19e.swap - /dev/disk/by-uuid/8829afeb-743a-4ced-a97d-ac2bb248e19e.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounted dev-hugepages.mount - Huge Pages File System.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounted dev-mqueue.mount - POSIX Message Queue File System.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounted sys-kernel-debug.mount - Kernel Debug File System.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Mounted sys-kernel-tracing.mount - Kernel Trace File System.
+Mar 07 16:49:30 CYB3R14 systemd[1]: fips-crypto-policy-overlay.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished fips-crypto-policy-overlay.service - Bind-mount FIPS crypto-policy in FIPS mode.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished kmod-static-nodes.service - Create List of Static Device Nodes.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@configfs.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@configfs.service - Load Kernel Module configfs.
+Mar 07 16:49:30 CYB3R14 systemd-journald[6332]: Collecting audit messages is disabled.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@dm_mod.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@dm_mod.service - Load Kernel Module dm_mod.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@dm_multipath.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@dm_multipath.service - Load Kernel Module dm_multipath.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@drm.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@drm.service - Load Kernel Module drm.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@efi_pstore.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@efi_pstore.service - Load Kernel Module efi_pstore.
+Mar 07 16:49:30 CYB3R14 systemd[1]: modprobe@fuse.service: Deactivated successfully.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished modprobe@fuse.service - Load Kernel Module fuse.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished systemd-network-generator.service - Generate network units from Kernel command line.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished systemd-remount-fs.service - Remount Root and Kernel File Systems.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Finished systemd-udev-load-credentials.service - Load udev Rules from Credentials.
+Mar 07 16:49:30 CYB3R14 systemd[1]: Started systemd-journald.service - Journal Service.
+Mar 07 16:49:30 CYB3R14 kernel: loop: module loaded
+Mar 07 16:49:31 CYB3R14 kernel: sd 5:0:0:0: Attached scsi generic sg0 type 0
+Mar 07 16:49:31 CYB3R14 kernel: intel_pmc_core INT33A1:00:  initialized
+Mar 07 16:49:31 CYB3R14 kernel: mc: Linux media interface: v0.10
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.0: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: usbcore: registered new interface driver usb-storage
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.1: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input23
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.2: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: mei_me 0000:00:16.0: enabling device (0000 -> 0002)
+Mar 07 16:49:31 CYB3R14 kernel: i801_smbus 0000:00:1f.4: SPD Write Disable is set
+Mar 07 16:49:31 CYB3R14 kernel: i801_smbus 0000:00:1f.4: SMBus using PCI interrupt
+Mar 07 16:49:31 CYB3R14 kernel: videodev: Linux video capture interface: v2.00
+Mar 07 16:49:31 CYB3R14 kernel: scsi host8: uas
+Mar 07 16:49:31 CYB3R14 kernel: usbcore: registered new interface driver uas
+Mar 07 16:49:31 CYB3R14 kernel: i2c i2c-1: Successfully instantiated SPD at 0x50
+Mar 07 16:49:31 CYB3R14 kernel: scsi 8:0:0:0: Direct-Access     PHILIPS  P300             0    PQ: 0 ANSI: 6
+Mar 07 16:49:31 CYB3R14 kernel: i2c i2c-1: Successfully instantiated SPD at 0x51
+Mar 07 16:49:31 CYB3R14 kernel: i2c i2c-1: Successfully instantiated SPD at 0x52
+Mar 07 16:49:31 CYB3R14 kernel: i2c i2c-1: Successfully instantiated SPD at 0x53
+Mar 07 16:49:31 CYB3R14 kernel: scsi 8:0:0:0: Attached scsi generic sg1 type 0
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.3: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] 2000409264 512-byte logical blocks: (1.02 TB/954 GiB)
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Write Protect is off
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Mode Sense: 43 00 00 00
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.4: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: idma64 idma64.5: Found Intel integrated DMA 64-bit
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Preferred minimum I/O size 512 bytes
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Optimal transfer size 33553920 bytes
+Mar 07 16:49:31 CYB3R14 kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Mar 07 16:49:31 CYB3R14 kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Mar 07 16:49:31 CYB3R14 kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Mar 07 16:49:31 CYB3R14 kernel:  sdb: sdb1 sdb2
+Mar 07 16:49:31 CYB3R14 kernel: sd 8:0:0:0: [sdb] Attached SCSI disk
+Mar 07 16:49:31 CYB3R14 kernel: RAPL PMU: API unit is 2^-32 Joules, 2 fixed counters, 655360 ms ovfl timer
+Mar 07 16:49:31 CYB3R14 kernel: RAPL PMU: hw unit of domain pp0-core 2^-14 Joules
+Mar 07 16:49:31 CYB3R14 kernel: RAPL PMU: hw unit of domain package 2^-14 Joules
+Mar 07 16:49:31 CYB3R14 kernel: iTCO_vendor_support: vendor-support=0
+Mar 07 16:49:31 CYB3R14 kernel: Intel(R) Wireless WiFi driver for Linux
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: enabling device (0000 -> 0002)
+Mar 07 16:49:31 CYB3R14 kernel: iTCO_wdt iTCO_wdt: Found a Intel PCH TCO device (Version=6, TCOBASE=0x0400)
+Mar 07 16:49:31 CYB3R14 kernel: iTCO_wdt iTCO_wdt: initialized. heartbeat=30 sec (nowayout=0)
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: Detected crf-id 0x400410, cnv-id 0x80401 wfpm id 0x80000020
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: PCI dev 7af0/0094, rev=0x430, rfid=0x2010d000
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: Detected Intel(R) Wi-Fi 6E AX211 160MHz
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: capa flags index 4 larger than supported by driver
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: TLV_FW_FSEQ_VERSION: FSEQ Version: 0.0.2.42
+Mar 07 16:49:31 CYB3R14 kernel: iwlwifi 0000:00:14.3: loaded firmware version 89.123cf747.0 so-a0-gf-a0-89.ucode op_mode iwlmvm
+Mar 07 16:49:31 CYB3R14 kernel: usb 1-8: Found UVC 1.00 device <unnamed> (046d:0825)
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_intel 0000:01:00.1: enabling device (0000 -> 0002)
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_intel 0000:01:00.1: Disabling MSI
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_intel 0000:01:00.1: Handle vga_switcheroo audio client
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA NVidia HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card2/input24
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA NVidia HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card2/input25
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA NVidia HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card2/input26
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA NVidia HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.0/0000:01:00.1/sound/card2/input27
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC897: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:line
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:    inputs:
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:      Rear Mic=0x18
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:      Front Mic=0x19
+Mar 07 16:49:31 CYB3R14 kernel: snd_hda_codec_realtek hdaudioC0D0:      Line=0x1a
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA Intel PCH Rear Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input28
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA Intel PCH Front Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input29
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA Intel PCH Line as /devices/pci0000:00/0000:00:1f.3/sound/card0/input30
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA Intel PCH Line Out as /devices/pci0000:00/0000:00:1f.3/sound/card0/input31
+Mar 07 16:49:31 CYB3R14 kernel: input: HDA Intel PCH Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input32
+Mar 07 16:49:31 CYB3R14 kernel: intel_tcc_cooling: Programmable TCC Offset detected
+Mar 07 16:49:31 CYB3R14 kernel: intel_rapl_common: Found RAPL domain package
+Mar 07 16:49:31 CYB3R14 kernel: intel_rapl_common: Found RAPL domain core
+Mar 07 16:49:31 CYB3R14 kernel: usbcore: registered new interface driver uvcvideo
+Mar 07 16:49:31 CYB3R14 kernel: XFS (dm-3): Mounting V5 Filesystem 95fc3e05-75e7-4e2e-a709-7434c2d50959
+Mar 07 16:49:31 CYB3R14 kernel: XFS (dm-4): Mounting V5 Filesystem f6beab7f-85f2-4790-ba76-fc179c57d885
+Mar 07 16:49:31 CYB3R14 kernel: XFS (nvme1n1p1): Mounting V5 Filesystem b3e6ae76-a2b9-4607-a7b7-bf0cab3e8c79
+Mar 07 16:49:31 CYB3R14 kernel: XFS (nvme1n1p1): Ending clean mount
+Mar 07 16:49:31 CYB3R14 kernel: XFS (dm-3): Ending clean mount
+Mar 07 16:49:31 CYB3R14 kernel: XFS (dm-4): Ending clean mount
+Mar 07 16:49:31 CYB3R14 kernel: XFS (sda1): Mounting V5 Filesystem ce1a8624-a80b-450b-b6ed-08e77f6125d1
+Mar 07 16:49:31 CYB3R14 systemd-journald[6332]: Received client request to flush runtime journal.
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: WFPM_UMAC_PD_NOTIFICATION: 0x20
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: WFPM_LMAC2_PD_NOTIFICATION: 0x1f
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: WFPM_AUTH_KEY_0: 0x90
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: CNVI_SCU_SEQ_DATA_DW9: 0x0
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: Detected RF GF, rfid=0x2010d000
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: RFIm is deactivated, reason = 5
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: loaded PNVM version 472fbe9b
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3: base HW address: ac:19:8e:ce:e2:da
+Mar 07 16:49:32 CYB3R14 kernel: iwlwifi 0000:00:14.3 wlo1: renamed from wlan0
+Mar 07 16:49:32 CYB3R14 kernel: XFS (sda1): Ending clean mount
+Mar 07 16:49:32 CYB3R14 kernel: XFS (dm-6): Mounting V5 Filesystem fc2fcf62-d843-4917-bf26-65ce1f3b87c9
+Mar 07 16:49:32 CYB3R14 kernel: XFS (dm-6): Ending clean mount
+Mar 07 16:49:33 CYB3R14 kernel: usb 1-8: set resolution quirk: cval->res = 384
+Mar 07 16:49:33 CYB3R14 kernel: usbcore: registered new interface driver snd-usb-audio
+Mar 07 16:49:33 CYB3R14 kernel: nvidia: loading out-of-tree module taints kernel.
+Mar 07 16:49:33 CYB3R14 kernel: nvidia: module license 'NVIDIA' taints kernel.
+Mar 07 16:49:33 CYB3R14 kernel: Disabling lock debugging due to kernel taint
+Mar 07 16:49:33 CYB3R14 kernel: nvidia: module license taints kernel.
+Mar 07 16:49:33 CYB3R14 kernel: nvidia-nvlink: Nvlink Core is being initialized, major device number 510
+Mar 07 16:49:33 CYB3R14 kernel: 
+Mar 07 16:49:33 CYB3R14 kernel: nvidia 0000:01:00.0: vgaarb: VGA decodes changed: olddecodes=io+mem,decodes=none:owns=none
+Mar 07 16:49:33 CYB3R14 kernel: NVRM: loading NVIDIA UNIX x86_64 Kernel Module  590.48.01  Mon Dec  8 11:22:45 UTC 2025
+Mar 07 16:49:33 CYB3R14 kernel: Process accounting resumed
+Mar 07 16:49:33 CYB3R14 kernel: input: keyd virtual keyboard as /devices/virtual/input/input33
+Mar 07 16:49:33 CYB3R14 kernel: input: keyd virtual pointer as /devices/virtual/input/input34
+Mar 07 16:49:33 CYB3R14 kernel: nvme nvme0: using unchecked data buffer
+Mar 07 16:49:33 CYB3R14 kernel: nvidia-modeset: Loading NVIDIA Kernel Mode Setting Driver for UNIX platforms  590.48.01  Mon Dec  8 12:50:27 UTC 2025
+Mar 07 16:49:33 CYB3R14 kernel: block nvme0n1: No UUID available providing old NGUID
+Mar 07 16:49:33 CYB3R14 kernel: [drm] [nvidia-drm] [GPU ID 0x00000100] Loading driver
+Mar 07 16:49:33 CYB3R14 kernel: NET: Registered PF_QIPCRTR protocol family
+Mar 07 16:49:35 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.PEG1.PEGP._DSM.USRG], AE_ALREADY_EXISTS (20240827/dsfield-184)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, CreateBufferField failure (20240827/dswload2-477)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: Aborting method \_SB.PC00.PEG1.PEGP._DSM due to previous error (AE_ALREADY_EXISTS) (20240827/psparse-529)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI BIOS Error (bug): Failure creating named object [\_SB.PC00.PEG1.PEGP._DSM.USRG], AE_ALREADY_EXISTS (20240827/dsfield-184)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: AE_ALREADY_EXISTS, CreateBufferField failure (20240827/dswload2-477)
+Mar 07 16:49:35 CYB3R14 kernel: ACPI Error: Aborting method \_SB.PC00.PEG1.PEGP._DSM due to previous error (AE_ALREADY_EXISTS) (20240827/psparse-529)
+Mar 07 16:49:35 CYB3R14 kernel: [drm] Initialized nvidia-drm 0.0.0 for 0000:01:00.0 on minor 1
+Mar 07 16:49:35 CYB3R14 kernel: Console: switching to colour dummy device 80x25
+Mar 07 16:49:35 CYB3R14 kernel: nvidia 0000:01:00.0: vgaarb: deactivate vga console
+Mar 07 16:49:35 CYB3R14 kernel: Realtek Internal NBASE-T PHY r8169-0-400:00: attached PHY driver (mii_bus:phy_addr=r8169-0-400:00, irq=MAC)
+Mar 07 16:49:35 CYB3R14 kernel: fbcon: nvidia-drmdrmfb (fb0) is primary device
+Mar 07 16:49:35 CYB3R14 kernel: r8169 0000:04:00.0 enp4s0: Link is Down
+Mar 07 16:49:35 CYB3R14 kernel: Console: switching to colour frame buffer device 180x56
+Mar 07 16:49:35 CYB3R14 kernel: nvidia 0000:01:00.0: [drm] fb0: nvidia-drmdrmfb frame buffer device
+Mar 07 16:49:35 CYB3R14 kernel: nvidia_uvm: module uses symbols nvUvmInterfaceDisableAccessCntr from proprietary module nvidia, inheriting taint.
+Mar 07 16:49:38 CYB3R14 kernel: r8169 0000:04:00.0 enp4s0: Link is Up - 1Gbps/Full - flow control rx/tx
+Mar 07 16:49:38 CYB3R14 kernel: Warning: Unmaintained driver is detected: nft_compat
+Mar 07 16:49:38 CYB3R14 kernel: Warning: Unmaintained driver is detected: nft_compat_module_init
+Mar 07 16:49:38 CYB3R14 kernel: Warning: Unmaintained driver is detected: ip_set
+Mar 07 16:49:38 CYB3R14 kernel: Warning: Unmaintained driver is detected: ip_set_init
+Mar 07 16:49:38 CYB3R14 kernel: block sda: the capability attribute has been deprecated.
+Mar 07 16:49:38 CYB3R14 kernel: bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+Mar 07 16:49:39 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 16:49:40 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:49:40 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:49:40 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:28 CYB3R14 kernel: logitech-hidpp-device 0003:046D:405E.0008: HID++ 4.5 device connected.
+Mar 07 16:50:40 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:42 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 16:50:43 CYB3R14 kernel: input: ydotoold virtual device as /devices/virtual/input/input35
+Mar 07 16:51:44 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 16:51:52 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 16:59:20 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:15:08 CYB3R14 kernel: lockdown_is_locked_down: 5 callbacks suppressed
+Mar 07 17:15:08 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:15:08 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:15:08 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:15:08 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:15:08 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:38:12 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:39:45 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:42:10 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:42:31 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:42:37 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:43:02 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:43:02 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:43:02 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:43:02 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:43:02 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 17:43:05 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:45:37 CYB3R14 kernel: input: LogiOps Virtual Input as /devices/virtual/input/input36
+Mar 07 17:48:00 CYB3R14 kernel: pcieport 0000:00:01.0: AER: Correctable error message received from 0000:01:00.0
+Mar 07 17:48:00 CYB3R14 kernel: nvidia 0000:01:00.0: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Receiver ID)
+Mar 07 17:48:00 CYB3R14 kernel: nvidia 0000:01:00.0:   device [10de:2504] error status/mask=00000001/0000a000
+Mar 07 17:48:00 CYB3R14 kernel: nvidia 0000:01:00.0:    [ 0] RxErr                  (First)
+Mar 07 17:48:56 CYB3R14 kernel: input: solaar-keyboard as /devices/virtual/input/input37
+Mar 07 17:51:54 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 17:52:31 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:00:31 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:00:34 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:01:10 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:01:22 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:03:52 CYB3R14 kernel: exFAT-fs (sdb2): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Mar 07 18:05:44 CYB3R14 kernel: pcieport 0000:00:01.0: AER: Multiple Correctable error message received from 0000:00:01.0
+Mar 07 18:05:44 CYB3R14 kernel: pcieport 0000:00:01.0: PCIe Bus Error: severity=Correctable, type=Data Link Layer, (Transmitter ID)
+Mar 07 18:05:44 CYB3R14 kernel: pcieport 0000:00:01.0:   device [8086:460d] error status/mask=00001000/00002000
+Mar 07 18:05:44 CYB3R14 kernel: pcieport 0000:00:01.0:    [12] Timeout               
+Mar 07 18:05:44 CYB3R14 kernel: pcieport 0000:00:01.0: AER:   Error of this Agent is reported first
+Mar 07 18:05:44 CYB3R14 kernel: nvidia 0000:01:00.0: PCIe Bus Error: severity=Correctable, type=Data Link Layer, (Transmitter ID)
+Mar 07 18:05:44 CYB3R14 kernel: nvidia 0000:01:00.0:   device [10de:2504] error status/mask=00001000/0000a000
+Mar 07 18:05:44 CYB3R14 kernel: nvidia 0000:01:00.0:    [12] Timeout               
+Mar 07 18:05:44 CYB3R14 kernel: snd_hda_intel 0000:01:00.1: PCIe Bus Error: severity=Correctable, type=Physical Layer, (Transmitter ID)
+Mar 07 18:05:44 CYB3R14 kernel: snd_hda_intel 0000:01:00.1:   device [10de:228e] error status/mask=00001001/0000a000
+Mar 07 18:05:44 CYB3R14 kernel: snd_hda_intel 0000:01:00.1:    [ 0] RxErr                  (First)
+Mar 07 18:05:44 CYB3R14 kernel: snd_hda_intel 0000:01:00.1:    [12] Timeout               
+Mar 07 18:05:46 CYB3R14 kernel: pcieport 0000:00:01.0: AER: Correctable error message received from 0000:01:00.0
+Mar 07 18:05:46 CYB3R14 kernel: nvidia 0000:01:00.0: PCIe Bus Error: severity=Correctable, type=Data Link Layer, (Receiver ID)
+Mar 07 18:05:46 CYB3R14 kernel: nvidia 0000:01:00.0:   device [10de:2504] error status/mask=00000040/0000a000
+Mar 07 18:05:46 CYB3R14 kernel: nvidia 0000:01:00.0:    [ 6] BadTLP                
+Mar 07 18:12:18 CYB3R14 kernel: perf: interrupt took too long (2501 > 2500), lowering kernel.perf_event_max_sample_rate to 79000
+Mar 07 18:15:30 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 18:22:45 CYB3R14 kernel: usb 1-7: new full-speed USB device number 11 using xhci_hcd
+Mar 07 18:22:45 CYB3R14 kernel: usb 1-7: New USB device found, idVendor=054c, idProduct=05c4, bcdDevice= 1.00
+Mar 07 18:22:45 CYB3R14 kernel: usb 1-7: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 18:22:45 CYB3R14 kernel: usb 1-7: Product: Wireless Controller
+Mar 07 18:22:45 CYB3R14 kernel: usb 1-7: Manufacturer: Sony Computer Entertainment
+Mar 07 18:22:45 CYB3R14 kernel: input: Sony Computer Entertainment Wireless Controller as /devices/pci0000:00/0000:00:14.0/usb1/1-7/1-7:1.0/0003:054C:05C4.000D/input/input38
+Mar 07 18:22:45 CYB3R14 kernel: hid-generic 0003:054C:05C4.000D: input,hidraw10: USB HID v1.11 Gamepad [Sony Computer Entertainment Wireless Controller] on usb-0000:00:14.0-7/input0
+Mar 07 18:30:59 CYB3R14 kernel: perf: interrupt took too long (3127 > 3126), lowering kernel.perf_event_max_sample_rate to 63000
+Mar 07 18:52:12 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: new high-speed USB device number 12 using xhci_hcd
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: New USB device found, idVendor=18d1, idProduct=4ee1, bcdDevice= 5.10
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: Product: Pixel 6a
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: Manufacturer: Google
+Mar 07 19:15:47 CYB3R14 kernel: usb 1-5: SerialNumber: 2B171JEGR06937
+Mar 07 19:16:06 CYB3R14 kernel: usb 1-5: reset high-speed USB device number 12 using xhci_hcd
+Mar 07 19:16:06 CYB3R14 kernel: usb 1-5: reset high-speed USB device number 12 using xhci_hcd
+Mar 07 19:16:49 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:17:55 CYB3R14 kernel: usb 1-11: USB disconnect, device number 7
+Mar 07 19:17:55 CYB3R14 kernel: usb 1-11.2: USB disconnect, device number 8
+Mar 07 19:17:55 CYB3R14 kernel: usb 1-11.4: USB disconnect, device number 10
+Mar 07 19:17:55 CYB3R14 kernel: usb 1-11.5: USB disconnect, device number 9
+Mar 07 19:18:20 CYB3R14 kernel: usb 1-11: new high-speed USB device number 13 using xhci_hcd
+Mar 07 19:18:20 CYB3R14 kernel: usb 1-11: New USB device found, idVendor=2109, idProduct=2815, bcdDevice= 7.54
+Mar 07 19:18:20 CYB3R14 kernel: usb 1-11: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:20 CYB3R14 kernel: usb 1-11: Product: USB2.0 Hub             
+Mar 07 19:18:20 CYB3R14 kernel: usb 1-11: Manufacturer: VIA Labs, Inc.         
+Mar 07 19:18:20 CYB3R14 kernel: hub 1-11:1.0: USB hub found
+Mar 07 19:18:20 CYB3R14 kernel: hub 1-11:1.0: 5 ports detected
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.2: new full-speed USB device number 14 using xhci_hcd
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.2: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.2: Product: YubiKey OTP+FIDO+CCID
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.2: Manufacturer: Yubico
+Mar 07 19:18:21 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.2/1-11.2:1.0/0003:1050:0407.000E/input/input39
+Mar 07 19:18:21 CYB3R14 kernel: hid-generic 0003:1050:0407.000E: input,hidraw2: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input0
+Mar 07 19:18:21 CYB3R14 kernel: hid-generic 0003:1050:0407.000F: hiddev97,hidraw7: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input1
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.4: new full-speed USB device number 15 using xhci_hcd
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.4: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.4: Product: YubiKey OTP+FIDO+CCID
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.4: Manufacturer: Yubico
+Mar 07 19:18:21 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.4/1-11.4:1.0/0003:1050:0407.0010/input/input40
+Mar 07 19:18:21 CYB3R14 kernel: hid-generic 0003:1050:0407.0010: input,hidraw8: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input0
+Mar 07 19:18:21 CYB3R14 kernel: hid-generic 0003:1050:0407.0011: hiddev100,hidraw9: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input1
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: new high-speed USB device number 16 using xhci_hcd
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: New USB device found, idVendor=050d, idProduct=006b, bcdDevice= 0.01
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: Product: USB-C 4-in-1 Multiport Adapter
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: Manufacturer: Belkin International   
+Mar 07 19:18:21 CYB3R14 kernel: usb 1-11.5: SerialNumber: 0000000000000001
+Mar 07 19:18:24 CYB3R14 kernel: usb 1-11: USB disconnect, device number 13
+Mar 07 19:18:24 CYB3R14 kernel: usb 1-11.2: USB disconnect, device number 14
+Mar 07 19:18:24 CYB3R14 kernel: usb 1-11.4: USB disconnect, device number 15
+Mar 07 19:18:24 CYB3R14 kernel: usb 1-11.5: USB disconnect, device number 16
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11: new high-speed USB device number 17 using xhci_hcd
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11: New USB device found, idVendor=2109, idProduct=2815, bcdDevice= 7.54
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11: Product: USB2.0 Hub             
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11: Manufacturer: VIA Labs, Inc.         
+Mar 07 19:18:35 CYB3R14 kernel: hub 1-11:1.0: USB hub found
+Mar 07 19:18:35 CYB3R14 kernel: hub 1-11:1.0: 5 ports detected
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11.2: new full-speed USB device number 18 using xhci_hcd
+Mar 07 19:18:35 CYB3R14 kernel: usb 1-11.2: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.2: Product: YubiKey OTP+FIDO+CCID
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.2: Manufacturer: Yubico
+Mar 07 19:18:36 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.2/1-11.2:1.0/0003:1050:0407.0012/input/input41
+Mar 07 19:18:36 CYB3R14 kernel: hid-generic 0003:1050:0407.0012: input,hidraw2: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input0
+Mar 07 19:18:36 CYB3R14 kernel: hid-generic 0003:1050:0407.0013: hiddev97,hidraw7: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.2/input1
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.4: new full-speed USB device number 19 using xhci_hcd
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.4: New USB device found, idVendor=1050, idProduct=0407, bcdDevice= 5.71
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.4: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.4: Product: YubiKey OTP+FIDO+CCID
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.4: Manufacturer: Yubico
+Mar 07 19:18:36 CYB3R14 kernel: input: Yubico YubiKey OTP+FIDO+CCID as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.4/1-11.4:1.0/0003:1050:0407.0014/input/input42
+Mar 07 19:18:36 CYB3R14 kernel: hid-generic 0003:1050:0407.0014: input,hidraw8: USB HID v1.10 Keyboard [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input0
+Mar 07 19:18:36 CYB3R14 kernel: hid-generic 0003:1050:0407.0015: hiddev100,hidraw9: USB HID v1.10 Device [Yubico YubiKey OTP+FIDO+CCID] on usb-0000:00:14.0-11.4/input1
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: new high-speed USB device number 20 using xhci_hcd
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: New USB device found, idVendor=050d, idProduct=006b, bcdDevice= 0.01
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: Product: USB-C 4-in-1 Multiport Adapter
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: Manufacturer: Belkin International   
+Mar 07 19:18:36 CYB3R14 kernel: usb 1-11.5: SerialNumber: 0000000000000001
+Mar 07 19:21:00 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:25:42 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:42:48 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:47:08 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:47:53 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:49:58 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 19:51:27 CYB3R14 kernel: usb 1-7: USB disconnect, device number 11
+Mar 07 19:51:33 CYB3R14 kernel: usb 1-11.4: USB disconnect, device number 19
+Mar 07 19:51:37 CYB3R14 kernel: usb 1-11.1: new full-speed USB device number 21 using xhci_hcd
+Mar 07 19:51:37 CYB3R14 kernel: usb 1-11.1: New USB device found, idVendor=054c, idProduct=05c4, bcdDevice= 1.00
+Mar 07 19:51:37 CYB3R14 kernel: usb 1-11.1: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Mar 07 19:51:37 CYB3R14 kernel: usb 1-11.1: Product: Wireless Controller
+Mar 07 19:51:37 CYB3R14 kernel: usb 1-11.1: Manufacturer: Sony Computer Entertainment
+Mar 07 19:51:37 CYB3R14 kernel: input: Sony Computer Entertainment Wireless Controller as /devices/pci0000:00/0000:00:14.0/usb1/1-11/1-11.1/1-11.1:1.0/0003:054C:05C4.0016/input/input43
+Mar 07 19:51:37 CYB3R14 kernel: hid-generic 0003:054C:05C4.0016: input,hidraw8: USB HID v1.11 Gamepad [Sony Computer Entertainment Wireless Controller] on usb-0000:00:14.0-11.1/input0
+Mar 07 20:33:03 CYB3R14 kernel: perf: interrupt took too long (3912 > 3908), lowering kernel.perf_event_max_sample_rate to 51000
+Mar 07 20:53:33 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 20:53:33 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 20:53:33 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 20:53:33 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 20:53:33 CYB3R14 kernel: Lockdown: systemd-logind: hibernation is restricted; see man kernel_lockdown.7
+Mar 07 21:14:51 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:19:23 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:20:02 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:20:37 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:22:12 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:22:34 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:26:26 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 21:50:29 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:00:01 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:01:52 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:03:50 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:07:31 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:09:03 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:12:42 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:13:11 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:13:26 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:21:16 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:24:15 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:28:15 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:44:46 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:44:53 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:49:59 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:51:14 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 22:57:52 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 23:14:35 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 07 23:15:47 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 08 00:28:38 CYB3R14 kernel: usb 1-8: reset high-speed USB device number 5 using xhci_hcd
+Mar 08 00:39:41 CYB3R14 kernel: Process accounting resumed
