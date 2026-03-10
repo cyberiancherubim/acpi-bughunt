@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-fb07f86 (HEAD -> main, origin/main) Organize ACPI artifacts and DSL disassembly
-6a74208 (tag: v0.1-initial-disclosure) Initial disclosure: Lenovo ACPI namespace collision AE_ALREADY_EXISTS; USB RHUB and GPU _DSM artifacts
+<img width="1365" height="2048" alt="image" src="https://github.com/user-attachments/assets/0dc3d7f6-2a64-40b4-b367-4adf61530643" />
+
 =======
 # ACPI Namespace Collision Research
 
