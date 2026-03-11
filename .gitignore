@@ -1,31 +1,14 @@
-acpica/
-*.bak
-*.tmp
-*.swp
+# Binary or temporary artifacts (kept out for privacy)
+*.dat
+*.dsl
 *.bin
 *.img
 *.iso
 *.log
-*.key
-*.pem
-*.crt
-*.der
-*.pfx
-*.p12
-*.kdbx
-*.sqlite
-*.pcap
-*.pcapng
+*.tmp
+*.swp
 *.core
+
+# Derived or private evidence bundles
+artifacts/
 acpica/
-ACPI - Wikipedia.html
-ACPI - Wikipedia_files/
-CYB3R14.txt
-G20240322
-R*/
-acpi.dat
-acpi.html
-firmware_analysis_dashboard.html
-lenovo_psirt_key.asc
-r
-version-20240827 

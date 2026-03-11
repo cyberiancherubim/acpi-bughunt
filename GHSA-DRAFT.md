@@ -20,7 +20,7 @@ The operating system may lose correct USB port capability and physical topology 
 
 ## Evidence
 
-See `EVIDENCE.md` and sanitized ACPI artifacts in the repository.
+See `EVIDENCE.md` and `REPORT.md` for summarized observations; raw dumps were removed for privacy.
 
 ## Historical context
 
@@ -32,4 +32,8 @@ Install corrected firmware when available. Preserve ACPI dumps, decompiled table
 
 ## Credit
 
-Grant Scott Turner
+Independent researcher (identity withheld for privacy)
+
+## Data handling
+
+All raw ACPI dumps, kernel logs, hardware inventories, and MSDM content were removed from the public repository to avoid exposing host-specific identifiers or keys. Only summarized findings remain; vendors can request private evidence if needed for validation.

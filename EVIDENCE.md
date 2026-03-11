@@ -1,39 +1,20 @@
-## Local evidence
+## Evidence summary (raw artifacts removed)
 
-### ACPI helper methods present in DSDT
+- Prior disassembly identified serialized helper methods `GPLD` and `GUPC` at root scope, invoked by XHCI RHUB USB devices.
+- The RHUB topology included devices `HS01`–`HS14` and `SS01`–`SS10`, each returning `_UPC` and `_PLD` data constructed via the helper methods.
+- Boot-time interpreter output (now redacted) reported `AE_ALREADY_EXISTS` while creating those helper methods and the per-port `_UPC/_PLD` objects, indicating duplicate definitions across the DSDT/SSDT set.
+- A device-specific method `_DSM` under `\_SB.PC00.PEG1.PEGP` attempted to create a buffer field `USRG` on each invocation; repeated creation triggered `AE_ALREADY_EXISTS` and aborted the method.
 
-- `dsdt.dsl:12646: Method (GPLD, 2, Serialized)`
-- `dsdt.dsl:12682: Method (GUPC, 2, Serialized)`
+## Runtime observations (summarized)
 
-### USB RHUB topology objects present
+- `AE_ALREADY_EXISTS` for `\GPLD` and `\GUPC` during ACPI table load.
+- `AE_ALREADY_EXISTS` for `_UPC` and `_PLD` under multiple RHUB port paths.
+- `CreateBufferField` collision for `USRG` inside `_DSM`, followed by method abort.
 
-- `dsdt.dsl:12715: Device (HS01)`
-- `dsdt.dsl:12936: Device (HS14)`
-- `dsdt.dsl:12975: Device (SS01)`
-- `dsdt.dsl:13164: Device (SS10)`
+## Redaction notice
 
-### Repeated helper invocations under RHUB
-
-Examples:
-- `dsdt.dsl:12720: Return (GUPC (One, Zero))`
-- `dsdt.dsl:12725: Return (GPLD (One, One))`
-- `dsdt.dsl:12805: Return (GUPC (Zero, 0xFF))`
-- `dsdt.dsl:12810: Return (GPLD (Zero, Zero))`
-
-### Additional SSDT references
-
-- `ssdt4.dsl:188` through `ssdt4.dsl:217` reference `HS01` through `HS14` and `SS01` through `SS10`
-
-## Runtime observations
-
-Observed boot-time ACPI errors include:
-- `ACPI Error: [GPLD] Namespace lookup failure, AE_ALREADY_EXISTS`
-- `ACPI Exception: AE_ALREADY_EXISTS, During name lookup/catalog`
-- `ACPI Error: 1 table load failures, ... successful`
+All underlying ACPI dumps, kernel logs, and disassembly outputs have been removed to prevent leakage of host identifiers, MSDM data, serials, or HWIDs. The above bullets describe the retained conclusions without exposing raw artefacts.
 
 ## Validation limitations
 
-Unsigned `chipsec.ko` could not be loaded under Secure Boot:
-- `insmod: ERROR: could not insert module ... Key was rejected by service`
-
-This did not affect ACPI table extraction or ASL-level namespace analysis.
+Unsigned `chipsec.ko` could not be loaded under Secure Boot; deeper ring-0 checks were not performed in the sanitized dataset.
